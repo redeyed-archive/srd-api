@@ -1,0 +1,57 @@
+{
+  "name": "@evilmonkeyinc/srd-api",
+  "version": "0.1.0",
+  "description": "Tools and helpers to query SRD content",
+  "main": "dist/src/Index.js",
+  "types": "dist/src/Index.d.ts",
+  "scripts": {
+    "build": "rm -rf ./dist/ && tsc",
+    "test": "jest",
+    "lint": "eslint --ext ts .",
+    "prepublishOnly": "./scripts/prepublishOnly.sh && npm run lint && npm run build",
+    "postpublish": "./scripts/postpublish.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evilmonkeyinc/srd-api.git"
+  },
+  "keywords": [
+    "srd"
+  ],
+  "author": "Scott McGowan <evilmonkeyinc@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evilmonkeyinc/srd-api/issues"
+  },
+  "homepage": "https://github.com/evilmonkeyinc/srd-api#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.2",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.4.0",
+    "ts-jest": "^25.4.0",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testRegex": "^.+\\.spec\\.ts$"
+  },
+  "files": [
+    "dist"
+  ],
+  "directories": {
+    "lib": "lib",
+    "public": "public"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
