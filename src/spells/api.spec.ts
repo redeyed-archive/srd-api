@@ -35,7 +35,7 @@ describe('spells.api.get', () => {
         it(test.name, (done) => {
             const actual = spellAPI.get(test.input);
             if (test.expected.found) {
-                expect(actual === undefined).toEqual(false);
+                expect(actual).toBeDefined();
                 if (actual !== undefined) {
                     expect(actual.name).toEqual(test.expected.name);
                 }
