@@ -15,7 +15,7 @@ export interface Query {
         verbal?: boolean;
     },
     concentration?: boolean;
-    damageType?: DamageType[];
+    damageTypes?: DamageType[];
     levels?: number[];
     name?: string;
     ritual?: boolean;
@@ -180,9 +180,9 @@ export default class API {
             }
         }
 
-        if (query.damageType !== undefined && query.damageType.length > 0) {
+        if (query.damageTypes !== undefined && query.damageTypes.length > 0) {
             let array = new Array<string>();
-            query.damageType.forEach((damageType) => {
+            query.damageTypes.forEach((damageType) => {
                 let subArray = this.spellsByDamageType.get(damageType) || [];
                 if (subArray.length > 0) {
                     array.push(...subArray)

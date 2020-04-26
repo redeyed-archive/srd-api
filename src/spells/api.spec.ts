@@ -388,7 +388,7 @@ describe('spells.api.query', () => {
             {
                 name: 'force spells',
                 query: {
-                    damageType: [
+                    damageTypes: [
                         DamageType.Force,
                     ],
                 },
@@ -399,7 +399,7 @@ describe('spells.api.query', () => {
             {
                 name: 'fire spells',
                 query: {
-                    damageType: [
+                    damageTypes: [
                         DamageType.Fire,
                     ],
                 },
@@ -410,7 +410,7 @@ describe('spells.api.query', () => {
             {
                 name: 'fire or acid spells',
                 query: {
-                    damageType: [
+                    damageTypes: [
                         DamageType.Fire,
                         DamageType.Acid,
                     ],
