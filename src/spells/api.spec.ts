@@ -6,6 +6,7 @@ import { ThrowReporter } from 'io-ts/lib/ThrowReporter';
 import { optional } from '../../lib/test';
 import { AttackType } from '../shared/Attacks';
 import { Ability } from '../shared/Abilities';
+import { DamageType } from '../shared/DamageType';
 
 describe('spells.api.get', () => {
 
@@ -383,6 +384,40 @@ describe('spells.api.query', () => {
                 expected: {
                     results: 7,
                 }
+            },
+            {
+                name: 'force spells',
+                query: {
+                    damageType: [
+                        DamageType.Force,
+                    ],
+                },
+                expected: {
+                    results: 8
+                },
+            },
+            {
+                name: 'fire spells',
+                query: {
+                    damageType: [
+                        DamageType.Fire,
+                    ],
+                },
+                expected: {
+                    results: 20
+                },
+            },
+            {
+                name: 'fire or acid spells',
+                query: {
+                    damageType: [
+                        DamageType.Fire,
+                        DamageType.Acid,
+                    ],
+                },
+                expected: {
+                    results: 22
+                },
             }
         ];
 
@@ -427,7 +462,7 @@ describe('validation', () => {
             io_ts.literal('necromancy'),
             io_ts.literal('transmutation'),
         ]),
-        casting_time: io_ts.union([
+        castingTime: io_ts.union([
             io_ts.literal('reaction'),
             io_ts.literal('bonus action'),
             io_ts.literal('action'),
@@ -438,6 +473,25 @@ describe('validation', () => {
             io_ts.literal('12 hours'),
             io_ts.literal('24 hours'),
         ]),
+        damageType: optional(
+            io_ts.array(
+                io_ts.union([
+                    io_ts.literal('acid'),
+                    io_ts.literal('bludgeoning'),
+                    io_ts.literal('cold'),
+                    io_ts.literal('fire'),
+                    io_ts.literal('force'),
+                    io_ts.literal('lightning'),
+                    io_ts.literal('necrotic'),
+                    io_ts.literal('piercing'),
+                    io_ts.literal('poison'),
+                    io_ts.literal('psychic'),
+                    io_ts.literal('radiant'),
+                    io_ts.literal('slashing'),
+                    io_ts.literal('thunder'),
+                ]),
+            )
+        ),
         duration: io_ts.union([
             io_ts.literal('instantaneous'),
             io_ts.literal('1 round'),
@@ -490,7 +544,7 @@ describe('validation', () => {
         })),
         components: io_ts.any,
         description: io_ts.array(io_ts.string),
-        higher_levels: optional(io_ts.array(io_ts.string)),
+        higherLevels: optional(io_ts.array(io_ts.string)),
         ritual: io_ts.boolean,
         attack: optional(io_ts.union([
             io_ts.literal('melee'),
@@ -505,7 +559,7 @@ describe('validation', () => {
             io_ts.literal('charisma'),
         ])),
         concentration: io_ts.boolean,
-        reaction_trigger: optional(io_ts.string),
+        reactionTrigger: optional(io_ts.string),
         classes: io_ts.array(io_ts.union([
             io_ts.literal('bard'),
             io_ts.literal('cleric'),

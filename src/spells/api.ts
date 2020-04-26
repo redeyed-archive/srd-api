@@ -3,6 +3,7 @@ import spellData from '../../public/spells.json';
 import { ClassType } from '../shared/Classes';
 import { Ability } from '../shared/Abilities';
 import { AttackType } from '../shared/Attacks';
+import { DamageType } from '../shared/DamageType';
 
 export interface Query {
     attackTypes?: AttackType[];
@@ -14,6 +15,7 @@ export interface Query {
         verbal?: boolean;
     },
     concentration?: boolean;
+    damageType?: DamageType[];
     levels?: number[];
     name?: string;
     ritual?: boolean;
@@ -35,6 +37,7 @@ export default class API {
     private materialSpells = new Array<string>();
     private somaticSpells = new Array<string>();
     private verbalSpells = new Array<string>();
+    private spellsByDamageType = new Map<DamageType, string[]>();
 
     constructor() {
         this.init();
@@ -177,6 +180,19 @@ export default class API {
             }
         }
 
+        if (query.damageType !== undefined && query.damageType.length > 0) {
+            let array = new Array<string>();
+            query.damageType.forEach((damageType) => {
+                let subArray = this.spellsByDamageType.get(damageType) || [];
+                if (subArray.length > 0) {
+                    array.push(...subArray)
+                }
+            })
+            if (array.length > 0) {
+                spellNameList = spellNameList.filter((value) => array.includes(value));
+            }
+        }
+
         spellNameList.forEach((spellName) => {
             const spell = this.spellByName.get(spellName);
             if (spell !== undefined) {
@@ -248,9 +264,17 @@ export default class API {
                     this.verbalSpells.push(key);
                 }
 
-                let castingTimeArray = this.spellsByCastingTime.get(spell.casting_time) || [];
+                if (spell.damageType !== undefined && spell.damageType.length > 0) {
+                    spell.damageType.forEach((damageType) => {
+                        let array = this.spellsByDamageType.get(damageType) || [];
+                        array.push(key);
+                        this.spellsByDamageType.set(damageType, array)
+                    });
+                }
+
+                let castingTimeArray = this.spellsByCastingTime.get(spell.castingTime) || [];
                 castingTimeArray.push(key);
-                this.spellsByCastingTime.set(spell.casting_time, castingTimeArray);
+                this.spellsByCastingTime.set(spell.castingTime, castingTimeArray);
             });
         }
     }

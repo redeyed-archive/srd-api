@@ -1,5 +1,13 @@
 # SRD API
 
+> **This library is still in under alpha development**: 
+> 
+> While this library is under development under version v0.x.x minor changes may include breaking changes normally expected of major change version upgrades. 
+> 
+> The library changes will become more stable when it reaches v1.0.0 and future breaking changes will result in a major change to the version number.
+
+## Description
+
 Tools and helpers to query content made available through the [Systems Reference Document (SRD)](https://dnd.wizards.com/articles/features/systems-reference-document-srd) and the [Open Gaming Licence (OGL)](http://www.opengamingfoundation.org/ogl.html).
 
 ## Usage
@@ -36,6 +44,7 @@ You can state one or more of the following filters:
 - classes: one or more ClassType that the spells could belong to.
 - components: state the components the spell uses, verbal, somatic, and material.
 - concentration: state if the spell would require concentration or not.
+- damageType: one or more DamageType that the spell could cause.
 - levels: one or more spell levels that the spell could have.
 - name: a string to compare to part or the whole of a name of a spell. This is case insensitive.
 - ritual: state if the spell can be cast as a ritual or not.

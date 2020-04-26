@@ -1,6 +1,7 @@
 import { ClassType } from '../shared/Classes';
 import { Ability } from '../shared/Abilities';
 import { AttackType } from '../shared/Attacks';
+import { DamageType } from '../shared/DamageType';
 
 export enum Duration {
     Instantaneous = 'instantaneous',
@@ -91,17 +92,18 @@ export default interface Spell {
     name: string;
     level: number;
     school: School;
-    casting_time: CastingTime;
+    castingTime: CastingTime;
     duration: Duration;
     range: Range;
     area?: Area;
     components: Components;
+    damageType?: DamageType[];
     description: string[];
-    higher_levels?: string[];
+    higherLevels?: string[];
     ritual: boolean;
     attack?: AttackType;
     save?: Ability;
     concentration: boolean;
-    reaction_trigger?: string;
+    reactionTrigger?: string;
     classes: ClassType[];
 }
