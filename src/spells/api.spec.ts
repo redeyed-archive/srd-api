@@ -449,6 +449,21 @@ describe('spells.api.query', () => {
 
 describe('validation', () => {
 
+    const descriptionInterface = io_ts.union([
+        io_ts.string,
+        io_ts.interface({
+            type: io_ts.literal('list'),
+            title: optional(io_ts.string),
+            content: io_ts.array(io_ts.string),
+        }),
+        io_ts.interface({
+            type: io_ts.literal('table'),
+            title: optional(io_ts.string),
+            content: io_ts.array(io_ts.array(io_ts.string)),
+        })
+    ]
+    );
+
     const spellInterface = io_ts.interface({
         name: io_ts.string,
         level: io_ts.number,
@@ -543,8 +558,8 @@ describe('validation', () => {
             ]),
         })),
         components: io_ts.any,
-        description: io_ts.array(io_ts.string),
-        higherLevels: optional(io_ts.array(io_ts.string)),
+        description: io_ts.array(descriptionInterface),
+        higherLevels: optional(io_ts.array(descriptionInterface)),
         ritual: io_ts.boolean,
         attack: optional(io_ts.union([
             io_ts.literal('melee'),

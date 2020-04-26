@@ -88,6 +88,20 @@ export interface Area {
     unit: 'feet' | 'miles';
 }
 
+export interface DescriptionList {
+    type: 'list',
+    title?: string,
+    content: string[],
+}
+
+export interface DescriptionTable {
+    type: 'title',
+    title?: string,
+    content: string[][],
+}
+
+export type Description = string | DescriptionList | DescriptionTable;
+
 export default interface Spell {
     name: string;
     level: number;
@@ -98,8 +112,8 @@ export default interface Spell {
     area?: Area;
     components: Components;
     damageType?: DamageType[];
-    description: string[];
-    higherLevels?: string[];
+    description: Description[];
+    higherLevels?: Description[];
     ritual: boolean;
     attack?: AttackType;
     save?: Ability;

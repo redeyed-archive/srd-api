@@ -209,7 +209,8 @@
             }
         },
         "description": [
-            "This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a skeleton if you chose bones or a zombie if you chose a corpse (the DM has the creature’s game statistics).\n\nOn each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
+            "This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a skeleton if you chose bones or a zombie if you chose a corpse (the DM has the creature’s game statistics).",
+            "On each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
             "The creature is under your control for 24 hours, after which it stops obeying any command you’ve given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one."
         ],
         "higherLevels": [
@@ -241,7 +242,61 @@
         "description": [
             "Objects come to life at your command. Choose up to ten nonmagical objects within range that are not being worn or carried. Medium targets count as two objects, Large targets count as four objects, Huge targets count as eight objects. You can’t animate any object larger than Huge. Each target animates and becomes a creature under your control until the spell ends or until reduced to 0 hit points.",
             "As a bonus action, you can mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
-            "Animated Object Statistics\nSize\tHP\tAC\tAttack\tStr\tDex\nTiny\t20\t18\t+8 to hit,\n        1d4 + 4 damage\t4\t18\nSmall\t25\t16\t+6 to hit,\n        1d8 + 2 damage\t6\t14\nMedium\t40\t13\t+5 to hit,\n        2d6 + 1 damage\t10\t12\nLarge\t50\t10\t+6 to hit,\n        2d10 + 2 damage\t14\t10\nHuge\t80\t10\t+8 to hit,\n        2d12 + 4 damage\t18\t6\nAn animated object is a construct with AC, hit points, attacks, Strength, and Dexterity determined by its size. Its Constitution is 10 and its Intelligence and Wisdom are 3, and its Charisma is 1. Its speed is 30 feet; if the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or a larger object, such as a chain bolted to a wall, its speed is 0. It has blindsight with a radius of 30 feet and is blind beyond that distance. When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
+            {
+                "type": "table",
+                "title": "Animated Object Statistics",
+                "content": [
+                    [
+                        "Size",
+                        "HP",
+                        "AC",
+                        "Attack",
+                        "Str",
+                        "Dex"
+                    ],
+                    [
+                        "Tiny",
+                        "20",
+                        "18",
+                        "+8 to hit, 1d4 + 4 damage",
+                        "4",
+                        "18"
+                    ],
+                    [
+                        "Small",
+                        "25",
+                        "16",
+                        "+6 to hit, 1d8 + 2 damage",
+                        "6",
+                        "14"
+                    ],
+                    [
+                        "Medium",
+                        "40",
+                        "13",
+                        "+5 to hit,2d6 + 1 damage",
+                        "10",
+                        "12"
+                    ],
+                    [
+                        "Large",
+                        "50",
+                        "10",
+                        "+6 to hit, 2d10 + 2 damage",
+                        "14",
+                        "10"
+                    ],
+                    [
+                        "Huge",
+                        "80",
+                        "10",
+                        "+8 to hit, 2d12 + 4 damage",
+                        "18",
+                        "6"
+                    ]
+                ]
+            },
+            "An animated object is a construct with AC, hit points, attacks, Strength, and Dexterity determined by its size. Its Constitution is 10 and its Intelligence and Wisdom are 3, and its Charisma is 1. Its speed is 30 feet; if the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or a larger object, such as a chain bolted to a wall, its speed is 0. It has blindsight with a radius of 30 feet and is blind beyond that distance. When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
             "If you command an object to attack, it can make a single melee attack against a creature within 5 feet of it. It makes a slam attack with an attack bonus and bludgeoning damage determined by its size. The DM might rule that a specific object inflicts slashing or piercing damage based on its form."
         ],
         "higherLevels": [
@@ -451,7 +506,16 @@
         },
         "description": [
             "By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The DM chooses from the following possible omens:",
-            "Weal, for good results\nWoe, for bad results\nWeal and woe, for both good and bad results\nNothing, for results that aren’t especially good or bad\nThe spell doesn’t take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.",
+            {
+                "type": "list",
+                "content": [
+                    "Weal, for good results",
+                    "Woe, for bad results",
+                    "Weal and woe, for both good and bad results",
+                    "Nothing, for results that aren’t especially good or bad"
+                ]
+            },
+            "The spell doesn’t take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.",
             "If you cast the spell two or more times before completing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The DM makes this roll in secret."
         ],
         "ritual": true,
@@ -611,7 +675,16 @@
         ],
         "description": [
             "You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:",
-            "Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.\nWhile cursed, the target has disadvantage on attack rolls against you.\nWhile cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.\nWhile the target is cursed, your attacks and spells deal an extra 1d8 necrotic damage to the target.\nA remove curse spell ends this effect. At the DM’s option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse’s effect."
+            {
+                "type": "list",
+                "content": [
+                    "Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.",
+                    "While cursed, the target has disadvantage on attack rolls against you.",
+                    "While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.",
+                    "While the target is cursed, your attacks and spells deal an extra 1d8 necrotic damage to the target."
+                ]
+            },
+            "A remove curse spell ends this effect. At the DM’s option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse’s effect."
         ],
         "higherLevels": [
             "If you cast this spell using a spell slot of 4th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn’t require concentration."
@@ -640,7 +713,7 @@
             "slashing"
         ],
         "description": [
-            "You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long,\n20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter,\n20 feet high, and 5 feet thick. The wall provides three-quarters cover to creatures behind it, and its space is difficult terrain.",
+            "You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides three-quarters cover to creatures behind it, and its space is difficult terrain.",
             "When a creature enters the wall’s area for the first time on a turn or starts its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes 6d10 slashing damage. On a successful save, the creature takes half as much damage."
         ],
         "save": "dexterity",
@@ -1205,7 +1278,16 @@
         "description": [
             "You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the spell gives you knowledge of the land within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn’t function where nature has been replaced by construction, such as in dungeons and towns.",
             "You instantly gain knowledge of up to three facts of your choice about any of the following subjects as they relate to the area:",
-            "terrain and bodies of water\nprevalent plants, minerals, animals, or peoples\npowerful celestials, fey, fiends, elementals, or undead\ninfluence from other planes of existence\nbuildings",
+            {
+                "type": "list",
+                "content": [
+                    "terrain and bodies of water",
+                    "prevalent plants, minerals, animals, or peoples",
+                    "powerful celestials, fey, fiends, elementals, or undead",
+                    "influence from other planes of existence",
+                    "buildings"
+                ]
+            },
             "For example, you could determine the location of powerful undead in the area, the location of major sources of safe drinking water, and the location of any nearby towns."
         ],
         "ritual": true,
@@ -1321,7 +1403,32 @@
         "description": [
             "This spell assaults and twists creatures’ minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.",
             "An affected target can’t take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.",
-            "d10\tBehavior\n1\tThe creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn’t take an action this turn.\n2–6\tThe creature doesn’t move or take actions this turn.\n7–8\tThe creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn.\n9–10\tThe creature can act and move normally.\nAt the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target."
+            {
+                "type": "table",
+                "content": [
+                    [
+                        "d10",
+                        "Behavior"
+                    ],
+                    [
+                        "1",
+                        "The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn’t take an action this turn."
+                    ],
+                    [
+                        "2–6",
+                        "The creature doesn’t move or take actions this turn."
+                    ],
+                    [
+                        "7–8",
+                        "The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn."
+                    ],
+                    [
+                        "9–10",
+                        "The creature can act and move normally."
+                    ]
+                ]
+            },
+            "At the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target."
         ],
         "higherLevels": [
             "When you cast this spell using a spell slot of 5th level or higher, the radius of the sphere increases by 5 feet for each slot level above 4th."
@@ -1349,7 +1456,16 @@
         },
         "description": [
             "You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:",
-            "One beast of challenge rating 2 or lower\nTwo beasts of challenge rating 1 or lower\nFour beasts of challenge rating 1/2 or lower\nEight beasts of challenge rating 1/4 or lower\nEach beast is also considered fey, and it disappears when it drops to 0 hit points or when the spell ends.",
+            {
+                "type": "list",
+                "content": [
+                    "One beast of challenge rating 2 or lower",
+                    "Two beasts of challenge rating 1 or lower",
+                    "Four beasts of challenge rating 1/2 or lower",
+                    "Eight beasts of challenge rating 1/4 or lower"
+                ]
+            },
+            "Each beast is also considered fey, and it disappears when it drops to 0 hit points or when the spell ends.",
             "The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.",
             "The DM has the creatures’ statistics."
         ],
@@ -1459,7 +1575,16 @@
         },
         "description": [
             "You summon elementals that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:",
-            "One elemental of challenge rating 2 or lower\nTwo elementals of challenge rating 1 or lower\nFour elementals of challenge rating 1/2 or lower\nEight elementals of challenge rating 1/4 or lower.\nAn elemental summoned by this spell disappears when it drops to 0 hit points or when the spell ends.",
+            {
+                "type": "list",
+                "content": [
+                    "One elemental of challenge rating 2 or lower",
+                    "Two elementals of challenge rating 1 or lower",
+                    "Four elementals of challenge rating 1/2 or lower",
+                    "Eight elementals of challenge rating 1/4 or lower."
+                ]
+            },
+            "An elemental summoned by this spell disappears when it drops to 0 hit points or when the spell ends.",
             "The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.",
             "The DM has the creatures’ statistics."
         ],
@@ -1490,7 +1615,16 @@
         },
         "description": [
             "You summon fey creatures that appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:",
-            "One fey creature of challenge rating 2 or lower\nTwo fey creatures of challenge rating 1 or lower\nFour fey creatures of challenge rating 1/2 or lower\nEight fey creatures of challenge rating 1/4 or lower\nA summoned creature disappears when it drops to 0 hit points or when the spell ends.",
+            {
+                "type": "list",
+                "content": [
+                    "One fey creature of challenge rating 2 or lower",
+                    "Two fey creatures of challenge rating 1 or lower",
+                    "Four fey creatures of challenge rating 1/2 or lower",
+                    "Eight fey creatures of challenge rating 1/4 or lower"
+                ]
+            },
+            "A summoned creature disappears when it drops to 0 hit points or when the spell ends.",
             "The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which have their own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.",
             "The DM has the creatures’ statistics."
         ],
@@ -1672,7 +1806,100 @@
             "You take control of the weather within 5 miles of you for the duration. You must be outdoors to cast this spell. Moving to a place where you don’t have a clear path to the sky ends the spell early.",
             "When you cast the spell, you change the current weather conditions, which are determined by the DM based on the climate and season. You can change precipitation, temperature, and wind. It takes 1d4 × 10 minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.",
             "When you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction.",
-            "Temperature\nStage\tCondition\n1\tUnbearable heat\n2\tHot\n3\tWarm\n4\tCool\n5\tCold\n6\tArctic cold\nWind\nStage\tCondition\n1\tCalm\n2\tModerate wind\n3\tStrong wind\n4\tGale\n5\tStorm\nPrecipitation\nStage\tCondition\n1\tClear\n2\tLight clouds\n3\tOvercast or ground fog\n4\tRain, hail, or snow\n5\tTorrential rain, driving hail, or blizzard"
+            {
+                "type": "table",
+                "title": "Precipitation",
+                "content": [
+                    [
+                        "Stage",
+                        "Condition"
+                    ],
+                    [
+                        "1",
+                        "Clear"
+                    ],
+                    [
+                        "2",
+                        "Light clouds"
+                    ],
+                    [
+                        "3",
+                        "Overcast or ground fog"
+                    ],
+                    [
+                        "4",
+                        "Rain, hail, or snow"
+                    ],
+                    [
+                        "5",
+                        "Torrential rain, driving hail, or blizzard"
+                    ]
+                ]
+            },
+            {
+                "type": "table",
+                "title": "Temperature",
+                "content": [
+                    [
+                        "Stage",
+                        "Condition"
+                    ],
+                    [
+                        "1",
+                        "Unbearable heat"
+                    ],
+                    [
+                        "2",
+                        "Hot"
+                    ],
+                    [
+                        "3",
+                        "Warm"
+                    ],
+                    [
+                        "4",
+                        "Cool"
+                    ],
+                    [
+                        "5",
+                        "Cold"
+                    ],
+                    [
+                        "6",
+                        "Arctic cold"
+                    ]
+                ]
+            },
+            {
+                "type": "table",
+                "title": "Wind",
+                "content": [
+                    [
+                        "Stage",
+                        "Condition"
+                    ],
+                    [
+                        "1",
+                        "Calm"
+                    ],
+                    [
+                        "2",
+                        "Moderate wind"
+                    ],
+                    [
+                        "3",
+                        "Strong wind"
+                    ],
+                    [
+                        "4",
+                        "Gale"
+                    ],
+                    [
+                        "5",
+                        "Storm"
+                    ]
+                ]
+            }
         ],
         "concentration": true,
         "classes": [
@@ -1807,7 +2034,36 @@
         "description": [
             "You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within range: soft goods, rope, wood, or something similar. You can also use this spell to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5-foot cube, and the object must be of a form and material that you have seen before.",
             "The duration depends on the object’s material. If the object is composed of multiple materials, use the shortest duration.",
-            "Material\tDuration\nVegetable matter\t1 day\nStone or crystal\t12 hours\nPrecious metals\t1 hour\nGems\t10 minutes\nAdamantine or mithral\t1 minute\nUsing any material created by this spell as another spell’s material component causes that spell to fail."
+            {
+                "type": "table",
+                "content": [
+                    [
+                        "Material",
+                        "Duration"
+                    ],
+                    [
+                        "Vegetable matter",
+                        "1 day"
+                    ],
+                    [
+                        "Stone or crystal",
+                        "12 hours"
+                    ],
+                    [
+                        "Precious metals",
+                        "1 hour"
+                    ],
+                    [
+                        "Gems",
+                        "10 minutes"
+                    ],
+                    [
+                        "Adamantine or mithral",
+                        "1 minute"
+                    ]
+                ]
+            },
+            "Using any material created by this spell as another spell’s material component causes that spell to fail."
         ],
         "higherLevels": [
             "When you cast this spell using a spell slot of 6th level or higher, the cube increases by 5 feet for each slot level above 5th."
@@ -2343,7 +2599,16 @@
             "verbal": true
         },
         "description": [
-            "You utter a divine word, imbued with the power that shaped the world at the dawn of creation. Choose any number of creatures you can see within range. Each creature that can hear you must make a Charisma saving throw. On a failed save, a creature suffers an effect based on its current hit points:\n50 hit points or fewer: deafened for 1 minute\n40 hit points or fewer: deafened and blinded for 10 minutes\n30 hit points or fewer: blinded, deafened, and stunned for 1 hour\n20 hit points or fewer: killed instantly",
+            "You utter a divine word, imbued with the power that shaped the world at the dawn of creation. Choose any number of creatures you can see within range. Each creature that can hear you must make a Charisma saving throw. On a failed save, a creature suffers an effect based on its current hit points:",
+            {
+                "type": "list",
+                "content": [
+                    "50 hit points or fewer: deafened for 1 minute",
+                    "40 hit points or fewer: deafened and blinded for 10 minutes",
+                    "30 hit points or fewer: blinded, deafened, and stunned for 1 hour",
+                    "20 hit points or fewer: killed instantly"
+                ]
+            },
             "Regardless of its current hit points, a celestial, an elemental, a fey, or a fiend that fails its save is forced back to its plane of origin (if it isn’t there already) and can’t return to your current plane for 24 hours by any means short of a wish spell."
         ],
         "save": "charisma",
@@ -2486,7 +2751,15 @@
         },
         "description": [
             "Whispering to the spirits of nature, you create one of the following effects within range:",
-            "You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.\nYou instantly make a flower blossom, a seed pod open, or a leaf bud bloom.\nYou create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.\nYou instantly light or snuff out a candle, a torch, or a small campfire."
+            {
+                "type": "list",
+                "content": [
+                    "You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.",
+                    "You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.",
+                    "You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.",
+                    "You instantly light or snuff out a candle, a torch, or a small campfire."
+                ]
+            }
         ],
         "classes": [
             "druid"
@@ -3787,7 +4060,15 @@
         },
         "description": [
             "You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target’s exhaustion level by one, or end one of the following effects on the target:",
-            "One effect that charmed or petrified the target\nOne curse, including the target’s attunement to a cursed magic item\nAny reduction to one of the target’s ability scores\nOne effect reducing the target’s hit point maximum"
+            {
+                "type": "list",
+                "content": [
+                    "One effect that charmed or petrified the target",
+                    "One curse, including the target’s attunement to a cursed magic item",
+                    "Any reduction to one of the target’s ability scores",
+                    "One effect reducing the target’s hit point maximum"
+                ]
+            }
         ],
         "classes": [
             "bard",
@@ -3844,7 +4125,17 @@
             "Doors. All doors in the warded area are magically locked, as if sealed by an arcane lock spell. In addition, you can cover up to ten doors with an illusion (equivalent to the illusory object function of the minor illusion spell) to make them appear as plain sections of wall.",
             "Stairs. Webs fill all stairs in the warded area from top to bottom, as the web spell. These strands regrow in 10 minutes if they are burned or torn away while guards and wards lasts.",
             "Other Spell Effect. You can place your choice of one of the following magical effects within the warded area of the stronghold.",
-            "Place dancing lights in four corridors. You can designate a simple program that the lights repeat as long as guards and wards lasts.\nPlace magic mouth in two locations.\nPlace stinking cloud in two locations. The vapors appear in the places you designate; they return within 10 minutes if dispersed by wind while guards and wards lasts.\nPlace a constant gust of wind in one corridor or room.\nPlace a suggestion in one location. You select an area of up to 5 feet square, and any creature that enters or passes through the area receives the suggestion mentally.\nThe whole warded area radiates magic. A dispel magic cast on a specific effect, if successful, removes only that effect.",
+            {
+                "type": "list",
+                "content": [
+                    "Place dancing lights in four corridors. You can designate a simple program that the lights repeat as long as guards and wards lasts.",
+                    "Place magic mouth in two locations.",
+                    "Place stinking cloud in two locations. The vapors appear in the places you designate; they return within 10 minutes if dispersed by wind while guards and wards lasts.",
+                    "Place a constant gust of wind in one corridor or room.",
+                    "Place a suggestion in one location. You select an area of up to 5 feet square, and any creature that enters or passes through the area receives the suggestion mentally."
+                ]
+            },
+            "The whole warded area radiates magic. A dispel magic cast on a specific effect, if successful, removes only that effect.",
             "You can create a permanently guarded and warded structure by casting this spell there every day for one year."
         ],
         "classes": [
@@ -4979,7 +5270,15 @@
         "description": [
             "You create a 10-foot-radius, 20-foot-tall cylinder of magical energy centered on a point on the ground that you can see within range. Glowing runes appear wherever the cylinder intersects with the floor or other surface.",
             "Choose one or more of the following types of creatures: celestials, elementals, fey, fiends, or undead. The circle affects a creature of the chosen type in the following ways:",
-            "The creature can’t willingly enter the cylinder by nonmagical means. If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a Charisma saving throw.\nThe creature has disadvantage on attack rolls against targets within the cylinder.\nTargets within the cylinder can’t be charmed, frightened, or possessed by the creature.\nWhen you cast this spell, you can elect to cause its magic to operate in the reverse direction, preventing a creature of the specified type from leaving the cylinder and protecting targets outside it."
+            {
+                "type": "list",
+                "content": [
+                    "The creature can’t willingly enter the cylinder by nonmagical means. If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a Charisma saving throw.",
+                    "The creature has disadvantage on attack rolls against targets within the cylinder.",
+                    "Targets within the cylinder can’t be charmed, frightened, or possessed by the creature."
+                ]
+            },
+            "When you cast this spell, you can elect to cause its magic to operate in the reverse direction, preventing a creature of the specified type from leaving the cylinder and protecting targets outside it."
         ],
         "higherLevels": [
             "When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 hour for each slot level above 3rd."
@@ -6034,7 +6333,17 @@
         },
         "description": [
             "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range:",
-            "You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.\nYou instantaneously light or snuff out a candle, a torch, or a small campfire.\nYou instantaneously clean or soil an object no larger than 1 cubic foot.\nYou chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.\nYou make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.\nYou create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.",
+            {
+                "type": "list",
+                "content": [
+                    "You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.",
+                    "You instantaneously light or snuff out a candle, a torch, or a small campfire.",
+                    "You instantaneously clean or soil an object no larger than 1 cubic foot.",
+                    "You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.",
+                    "You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.",
+                    "You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn."
+                ]
+            },
             "If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
         ],
         "classes": [
@@ -6115,7 +6424,7 @@
             "3. Yellow. The creature takes 10d6 lightning damage on a failed save, or half as much damage on a successful one. This layer can be destroyed by dealing at least 60 force damage to it.",
             "4. Green. The creature takes 10d6 poison damage on a failed save, or half as much damage on a successful one. A passwall spell, or another spell of equal or greater level that can open a portal on a solid surface, destroys this layer.",
             "5. Blue. The creature takes 10d6 cold damage on a failed save, or half as much damage on a successful one. This layer can be destroyed by dealing at least 25 fire damage to it.",
-            "6. Indigo. On a failed save, the creature is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don’t need to be consecutive; keep track of both until the creature collects three of a kind.\n\nWhile this layer is in place, spells can’t be cast through the wall. The layer is destroyed by bright light shed by a daylight spell or a similar spell of equal or higher level.",
+            "6. Indigo. On a failed save, the creature is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don’t need to be consecutive; keep track of both until the creature collects three of a kind.\nWhile this layer is in place, spells can’t be cast through the wall. The layer is destroyed by bright light shed by a daylight spell or a similar spell of equal or higher level.",
             "7. Violet. On a failed save, the creature is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of the DM’s choosing and is no longer blinded. (Typically, a creature that is on a plane that isn’t its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.) This layer is destroyed by a dispel magic spell or a similar spell of equal or higher level that can end spells and magical effects."
         ],
         "classes": [
@@ -6427,7 +6736,71 @@
         "description": [
             "You touch a dead humanoid or a piece of a dead humanoid. Provided that the creature has been dead no longer than 10 days, the spell forms a new adult body for it and then calls the soul to enter that body. If the target’s soul isn’t free or willing to do so, the spell fails.",
             "The magic fashions a new body for the creature to inhabit, which likely causes the creature’s race to change. The DM rolls a d100 and consults the following table to determine what form the creature takes when restored to life, or the DM chooses a form.",
-            "d100\tRace\n01–04\tDragonborn\n05–13\tDwarf, hill\n14–21\tDwarf, mountain\n22–25\tElf, dark\n26–34\tElf, high\n35–42\tElf, wood\n43–46\tGnome, forest\n47–52\tGnome, rock\n53–56\tHalf-elf\n57–60\tHalf-orc\n61–68\tHalfling, lightfoot\n69–76\tHalfling, stout\n77–96\tHuman\n97–00\tTiefling",
+            {
+                "type": "table",
+                "content": [
+                    [
+                        "d100",
+                        "Race"
+                    ],
+                    [
+                        "01–04",
+                        "Dragonborn"
+                    ],
+                    [
+                        "05–13",
+                        "Dwarf, hill"
+                    ],
+                    [
+                        "14–21",
+                        "Dwarf, mountain"
+                    ],
+                    [
+                        "22–25",
+                        "Elf, dark"
+                    ],
+                    [
+                        "26–34",
+                        "Elf, high"
+                    ],
+                    [
+                        "35–42",
+                        "Elf, wood"
+                    ],
+                    [
+                        "43–46",
+                        "Gnome, forest"
+                    ],
+                    [
+                        "47–52",
+                        "Gnome, rock"
+                    ],
+                    [
+                        "53–56",
+                        "Half-elf"
+                    ],
+                    [
+                        "57–60",
+                        "Half-orc"
+                    ],
+                    [
+                        "61–68",
+                        "Halfling, lightfoot"
+                    ],
+                    [
+                        "69–76",
+                        "Halfling, stout"
+                    ],
+                    [
+                        "77–96",
+                        "Human"
+                    ],
+                    [
+                        "97–00",
+                        "Tiefling"
+                    ]
+                ]
+            },
             "The reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original race for the new one and changes its racial traits accordingly."
         ],
         "classes": [
@@ -6691,7 +7064,44 @@
         },
         "description": [
             "You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a Wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. If a target knows you’re casting this spell, it can fail the saving throw voluntarily if it wants to be observed.",
-            "Knowledge\tSave Modifier\nSecondhand (you have heard of the target)\t+5\nFirsthand (you have met the target)\t+0\nFamiliar (you know the target well)\t−5\nConnection\tSave Modifier\nLikeness or picture\t−2\nPossession or garment\t−4\nBody part, lock of hair, bit of nail, or the like\t−10\nOn a successful save, the target isn’t affected, and you can’t use this spell against it again for 24 hours.",
+            {
+                "type": "table",
+                "content": [
+                    [
+                        "Knowledge",
+                        "Save Modifier"
+                    ],
+                    [
+                        "Secondhand (you have heard of the target)",
+                        "+5"
+                    ],
+                    [
+                        "Firsthand (you have met the target)",
+                        "+0"
+                    ],
+                    [
+                        "Familiar (you know the target well)",
+                        "−5"
+                    ],
+                    [
+                        "Connection",
+                        "Save Modifier"
+                    ],
+                    [
+                        "Likeness or picture",
+                        "−2"
+                    ],
+                    [
+                        "Possession or garment",
+                        "−4"
+                    ],
+                    [
+                        "Body part, lock of hair, bit of nail, or the like",
+                        "−10"
+                    ]
+                ]
+            },
+            "On a successful save, the target isn’t affected, and you can’t use this spell against it again for 24 hours.",
             "On a failed save, the spell creates an invisible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. A creature that can see invisible objects sees the sensor as a luminous orb about the size of your fist.",
             "Instead of targeting a creature, you can choose a location you have seen before as the target of this spell. When you do, the sensor appears at that location and doesn’t move."
         ],
@@ -7654,7 +8064,68 @@
         "description": [
             "This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can’t be held or carried by an unwilling creature.",
             "The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The DM rolls d100 and consults the table.",
-            "Familiarity\tMishap\tSimilar Area\tOff Target\tOn Target\nPermanent circle\t—\t—\t—\t01–100\nAssociated object\t—\t—\t—\t01–100\nVery familiar\t01–05\t06–13\t14–24\t25–100\nSeen casually\t01–33\t34–43\t44–53\t54–100\nViewed once\t01–43\t44–53\t54–73\t74–100\nDescription\t01–43\t44–53\t54–73\t74–100\nFalse destination\t01–50\t51–100\t—\t—\nFamiliarity. “Permanent circle” means a permanent teleportation circle whose sigil sequence you know. “Associated object” means that you possess an object taken from the desired destination within the last six months, such as a book from a wizard’s library, bed linen from a royal suite, or a chunk of marble from a lich’s secret tomb.",
+            {
+                "type": "table",
+                "content": [
+                    [
+                        "Familiarity",
+                        "Mishap",
+                        "Similar Area",
+                        "Off Target",
+                        "On Target"
+                    ],
+                    [
+                        "Permanent circle",
+                        "—",
+                        "—",
+                        "—",
+                        "01–100"
+                    ],
+                    [
+                        "Associated object",
+                        "—",
+                        "—",
+                        "—",
+                        "01–100"
+                    ],
+                    [
+                        "Very familiar",
+                        "01–05",
+                        "06–13",
+                        "14–24",
+                        "25–100"
+                    ],
+                    [
+                        "Seen casually",
+                        "01–33",
+                        "34–43",
+                        "44–53",
+                        "54–100"
+                    ],
+                    [
+                        "Viewed once",
+                        "01–43",
+                        "44–53",
+                        "54–73",
+                        "74–100"
+                    ],
+                    [
+                        "Description",
+                        "01–43",
+                        "44–53",
+                        "54–73",
+                        "74–100"
+                    ],
+                    [
+                        "False destination",
+                        "01–50",
+                        "51–100",
+                        "—",
+                        "—"
+                    ]
+                ]
+            },
+            "Familiarity. “Permanent circle” means a permanent teleportation circle whose sigil sequence you know. “Associated object” means that you possess an object taken from the desired destination within the last six months, such as a book from a wizard’s library, bed linen from a royal suite, or a chunk of marble from a lich’s secret tomb.",
             "“Very familiar” is a place you have been very often, a place you have carefully studied, or a place you can see when you cast the spell. “Seen casually” is someplace you have seen more than once but with which you aren’t very familiar. “Viewed once” is a place you have seen once, possibly using magic. “Description” is a place whose location and appearance you know through someone else’s description, perhaps from a map.",
             "“False destination” is a place that doesn’t exist. Perhaps you tried to scry an enemy’s sanctum but instead viewed an illusion, or you are attempting to teleport to a familiar location that no longer exists.",
             "On Target. You and your group (or the target object) appear where you want to.",
@@ -7709,7 +8180,18 @@
         },
         "description": [
             "You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:",
-            "Your voice booms up to three times as loud as normal for 1 minute.\nYou cause flames to flicker, brighten, dim, or change color for 1 minute.\nYou cause harmless tremors in the ground for 1 minute.\nYou create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.\nYou instantaneously cause an unlocked door or window to fly open or slam shut.\nYou alter the appearance of your eyes for 1 minute.\nIf you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action."
+            {
+                "type": "list",
+                "content": [
+                    "Your voice booms up to three times as loud as normal for 1 minute.",
+                    "You cause flames to flicker, brighten, dim, or change color for 1 minute.",
+                    "You cause harmless tremors in the ground for 1 minute.",
+                    "You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.",
+                    "You instantaneously cause an unlocked door or window to fly open or slam shut.",
+                    "You alter the appearance of your eyes for 1 minute."
+                ]
+            },
+            "If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action."
         ],
         "classes": [
             "cleric"
@@ -8402,7 +8884,17 @@
             "Wish is the mightiest spell a mortal creature can cast. By simply speaking aloud, you can alter the very foundations of reality in accord with your desires.",
             "The basic use of this spell is to duplicate any other spell of 8th level or lower. You don’t need to meet any requirements in that spell, including costly components. The spell simply takes effect.",
             "Alternatively, you can create one of the following effects of your choice:",
-            "You create one object of up to 25,000 gp in value that isn’t a magic item. The object can be no more than 300 feet in any dimension, and it appears in an unoccupied space you can see on the ground.\nYou allow up to twenty creatures that you can see to regain all hit points, and you end all effects on them described in the greater restoration spell.\nYou grant up to ten creatures that you can see resistance to a damage type you choose.\nYou grant up to ten creatures you can see immunity to a single spell or other magical effect for 8 hours. For instance, you could make yourself and all your companions immune to a lich’s life drain attack.\nYou undo a single recent event by forcing a reroll of any roll made within the last round (including your last turn). Reality reshapes itself to accommodate the new result. For example, a wish spell could undo an opponent’s successful save, a foe’s critical hit, or a friend’s failed save. You can force the reroll to be made with advantage or disadvantage, and you can choose whether to use the reroll or the original roll.\nYou might be able to achieve something beyond the scope of the above examples. State your wish to the DM as precisely as possible. The DM has great latitude in ruling what occurs in such an instance; the greater the wish, the greater the likelihood that something goes wrong. This spell might simply fail, the effect you desire might only be partly achieved, or you might suffer some unforeseen consequence as a result of how you worded the wish. For example, wishing that a villain were dead might propel you forward in time to a period when that villain is no longer alive, effectively removing you from the game. Similarly, wishing for a legendary magic item or artifact might instantly transport you to the presence of the item’s current owner.",
+            {
+                "type": "list",
+                "content": [
+                    "You create one object of up to 25,000 gp in value that isn’t a magic item. The object can be no more than 300 feet in any dimension, and it appears in an unoccupied space you can see on the ground.",
+                    "You allow up to twenty creatures that you can see to regain all hit points, and you end all effects on them described in the greater restoration spell.",
+                    "You grant up to ten creatures that you can see resistance to a damage type you choose.",
+                    "You grant up to ten creatures you can see immunity to a single spell or other magical effect for 8 hours. For instance, you could make yourself and all your companions immune to a lich’s life drain attack.",
+                    "You undo a single recent event by forcing a reroll of any roll made within the last round (including your last turn). Reality reshapes itself to accommodate the new result. For example, a wish spell could undo an opponent’s successful save, a foe’s critical hit, or a friend’s failed save. You can force the reroll to be made with advantage or disadvantage, and you can choose whether to use the reroll or the original roll."
+                ]
+            },
+            "You might be able to achieve something beyond the scope of the above examples. State your wish to the DM as precisely as possible. The DM has great latitude in ruling what occurs in such an instance; the greater the wish, the greater the likelihood that something goes wrong. This spell might simply fail, the effect you desire might only be partly achieved, or you might suffer some unforeseen consequence as a result of how you worded the wish. For example, wishing that a villain were dead might propel you forward in time to a period when that villain is no longer alive, effectively removing you from the game. Similarly, wishing for a legendary magic item or artifact might instantly transport you to the presence of the item’s current owner.",
             "The stress of casting this spell to produce any effect other than duplicating another spell weakens you. After enduring that stress, each time you cast a spell until you finish a long rest, you take 1d10 necrotic damage per level of that spell. This damage can’t be reduced or prevented in any way. In addition, your Strength drops to 3, if it isn’t 3 or lower already, for 2d4 days. For each of those days that you spend resting and doing nothing more than light activity, your remaining recovery time decreases by 2 days. Finally, there is a 33 percent chance that you are unable to cast wish ever again if you suffer this stress."
         ],
         "classes": [

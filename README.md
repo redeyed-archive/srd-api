@@ -52,6 +52,10 @@ You can state one or more of the following filters:
 - schools: one or more spell School that the spell could have.
 for example, you can request all cantrips (level 0) for Wizards and Warlocks, and all the spells returned will have level 0 and the wizard and/or warlock values in classes
 
+### Spell
+
+The `Spell` object returned by the `SpellAPI` is detailed further [here](docs/Spell.md)
+
 # Licence
 
 This project is covered under the MIT licence.
