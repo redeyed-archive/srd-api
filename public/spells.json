@@ -21,7 +21,8 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Aid",
@@ -48,7 +49,8 @@
         "classes": [
             "cleric",
             "paladin"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Alarm",
@@ -74,7 +76,8 @@
         "classes": [
             "ranger",
             "wizard"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Alter Self",
@@ -97,7 +100,8 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Animal Friendship",
@@ -125,7 +129,9 @@
             "bard",
             "druid",
             "ranger"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Animal Messenger",
@@ -154,7 +160,8 @@
             "bard",
             "druid",
             "ranger"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Animal Shapes",
@@ -175,7 +182,8 @@
         "concentration": true,
         "classes": [
             "druid"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Animate Dead",
@@ -202,7 +210,9 @@
         "classes": [
             "cleric",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Animate Objects",
@@ -229,7 +239,8 @@
             "bard",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Antilife Shell",
@@ -251,7 +262,8 @@
         "concentration": true,
         "classes": [
             "druid"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Antimagic Field",
@@ -285,7 +297,8 @@
         "classes": [
             "cleric",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Antipathy/Sympathy",
@@ -314,7 +327,9 @@
         "classes": [
             "druid",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Arcane Eye",
@@ -339,7 +354,8 @@
         "concentration": true,
         "classes": [
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Arcane Lock",
@@ -362,7 +378,9 @@
         ],
         "classes": [
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Astral Projection",
@@ -391,7 +409,9 @@
             "cleric",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Augury",
@@ -416,7 +436,8 @@
         "ritual": true,
         "classes": [
             "cleric"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Awaken",
@@ -440,7 +461,9 @@
         "classes": [
             "bard",
             "druid"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Bane",
@@ -468,7 +491,8 @@
         "classes": [
             "bard",
             "cleric"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Banishment",
@@ -501,7 +525,8 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Barkskin",
@@ -525,7 +550,8 @@
         "classes": [
             "druid",
             "ranger"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Beacon of Hope",
@@ -545,7 +571,8 @@
         "concentration": true,
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Bestow Curse",
@@ -571,7 +598,8 @@
             "bard",
             "cleric",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Blade Barrier",
@@ -592,7 +620,8 @@
         "concentration": true,
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Bless",
@@ -619,7 +648,8 @@
         "classes": [
             "cleric",
             "paladin"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Blight",
@@ -646,7 +676,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Blindness/Deafness",
@@ -670,7 +702,9 @@
             "cleric",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Blink",
@@ -690,7 +724,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Blur",
@@ -709,7 +745,8 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Branding Smite",
@@ -730,7 +767,8 @@
         "concentration": true,
         "classes": [
             "paladin"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Burning Hands",
@@ -755,7 +793,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Call Lightning",
@@ -780,7 +820,8 @@
         "concentration": true,
         "classes": [
             "druid"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Calm Emotions",
@@ -803,7 +844,8 @@
         "classes": [
             "bard",
             "cleric"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Chain Lightning",
@@ -831,7 +873,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Charm Person",
@@ -857,7 +901,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Chill Touch",
@@ -880,7 +926,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Circle of Death",
@@ -908,7 +956,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Clairvoyance",
@@ -936,7 +986,8 @@
             "cleric",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Clone",
@@ -959,7 +1010,9 @@
         ],
         "classes": [
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Cloudkill",
@@ -985,7 +1038,8 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Color Spray",
@@ -1013,7 +1067,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Command",
@@ -1041,7 +1097,9 @@
         "classes": [
             "cleric",
             "paladin"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Commune",
@@ -1066,7 +1124,8 @@
         "ritual": true,
         "classes": [
             "cleric"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Commune with Nature",
@@ -1089,7 +1148,8 @@
         "classes": [
             "druid",
             "ranger"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Comprehend Languages",
@@ -1116,7 +1176,8 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Compulsion",
@@ -1137,7 +1198,8 @@
         "concentration": true,
         "classes": [
             "bard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Cone of Cold",
@@ -1166,7 +1228,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Confusion",
@@ -1198,7 +1262,8 @@
             "druid",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Conjure Animals",
@@ -1224,7 +1289,8 @@
         "classes": [
             "druid",
             "ranger"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Conjure Celestial",
@@ -1248,7 +1314,8 @@
         "concentration": true,
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Conjure Elemental",
@@ -1278,7 +1345,8 @@
         "classes": [
             "druid",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Conjure Fey",
@@ -1304,7 +1372,8 @@
         "classes": [
             "druid",
             "warlock"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Conjure Minor Elementals",
@@ -1330,7 +1399,8 @@
         "classes": [
             "druid",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Conjure Woodland Beings",
@@ -1360,7 +1430,8 @@
         "classes": [
             "druid",
             "ranger"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Contact Other Plane",
@@ -1381,7 +1452,8 @@
         "classes": [
             "warlock",
             "wizard"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Contagion",
@@ -1409,7 +1481,9 @@
         "classes": [
             "cleric",
             "druid"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Contingency",
@@ -1433,7 +1507,9 @@
         ],
         "classes": [
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Continual Flame",
@@ -1456,7 +1532,9 @@
         "classes": [
             "cleric",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Control Water",
@@ -1490,7 +1568,8 @@
             "cleric",
             "druid",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Control Weather",
@@ -1519,7 +1598,8 @@
             "cleric",
             "druid",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Counterspell",
@@ -1542,7 +1622,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Create Food and Water",
@@ -1561,7 +1643,9 @@
         "classes": [
             "cleric",
             "paladin"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Create or Destroy Water",
@@ -1589,7 +1673,9 @@
         "classes": [
             "cleric",
             "druid"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Create Undead",
@@ -1618,7 +1704,9 @@
             "cleric",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Creation",
@@ -1646,7 +1734,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Cure Wounds",
@@ -1671,7 +1761,9 @@
             "druid",
             "paladin",
             "ranger"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Dancing Lights",
@@ -1697,7 +1789,8 @@
             "bard",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Darkness",
@@ -1723,7 +1816,8 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Darkvision",
@@ -1748,7 +1842,9 @@
             "ranger",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Daylight",
@@ -1772,7 +1868,9 @@
             "paladin",
             "ranger",
             "sorcerer"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Death Ward",
@@ -1793,7 +1891,9 @@
         "classes": [
             "cleric",
             "paladin"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Delayed Blast Fireball",
@@ -1824,7 +1924,8 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Demiplane",
@@ -1843,7 +1944,9 @@
         "classes": [
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Detect Evil and Good",
@@ -1864,7 +1967,8 @@
         "classes": [
             "cleric",
             "paladin"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Detect Magic",
@@ -1949,7 +2053,8 @@
             "bard",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Dimension Door",
@@ -1971,7 +2076,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Disguise Self",
@@ -1993,7 +2100,9 @@
             "bard",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Disintegrate",
@@ -2023,7 +2132,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Dispel Evil and Good",
@@ -2050,7 +2161,8 @@
         "classes": [
             "cleric",
             "paladin"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Dispel Magic",
@@ -2077,7 +2189,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Divination",
@@ -2102,7 +2216,8 @@
         "ritual": true,
         "classes": [
             "cleric"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Divine Favor",
@@ -2121,7 +2236,8 @@
         "concentration": true,
         "classes": [
             "paladin"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Divine Word",
@@ -2140,7 +2256,9 @@
         "save": "charisma",
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Dominate Beast",
@@ -2167,7 +2285,8 @@
         "classes": [
             "druid",
             "sorcerer"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Dominate Monster",
@@ -2196,7 +2315,8 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Dominate Person",
@@ -2224,7 +2344,8 @@
             "bard",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Dream",
@@ -2252,7 +2373,9 @@
             "bard",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Druidcraft",
@@ -2271,7 +2394,9 @@
         ],
         "classes": [
             "druid"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Earthquake",
@@ -2302,7 +2427,8 @@
             "cleric",
             "druid",
             "sorcerer"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Eldritch Blast",
@@ -2322,7 +2448,9 @@
         "attack": "ranged",
         "classes": [
             "warlock"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Enhance Ability",
@@ -2357,7 +2485,8 @@
             "cleric",
             "druid",
             "sorcerer"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Enlarge/Reduce",
@@ -2385,7 +2514,8 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Entangle",
@@ -2407,7 +2537,8 @@
         "concentration": true,
         "classes": [
             "druid"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Enthrall",
@@ -2427,7 +2558,9 @@
         "classes": [
             "bard",
             "warlock"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Etherealness",
@@ -2456,7 +2589,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Expeditious Retreat",
@@ -2477,7 +2612,8 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Eyebite",
@@ -2503,7 +2639,8 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Fabricate",
@@ -2523,7 +2660,9 @@
         ],
         "classes": [
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Faerie Fire",
@@ -2544,7 +2683,8 @@
         "classes": [
             "bard",
             "druid"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "False Life",
@@ -2570,7 +2710,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Fear",
@@ -2599,7 +2741,8 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Feather Fall",
@@ -2623,7 +2766,9 @@
             "bard",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Feeblemind",
@@ -2652,7 +2797,9 @@
             "druid",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Find Familiar",
@@ -2681,7 +2828,8 @@
         "ritual": true,
         "classes": [
             "wizard"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Find Steed",
@@ -2703,7 +2851,9 @@
         ],
         "classes": [
             "paladin"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Find the Path",
@@ -2729,7 +2879,8 @@
             "bard",
             "cleric",
             "druid"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Find Traps",
@@ -2750,7 +2901,9 @@
             "cleric",
             "druid",
             "ranger"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Finger of Death",
@@ -2772,7 +2925,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Fireball",
@@ -2800,7 +2955,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Fire Bolt",
@@ -2821,7 +2978,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Fire Shield",
@@ -2845,7 +3004,9 @@
         ],
         "classes": [
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Fire Storm",
@@ -2867,7 +3028,9 @@
             "cleric",
             "druid",
             "sorcerer"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Flame Blade",
@@ -2896,7 +3059,8 @@
         "concentration": true,
         "classes": [
             "druid"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Flame Strike",
@@ -2922,7 +3086,9 @@
         "save": "dexterity",
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Flaming Sphere",
@@ -2952,7 +3118,8 @@
         "classes": [
             "druid",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Flesh to Stone",
@@ -2980,7 +3147,8 @@
         "classes": [
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Fly",
@@ -3008,7 +3176,8 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Fog Cloud",
@@ -3033,7 +3202,8 @@
             "ranger",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Forbiddance",
@@ -3059,7 +3229,8 @@
         "ritual": true,
         "classes": [
             "cleric"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Forcecage",
@@ -3089,7 +3260,9 @@
             "bard",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Foresight",
@@ -3115,7 +3288,9 @@
             "druid",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Freedom of Movement",
@@ -3141,7 +3316,9 @@
             "cleric",
             "druid",
             "ranger"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Gaseous Form",
@@ -3168,7 +3345,8 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Gate",
@@ -3196,7 +3374,8 @@
             "cleric",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Geas",
@@ -3223,7 +3402,9 @@
             "druid",
             "paladin",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Gentle Repose",
@@ -3248,7 +3429,8 @@
         "classes": [
             "cleric",
             "wizard"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Giant Insect",
@@ -3270,7 +3452,8 @@
         "concentration": true,
         "classes": [
             "druid"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Glibness",
@@ -3288,7 +3471,9 @@
         "classes": [
             "bard",
             "warlock"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Globe of Invulnerability",
@@ -3317,7 +3502,8 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Glyph of Warding",
@@ -3351,7 +3537,9 @@
             "bard",
             "cleric",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Goodberry",
@@ -3375,7 +3563,9 @@
         "classes": [
             "druid",
             "ranger"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Grease",
@@ -3399,7 +3589,9 @@
         "save": "dexterity",
         "classes": [
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Greater Invisibility",
@@ -3420,7 +3612,8 @@
             "bard",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Greater Restoration",
@@ -3445,7 +3638,9 @@
             "bard",
             "cleric",
             "druid"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Guardian of Faith",
@@ -3464,7 +3659,9 @@
         "save": "dexterity",
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Guards and Wards",
@@ -3495,7 +3692,9 @@
         "classes": [
             "bard",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Guidance",
@@ -3515,7 +3714,8 @@
         "classes": [
             "cleric",
             "druid"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Guiding Bolt",
@@ -3537,7 +3737,9 @@
         "attack": "ranged",
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Gust of Wind",
@@ -3567,7 +3769,8 @@
             "druid",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Hallow",
@@ -3602,7 +3805,9 @@
         "save": "charisma",
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Hallucinatory Terrain",
@@ -3628,7 +3833,9 @@
             "druid",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Harm",
@@ -3647,7 +3854,9 @@
         "save": "constitution",
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Haste",
@@ -3672,7 +3881,8 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Heal",
@@ -3694,7 +3904,9 @@
         "classes": [
             "cleric",
             "druid"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Healing Word",
@@ -3716,7 +3928,9 @@
             "bard",
             "cleric",
             "druid"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Heat Metal",
@@ -3745,7 +3959,8 @@
         "classes": [
             "bard",
             "druid"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Hellish Rebuke",
@@ -3768,7 +3983,9 @@
         "reaction_trigger": "which you take in response to being damaged by a creature within 60 feet of you that you can see",
         "classes": [
             "warlock"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Heroes’ Feast",
@@ -3793,7 +4010,9 @@
         "classes": [
             "cleric",
             "druid"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Heroism",
@@ -3816,7 +4035,8 @@
         "classes": [
             "bard",
             "paladin"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Hold Monster",
@@ -3846,7 +4066,8 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Hold Person",
@@ -3878,7 +4099,8 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Holy Aura",
@@ -3902,7 +4124,8 @@
         "concentration": true,
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Hunter’s Mark",
@@ -3923,7 +4146,8 @@
         "concentration": true,
         "classes": [
             "ranger"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Hypnotic Pattern",
@@ -3950,7 +4174,8 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Ice Storm",
@@ -3979,7 +4204,9 @@
             "druid",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Identify",
@@ -4004,7 +4231,8 @@
         "classes": [
             "bard",
             "wizard"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Illusory Script",
@@ -4031,7 +4259,8 @@
             "bard",
             "warlock",
             "wizard"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Imprisonment",
@@ -4068,7 +4297,9 @@
         "classes": [
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Incendiary Cloud",
@@ -4091,7 +4322,8 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Inflict Wounds",
@@ -4113,7 +4345,9 @@
         "attack": "melee",
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Insect Plague",
@@ -4143,7 +4377,8 @@
             "cleric",
             "druid",
             "sorcerer"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Invisibility",
@@ -4172,7 +4407,8 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Jump",
@@ -4197,7 +4433,9 @@
             "ranger",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Knock",
@@ -4219,7 +4457,9 @@
             "bard",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Legend Lore",
@@ -4244,7 +4484,9 @@
             "bard",
             "cleric",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Lesser Restoration",
@@ -4266,7 +4508,9 @@
             "druid",
             "paladin",
             "ranger"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Levitate",
@@ -4293,7 +4537,8 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Light",
@@ -4319,7 +4564,9 @@
             "cleric",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Lightning Bolt",
@@ -4348,7 +4595,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Locate Animals or Plants",
@@ -4373,7 +4622,8 @@
             "bard",
             "druid",
             "ranger"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Locate Creature",
@@ -4403,7 +4653,8 @@
             "paladin",
             "ranger",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Locate Object",
@@ -4433,7 +4684,8 @@
             "paladin",
             "ranger",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Longstrider",
@@ -4461,7 +4713,9 @@
             "druid",
             "ranger",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Mage Armor",
@@ -4484,7 +4738,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Mage Hand",
@@ -4507,7 +4763,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Magic Circle",
@@ -4538,7 +4796,9 @@
             "paladin",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Magic Jar",
@@ -4567,7 +4827,9 @@
         "save": "charisma",
         "classes": [
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Magic Missile",
@@ -4589,7 +4851,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Magic Mouth",
@@ -4615,7 +4879,8 @@
         "classes": [
             "bard",
             "wizard"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Magic Weapon",
@@ -4638,7 +4903,8 @@
         "classes": [
             "paladin",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Major Image",
@@ -4669,7 +4935,8 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Mass Cure Wounds",
@@ -4692,7 +4959,9 @@
             "bard",
             "cleric",
             "druid"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Mass Heal",
@@ -4710,7 +4979,9 @@
         ],
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Mass Healing Word",
@@ -4730,7 +5001,9 @@
         ],
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Mass Suggestion",
@@ -4761,7 +5034,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Maze",
@@ -4782,7 +5057,8 @@
         "concentration": true,
         "classes": [
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Meld into Stone",
@@ -4804,7 +5080,8 @@
         "classes": [
             "cleric",
             "druid"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Mending",
@@ -4831,7 +5108,9 @@
             "druid",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Message",
@@ -4856,7 +5135,9 @@
             "bard",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Meteor Swarm",
@@ -4877,7 +5158,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Mind Blank",
@@ -4896,7 +5179,9 @@
         "classes": [
             "bard",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Minor Illusion",
@@ -4923,7 +5208,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Mirage Arcane",
@@ -4946,7 +5233,9 @@
             "bard",
             "druid",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Mirror Image",
@@ -4970,7 +5259,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Mislead",
@@ -4991,7 +5282,8 @@
         "classes": [
             "bard",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Misty Step",
@@ -5010,7 +5302,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Modify Memory",
@@ -5038,7 +5332,8 @@
         "classes": [
             "bard",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Moonbeam",
@@ -5068,7 +5363,8 @@
         "concentration": true,
         "classes": [
             "druid"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Mordenkainen’s Sword",
@@ -5094,7 +5390,8 @@
         "classes": [
             "bard",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Move Earth",
@@ -5123,7 +5420,8 @@
             "druid",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Nondetection",
@@ -5147,7 +5445,9 @@
             "bard",
             "ranger",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Otto’s Irresistible Dance",
@@ -5168,7 +5468,8 @@
         "classes": [
             "bard",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Pass without Trace",
@@ -5192,7 +5493,8 @@
         "classes": [
             "druid",
             "ranger"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Passwall",
@@ -5215,7 +5517,9 @@
         ],
         "classes": [
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Phantasmal Killer",
@@ -5238,7 +5542,8 @@
         "concentration": true,
         "classes": [
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Phantom Steed",
@@ -5258,7 +5563,8 @@
         "ritual": true,
         "classes": [
             "wizard"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Planar Ally",
@@ -5281,7 +5587,9 @@
         ],
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Planar Binding",
@@ -5311,7 +5619,9 @@
             "cleric",
             "druid",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Plane Shift",
@@ -5341,7 +5651,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Plant Growth",
@@ -5364,7 +5676,9 @@
             "bard",
             "druid",
             "ranger"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Poison Spray",
@@ -5387,7 +5701,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Polymorph",
@@ -5418,7 +5734,8 @@
             "druid",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Power Word Kill",
@@ -5438,7 +5755,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Power Word Stun",
@@ -5460,7 +5779,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Prayer of Healing",
@@ -5480,7 +5801,9 @@
         ],
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Prestidigitation",
@@ -5503,7 +5826,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Prismatic Spray",
@@ -5531,7 +5856,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Prismatic Wall",
@@ -5559,7 +5886,9 @@
         ],
         "classes": [
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Produce Flame",
@@ -5580,7 +5909,9 @@
         "attack": "ranged",
         "classes": [
             "druid"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Programmed Illusion",
@@ -5606,7 +5937,9 @@
         "classes": [
             "bard",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Project Image",
@@ -5633,7 +5966,8 @@
         "classes": [
             "bard",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Protection from Energy",
@@ -5656,7 +5990,8 @@
             "ranger",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Protection from Evil and Good",
@@ -5683,7 +6018,8 @@
             "paladin",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Protection from Poison",
@@ -5705,7 +6041,9 @@
             "druid",
             "paladin",
             "ranger"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Purify Food and Drink",
@@ -5726,7 +6064,8 @@
             "cleric",
             "druid",
             "paladin"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Raise Dead",
@@ -5753,7 +6092,9 @@
             "bard",
             "cleric",
             "paladin"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Ray of Enfeeblement",
@@ -5775,7 +6116,8 @@
         "classes": [
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Ray of Frost",
@@ -5796,7 +6138,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Regenerate",
@@ -5821,7 +6165,9 @@
             "bard",
             "cleric",
             "druid"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Reincarnate",
@@ -5846,7 +6192,9 @@
         ],
         "classes": [
             "druid"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Remove Curse",
@@ -5867,7 +6215,9 @@
             "paladin",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Resistance",
@@ -5891,7 +6241,8 @@
         "classes": [
             "cleric",
             "druid"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Resurrection",
@@ -5918,7 +6269,9 @@
         "classes": [
             "bard",
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Reverse Gravity",
@@ -5946,7 +6299,8 @@
             "druid",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Revivify",
@@ -5969,7 +6323,9 @@
         "classes": [
             "cleric",
             "paladin"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Rope Trick",
@@ -5994,7 +6350,9 @@
         ],
         "classes": [
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Sacred Flame",
@@ -6014,7 +6372,9 @@
         "save": "dexterity",
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Sanctuary",
@@ -6038,7 +6398,9 @@
         "save": "wisdom",
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Scorching Ray",
@@ -6062,7 +6424,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Scrying",
@@ -6093,7 +6457,8 @@
             "druid",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "See Invisibility",
@@ -6117,7 +6482,9 @@
             "bard",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Seeming",
@@ -6141,7 +6508,9 @@
             "bard",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Sending",
@@ -6166,7 +6535,9 @@
             "bard",
             "cleric",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Sequester",
@@ -6190,7 +6561,9 @@
         ],
         "classes": [
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Shapechange",
@@ -6219,7 +6592,8 @@
         "classes": [
             "druid",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Shatter",
@@ -6249,7 +6623,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Shield",
@@ -6269,7 +6645,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Shield of Faith",
@@ -6293,7 +6671,8 @@
         "classes": [
             "cleric",
             "paladin"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Shillelagh",
@@ -6315,7 +6694,9 @@
         ],
         "classes": [
             "druid"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Shocking Grasp",
@@ -6336,7 +6717,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Silence",
@@ -6385,7 +6768,8 @@
             "bard",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Simulacrum",
@@ -6410,7 +6794,9 @@
         ],
         "classes": [
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Sleep",
@@ -6439,7 +6825,9 @@
             "bard",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Sleet Storm",
@@ -6466,7 +6854,8 @@
             "druid",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Slow",
@@ -6494,7 +6883,8 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Spare the Dying",
@@ -6512,7 +6902,9 @@
         ],
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Speak with Animals",
@@ -6533,7 +6925,8 @@
             "bard",
             "druid",
             "ranger"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Speak with Dead",
@@ -6557,7 +6950,9 @@
         "classes": [
             "bard",
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Speak with Plants",
@@ -6582,7 +6977,9 @@
             "bard",
             "druid",
             "ranger"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Spider Climb",
@@ -6607,7 +7004,8 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Spike Growth",
@@ -6632,7 +7030,8 @@
         "classes": [
             "druid",
             "ranger"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Spirit Guardians",
@@ -6661,7 +7060,8 @@
         "concentration": true,
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Spiritual Weapon",
@@ -6685,7 +7085,9 @@
         "attack": "melee",
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Stinking Cloud",
@@ -6713,7 +7115,8 @@
             "bard",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Stone Shape",
@@ -6737,7 +7140,9 @@
             "cleric",
             "druid",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Stoneskin",
@@ -6763,7 +7168,8 @@
             "ranger",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Storm of Vengeance",
@@ -6787,7 +7193,8 @@
         "concentration": true,
         "classes": [
             "druid"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Suggestion",
@@ -6816,7 +7223,8 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Sunbeam",
@@ -6845,7 +7253,8 @@
             "druid",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Sunburst",
@@ -6872,7 +7281,9 @@
             "druid",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Symbol",
@@ -6908,7 +7319,9 @@
             "bard",
             "cleric",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Telekinesis",
@@ -6933,7 +7346,8 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Teleport",
@@ -6960,7 +7374,9 @@
             "bard",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Teleportation Circle",
@@ -6985,7 +7401,9 @@
             "bard",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Thaumaturgy",
@@ -7003,7 +7421,9 @@
         ],
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Thunderwave",
@@ -7030,7 +7450,9 @@
             "druid",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Time Stop",
@@ -7049,7 +7471,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Tongues",
@@ -7074,7 +7498,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Transport via Plants",
@@ -7092,7 +7518,9 @@
         ],
         "classes": [
             "druid"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Tree Stride",
@@ -7113,7 +7541,8 @@
         "classes": [
             "druid",
             "ranger"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "True Polymorph",
@@ -7147,7 +7576,8 @@
             "bard",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "True Resurrection",
@@ -7172,7 +7602,9 @@
         "classes": [
             "cleric",
             "druid"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "True Seeing",
@@ -7198,7 +7630,9 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "True Strike",
@@ -7219,7 +7653,8 @@
             "sorcerer",
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Unseen Servant",
@@ -7246,7 +7681,8 @@
             "bard",
             "warlock",
             "wizard"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Vampiric Touch",
@@ -7270,7 +7706,8 @@
         "classes": [
             "warlock",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Vicious Mockery",
@@ -7289,7 +7726,9 @@
         "save": "wisdom",
         "classes": [
             "bard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Wall of Fire",
@@ -7320,7 +7759,8 @@
             "druid",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Wall of Force",
@@ -7344,7 +7784,8 @@
         "concentration": true,
         "classes": [
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Wall of Ice",
@@ -7372,7 +7813,8 @@
         "concentration": true,
         "classes": [
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Wall of Stone",
@@ -7403,7 +7845,8 @@
             "druid",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Wall of Thorns",
@@ -7432,7 +7875,8 @@
         "concentration": true,
         "classes": [
             "druid"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Warding Bond",
@@ -7455,7 +7899,9 @@
         ],
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Water Breathing",
@@ -7481,7 +7927,8 @@
             "ranger",
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Water Walk",
@@ -7508,7 +7955,8 @@
             "druid",
             "ranger",
             "sorcerer"
-        ]
+        ],
+        "concentration": false
     },
     {
         "name": "Web",
@@ -7537,7 +7985,8 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Weird",
@@ -7557,7 +8006,8 @@
         "concentration": true,
         "classes": [
             "wizard"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Wind Walk",
@@ -7580,7 +8030,9 @@
         ],
         "classes": [
             "druid"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Wind Wall",
@@ -7607,7 +8059,8 @@
         "classes": [
             "druid",
             "ranger"
-        ]
+        ],
+        "ritual": false
     },
     {
         "name": "Wish",
@@ -7629,7 +8082,9 @@
         "classes": [
             "sorcerer",
             "wizard"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Word of Recall",
@@ -7647,7 +8102,9 @@
         ],
         "classes": [
             "cleric"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     },
     {
         "name": "Zone of Truth",
@@ -7669,6 +8126,8 @@
             "bard",
             "cleric",
             "paladin"
-        ]
+        ],
+        "ritual": false,
+        "concentration": false
     }
 ]

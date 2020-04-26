@@ -1,13 +1,13 @@
-import * as t from 'io-ts';
+import * as iots from 'io-ts';
 
-export function optional<RT extends t.Any>(
+export function optional<RT extends iots.Any>(
     type: RT,
     name: string = `${type.name} | undefined`
-): t.UnionType<
-    [RT, t.UndefinedType],
-    t.TypeOf<RT> | undefined,
-    t.OutputOf<RT> | undefined,
-    t.InputOf<RT> | undefined
+): iots.UnionType<
+    [RT, iots.UndefinedType],
+    iots.TypeOf<RT> | undefined,
+    iots.OutputOf<RT> | undefined,
+    iots.InputOf<RT> | undefined
 > {
-    return t.union<[RT, t.UndefinedType]>([type, t.undefined], name);
+    return iots.union<[RT, iots.UndefinedType]>([type, iots.undefined], name);
 }

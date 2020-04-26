@@ -97,10 +97,10 @@ export default interface Spell {
     components: Components;
     description: string[];
     higher_levels?: string[];
-    ritual?: boolean;
+    ritual: boolean;
     attack?: AttackType;
     save?: Ability;
-    concentration?: boolean;
+    concentration: boolean;
     reaction_trigger?: string;
     classes: ClassType[];
 }
