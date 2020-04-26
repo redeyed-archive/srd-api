@@ -1,12 +1,16 @@
 import Spell, { School } from '../models/Spell';
 import spellData from '../../public/spells.json';
 import { ClassType } from '../shared/Classes';
+import { Ability } from '../shared/Abilities';
+import { AttackType } from '../shared/Attacks';
 
 export class Query {
     name?: string;
     classes?: ClassType[];
     levels?: number[];
     schools?: School[];
+    attackTypes?: AttackType[];
+    saveTypes?: Ability[];
 }
 
 export default class API {
@@ -14,7 +18,9 @@ export default class API {
     private spellByName = new Map<string, Spell>();
     private spellsByClass = new Map<ClassType, string[]>();
     private spellsByLevel = new Map<number, string[]>();
-    private spellsBySchool = new Map<School, string[]>()
+    private spellsBySchool = new Map<School, string[]>();
+    private spellsByAttackType = new Map<AttackType, string[]>();
+    private spellsBySaveType = new Map<Ability, string[]>();
 
     constructor() {
         this.init();
@@ -77,6 +83,40 @@ export default class API {
             }
         }
 
+        if (query.attackTypes !== undefined && query.attackTypes.length > 0) {
+            let array = new Array<string>();
+            query.attackTypes.forEach((attackType) => {
+                let subArray = this.spellsByAttackType.get(attackType) || [];
+                if (subArray.length > 0) {
+                    array.push(...subArray)
+                }
+            })
+            if (array.length > 0) {
+                if (spellNameList.length > 0) {
+                    spellNameList = spellNameList.filter((value) => array.includes(value));
+                } else {
+                    spellNameList.push(...array);
+                }
+            }
+        }
+
+        if (query.saveTypes !== undefined && query.saveTypes.length > 0) {
+            let array = new Array<string>();
+            query.saveTypes.forEach((saveType) => {
+                let subArray = this.spellsBySaveType.get(saveType) || [];
+                if (subArray.length > 0) {
+                    array.push(...subArray)
+                }
+            })
+            if (array.length > 0) {
+                if (spellNameList.length > 0) {
+                    spellNameList = spellNameList.filter((value) => array.includes(value));
+                } else {
+                    spellNameList.push(...array);
+                }
+            }
+        }
+
         if (query.name !== undefined && query.name !== '') {
             const regex = new RegExp(`.*${query.name}.*`, 'gmi');
             if (spellNameList.length === 0) {
@@ -123,6 +163,18 @@ export default class API {
                     this.spellsBySchool.set(spell.school, schoolArray);
                 }
                 schoolArray.push(key);
+
+                if (spell.attack !== undefined) {
+                    let array = this.spellsByAttackType.get(spell.attack) || [];
+                    array.push(key);
+                    this.spellsByAttackType.set(spell.attack, array)
+                }
+
+                if (spell.save !== undefined) {
+                    let array = this.spellsBySaveType.get(spell.save) || [];
+                    array.push(key);
+                    this.spellsBySaveType.set(spell.save, array)
+                }
             });
         }
     }

@@ -4,6 +4,8 @@ import { ClassType } from '../shared/Classes';
 import * as io_ts from 'io-ts';
 import { ThrowReporter } from 'io-ts/lib/ThrowReporter';
 import { optional } from '../../lib/test';
+import { AttackType } from '../shared/Attacks';
+import { Ability } from '../shared/Abilities';
 
 describe('spells.api.get', () => {
 
@@ -159,7 +161,75 @@ describe('spells.api.query', () => {
                 expected: {
                     results: 1,
                 }
-            }
+            },
+            {
+                name: 'ranged attacks',
+                query: {
+                    attackTypes: [
+                        AttackType.Ranged,
+                    ],
+                },
+                expected: {
+                    results: 8,
+                }
+            },
+            {
+                name: 'melee attacks',
+                query: {
+                    attackTypes: [
+                        AttackType.Melee,
+                    ],
+                },
+                expected: {
+                    results: 8,
+                }
+            },
+            {
+                name: 'ranged and melee attacks',
+                query: {
+                    attackTypes: [
+                        AttackType.Ranged,
+                        AttackType.Melee,
+                    ],
+                },
+                expected: {
+                    results: 16,
+                }
+            },
+            {
+                name: 'dex saves',
+                query: {
+                    saveTypes: [
+                        Ability.Dexterity,
+                    ],
+                },
+                expected: {
+                    results: 27,
+                }
+            },
+            {
+                name: 'con saves',
+                query: {
+                    saveTypes: [
+                        Ability.Constitution,
+                    ],
+                },
+                expected: {
+                    results: 21,
+                }
+            },
+            {
+                name: 'dex and con saves',
+                query: {
+                    saveTypes: [
+                        Ability.Constitution,
+                        Ability.Dexterity,
+                    ],
+                },
+                expected: {
+                    results: 48,
+                }
+            },
         ];
 
     const spellAPI = new SpellAPI();
