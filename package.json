@@ -47,11 +47,14 @@
     "testRegex": "^.+\\.spec\\.ts$"
   },
   "files": [
-    "dist"
+    "dist",
+    "docs"
   ],
   "directories": {
-    "lib": "lib",
-    "public": "public"
+    "lib": "src",
+    "public": "public",
+    "doc": "docs",
+    "bin": "dist"
   },
   "publishConfig": {
     "access": "public"
