@@ -13,9 +13,11 @@
         "description": [
             "You hurl a bubble of acid. Choose one or two creatures you can see within range. If you choose two, they must be within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage."
         ],
-        "higher_levels": "This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+        "higher_levels": [
+            "This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+        ],
         "ritual": false,
-        "attack_save": "dexterity_save",
+        "save": "dexterity",
         "classes": [
             "sorcerer",
             "wizard"
@@ -39,7 +41,9 @@
         "description": [
             "Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target’s hit point maximum and current hit points increase by 5 for the duration."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, a target’s hit points increase by an additional 5 for each slot level above 2nd.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 3rd level or higher, a target’s hit points increase by an additional 5 for each slot level above 2nd."
+        ],
         "ritual": false,
         "classes": [
             "cleric",
@@ -113,8 +117,10 @@
         "description": [
             "This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast’s Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a Wisdom saving throw or be charmed by you for the spell’s duration. If you or one of your companions harms the target, the spell ends."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional beast for each slot level above 1st.",
-        "attack_save": "wisdom_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional beast for each slot level above 1st."
+        ],
+        "save": "wisdom",
         "classes": [
             "bard",
             "druid",
@@ -140,7 +146,9 @@
             "By means of this spell, you use an animal to deliver a message. Choose a Tiny beast you can see within range, such as a squirrel, a blue jay, or a bat. You specify a location, which you must have visited, and a recipient who matches a general description, such as “a man or woman dressed in the uniform of the town guard” or “a red-haired dwarf wearing a pointed hat.” You also speak a message of up to twenty-five words. The target beast travels for the duration of the spell toward the specified location, covering about 50 miles per 24 hours for a flying messenger, or 25 miles for other animals.",
             "When the messenger arrives, it delivers your message to the creature that you described, replicating the sound of your voice. The messenger speaks only to a creature matching the description you gave. If the messenger doesn’t reach its destination before the spell ends, the message is lost, and the beast makes its way back to where you cast this spell."
         ],
-        "higher_levels": "If you cast this spell using a spell slot of 3nd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd.",
+        "higher_levels": [
+            "If you cast this spell using a spell slot of 3nd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd."
+        ],
         "ritual": true,
         "classes": [
             "bard",
@@ -188,7 +196,9 @@
             "This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a skeleton if you chose bones or a zombie if you chose a corpse (the DM has the creature’s game statistics).\n\nOn each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
             "The creature is under your control for 24 hours, after which it stops obeying any command you’ve given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 4th level or higher, you animate or reassert control over two additional undead creatures for each slot level above 3rd. Each of the creatures must come from a different corpse or pile of bones.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 4th level or higher, you animate or reassert control over two additional undead creatures for each slot level above 3rd. Each of the creatures must come from a different corpse or pile of bones."
+        ],
         "classes": [
             "cleric",
             "wizard"
@@ -211,7 +221,9 @@
             "Animated Object Statistics\nSize\tHP\tAC\tAttack\tStr\tDex\nTiny\t20\t18\t+8 to hit,\n        1d4 + 4 damage\t4\t18\nSmall\t25\t16\t+6 to hit,\n        1d8 + 2 damage\t6\t14\nMedium\t40\t13\t+5 to hit,\n        2d6 + 1 damage\t10\t12\nLarge\t50\t10\t+6 to hit,\n        2d10 + 2 damage\t14\t10\nHuge\t80\t10\t+8 to hit,\n        2d12 + 4 damage\t18\t6\nAn animated object is a construct with AC, hit points, attacks, Strength, and Dexterity determined by its size. Its Constitution is 10 and its Intelligence and Wisdom are 3, and its Charisma is 1. Its speed is 30 feet; if the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or a larger object, such as a chain bolted to a wall, its speed is 0. It has blindsight with a radius of 30 feet and is blind beyond that distance. When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
             "If you command an object to attack, it can make a single melee attack against a creature within 5 feet of it. It makes a slam attack with an attack bonus and bludgeoning damage determined by its size. The DM might rule that a specific object inflicts slashing or piercing damage based on its form."
         ],
-        "higher_levels": "If you cast this spell using a spell slot of 6th level or higher, you can animate two additional objects for each slot level above 5th.",
+        "higher_levels": [
+            "If you cast this spell using a spell slot of 6th level or higher, you can animate two additional objects for each slot level above 5th."
+        ],
         "concentration": true,
         "classes": [
             "bard",
@@ -225,7 +237,8 @@
         "school": "abjuration",
         "casting_time": "action",
         "duration": "1 hour",
-        "range": "self (10-foot radius)",
+        "range": "self",
+        "area": "10-foot radius",
         "components": {
             "verbal": true,
             "somatic": true
@@ -246,7 +259,8 @@
         "school": "abjuration",
         "casting_time": "action",
         "duration": "1 hour",
-        "range": "self (10-foot-radius sphere)",
+        "range": "self",
+        "area": "10-foot radius",
         "components": {
             "verbal": true,
             "somatic": true,
@@ -296,7 +310,7 @@
             "Ending the Effect. If an affected creature ends its turn while not within 60 feet of the target or able to see it, the creature makes a Wisdom saving throw. On a successful save, the creature is no longer affected by the target and recognizes the feeling of repugnance or attraction as magical. In addition, a creature affected by the spell is allowed another Wisdom saving throw every 24 hours while the spell persists.",
             "A creature that successfully saves against this effect is immune to it for 1 minute, after which time it can be affected again."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "classes": [
             "druid",
             "wizard"
@@ -446,8 +460,10 @@
         "description": [
             "Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
-        "attack_save": "charisma_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+        ],
+        "save": "charisma",
         "concentration": true,
         "classes": [
             "bard",
@@ -474,8 +490,10 @@
             "If the target is native to the plane of existence you’re on, you banish the target to a harmless demiplane. While there, the target is incapacitated. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.",
             "If the target is native to a different plane of existence than the one you’re on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn’t return."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.",
-        "attack_save": "charisma_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th."
+        ],
+        "save": "charisma",
         "concentration": true,
         "classes": [
             "cleric",
@@ -523,7 +541,7 @@
         "description": [
             "This spell bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on Wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "cleric"
@@ -544,8 +562,10 @@
             "You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:",
             "Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.\nWhile cursed, the target has disadvantage on attack rolls against you.\nWhile cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.\nWhile the target is cursed, your attacks and spells deal an extra 1d8 necrotic damage to the target.\nA remove curse spell ends this effect. At the DM’s option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse’s effect."
         ],
-        "higher_levels": "If you cast this spell using a spell slot of 4th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn’t require concentration.",
-        "attack_save": "wisdom_save",
+        "higher_levels": [
+            "If you cast this spell using a spell slot of 4th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn’t require concentration."
+        ],
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "bard",
@@ -568,7 +588,7 @@
             "You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long,\n20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter,\n20 feet high, and 5 feet thick. The wall provides three-quarters cover to creatures behind it, and its space is difficult terrain.",
             "When a creature enters the wall’s area for the first time on a turn or starts its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes 6d10 slashing damage. On a successful save, the creature takes half as much damage."
         ],
-        "attack_save": "dexterity_save",
+        "save": "dexterity",
         "concentration": true,
         "classes": [
             "cleric"
@@ -592,7 +612,9 @@
         "description": [
             "You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+        ],
         "concentration": true,
         "classes": [
             "cleric",
@@ -615,8 +637,10 @@
             "If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the spell deals maximum damage to it.",
             "If you target a nonmagical plant that isn’t a creature, such as a tree or shrub, it doesn’t make a saving throw; it simply withers and dies."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.",
-        "attack_save": "constitution_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th."
+        ],
+        "save": "constitution",
         "classes": [
             "druid",
             "sorcerer",
@@ -637,8 +661,10 @@
         "description": [
             "You can blind or deafen a foe. Choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for the duration. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
-        "attack_save": "constitution_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+        ],
+        "save": "constitution",
         "classes": [
             "bard",
             "cleric",
@@ -698,7 +724,9 @@
         "description": [
             "The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which becomes visible if it’s invisible, and the target sheds dim light in a 5-foot radius and can’t become invisible until the spell ends."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by 1d6 for each slot level above 2nd.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by 1d6 for each slot level above 2nd."
+        ],
         "concentration": true,
         "classes": [
             "paladin"
@@ -710,7 +738,8 @@
         "school": "evocation",
         "casting_time": "action",
         "duration": "instantaneous",
-        "range": "self (15-foot cone)",
+        "range": "self",
+        "area": "15-foot cone",
         "components": {
             "verbal": true,
             "somatic": true
@@ -719,8 +748,10 @@
             "As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.",
             "The fire ignites any flammable objects in the area that aren’t being worn or carried."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
-        "attack_save": "dexterity_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
+        ],
+        "save": "dexterity",
         "classes": [
             "sorcerer",
             "wizard"
@@ -742,8 +773,10 @@
             "When you cast the spell, choose a point you can see under the cloud. A bolt of lightning flashes down from the cloud to that point. Each creature within 5 feet of that point must make a Dexterity saving throw. A creature takes 3d10 lightning damage on a failed save, or half as much damage on a successful one. On each of your turns until the spell ends, you can use your action to call down lightning in this way again, targeting the same point or a different one.",
             "If you are outdoors in stormy conditions when you cast this spell, the spell gives you control over the existing storm instead of creating a new one. Under such conditions, the spell’s damage increases by 1d10."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 4th or higher level, the damage increases by 1d10 for each slot level above 3rd.",
-        "attack_save": "dexterity_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 4th or higher level, the damage increases by 1d10 for each slot level above 3rd."
+        ],
+        "save": "dexterity",
         "concentration": true,
         "classes": [
             "druid"
@@ -765,7 +798,7 @@
             "You can suppress any effect causing a target to be charmed or frightened. When this spell ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.",
             "Alternatively, you can make a target indifferent about creatures of your choice that it is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the spell ends, the creature becomes hostile again, unless the DM rules otherwise."
         ],
-        "attack_save": "charisma_save",
+        "save": "charisma",
         "concentration": true,
         "classes": [
             "bard",
@@ -791,8 +824,10 @@
             "You create a bolt of lightning that arcs toward a target of your choice that you can see within range. Three bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts.",
             "A target must make a Dexterity saving throw. The target takes 10d8 lightning damage on a failed save, or half as much damage on a successful one."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 7th level or higher, one additional bolt leaps from the first target to another target for each slot level above 6th.",
-        "attack_save": "dexterity_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 7th level or higher, one additional bolt leaps from the first target to another target for each slot level above 6th."
+        ],
+        "save": "dexterity",
         "classes": [
             "sorcerer",
             "wizard"
@@ -812,8 +847,10 @@
         "description": [
             "You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
-        "attack_save": "wisdom_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
+        ],
+        "save": "wisdom",
         "classes": [
             "bard",
             "druid",
@@ -838,7 +875,7 @@
             "If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.",
             "This spell’s damage increases by 1d8 when you reach 5th level (2d8),  11th level (3d8), and 17th level (4d8)."
         ],
-        "attack_save": "ranged_spell_attack",
+        "attack": "ranged",
         "classes": [
             "sorcerer",
             "warlock",
@@ -863,8 +900,10 @@
         "description": [
             "A sphere of negative energy ripples out in a 60-foot-radius sphere from a point within range. Each creature in that area must make a Constitution saving throw. A target takes 8d6 necrotic damage on a failed save, or half as much damage on a successful one."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d6 for each slot level above 6th.",
-        "attack_save": "constitution_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d6 for each slot level above 6th."
+        ],
+        "save": "constitution",
         "classes": [
             "sorcerer",
             "warlock",
@@ -938,8 +977,10 @@
             "When a creature enters the spell’s area for the first time on a turn or starts its turn there, that creature must make a Constitution saving throw. The creature takes 5d8 poison damage on a failed save, or half as much damage on a successful one. Creatures are affected even if they hold their breath or don’t need to breathe.",
             "The fog moves 10 feet away from you at the start of each of your turns, rolling along the surface of the ground. The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
-        "attack_save": "constitution_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th."
+        ],
+        "save": "constitution",
         "concentration": true,
         "classes": [
             "sorcerer",
@@ -952,7 +993,8 @@
         "school": "illusion",
         "casting_time": "action",
         "duration": "1 round",
-        "range": "self (15-foot cone)",
+        "range": "self",
+        "area": "15-foot cone",
         "components": {
             "verbal": true,
             "somatic": true,
@@ -965,7 +1007,9 @@
             "A dazzling array of flashing, colored light springs from your hand. Roll 6d10; the total is how many hit points of creatures this spell can affect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures and creatures that can’t see).",
             "Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the end of your next turn. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for that creature to be affected."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st."
+        ],
         "classes": [
             "sorcerer",
             "wizard"
@@ -990,8 +1034,10 @@
             "Grovel. The target falls prone and then ends its turn.",
             "Halt. The target doesn’t move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
-        "attack_save": "wisdom_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
+        ],
+        "save": "wisdom",
         "classes": [
             "cleric",
             "paladin"
@@ -1087,7 +1133,7 @@
             "Creatures of your choice that you can see within range and that can hear you must make a Wisdom saving throw. A target automatically succeeds on this saving throw if it can’t be charmed. On a failed save, a target is affected by this spell. Until the spell ends, you can use a bonus action on each of your turns to designate a direction that is horizontal to you. Each affected target must use as much of its movement as possible to move in that direction on its next turn. It can take its action before it moves. After moving in this way, it can make another Wisdom saving throw to try to end the effect.",
             "A target isn’t compelled to move into an obviously deadly hazard, such as a fire or pit, but it will provoke opportunity attacks to move in the designated direction."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "bard"
@@ -1099,7 +1145,8 @@
         "school": "evocation",
         "casting_time": "action",
         "duration": "instantaneous",
-        "range": "self (60-foot cone)",
+        "range": "self",
+        "area": "60-foot cone",
         "components": {
             "verbal": true,
             "somatic": true,
@@ -1112,8 +1159,10 @@
             "A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.",
             "A creature killed by this spell becomes a frozen statue until it thaws."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
-        "attack_save": "constitution_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th."
+        ],
+        "save": "constitution",
         "classes": [
             "sorcerer",
             "wizard"
@@ -1139,8 +1188,10 @@
             "An affected target can’t take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.",
             "d10\tBehavior\n1\tThe creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn’t take an action this turn.\n2–6\tThe creature doesn’t move or take actions this turn.\n7–8\tThe creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn.\n9–10\tThe creature can act and move normally.\nAt the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 5th level or higher, the radius of the sphere increases by 5 feet for each slot level above 4th.",
-        "attack_save": "wisdom_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 5th level or higher, the radius of the sphere increases by 5 feet for each slot level above 4th."
+        ],
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "bard",
@@ -1166,7 +1217,9 @@
             "The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.",
             "The DM has the creatures’ statistics."
         ],
-        "higher_levels": "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 5th level slot, three times as many with a 7th level slot, and four times as many with a 9th level slot.",
+        "higher_levels": [
+            "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 5th level slot, three times as many with a 7th level slot, and four times as many with a 9th level slot."
+        ],
         "concentration": true,
         "classes": [
             "druid",
@@ -1189,7 +1242,9 @@
             "The celestial is friendly to you and your companions for the duration. Roll initiative for the celestial, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), as long as they don’t violate its alignment. If you don’t issue any commands to the celestial, it defends itself from hostile creatures but otherwise takes no actions.",
             "The DM has the celestial’s statistics."
         ],
-        "higher_levels": "When you cast this spell using a 9th level spell slot, you summon a celestial of challenge rating 5 or lower.",
+        "higher_levels": [
+            "When you cast this spell using a 9th level spell slot, you summon a celestial of challenge rating 5 or lower."
+        ],
         "concentration": true,
         "classes": [
             "cleric"
@@ -1216,7 +1271,9 @@
             "If your concentration is broken, the elemental doesn’t disappear. Instead, you lose control of the elemental, it becomes hostile toward you and your companions, and it might attack. An uncontrolled elemental can’t be dismissed by you, and it disappears 1 hour after you summoned it.",
             "The DM has the elemental’s statistics."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 6th level or higher, the challenge rating increases by 1 for each slot level above 5th.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 6th level or higher, the challenge rating increases by 1 for each slot level above 5th."
+        ],
         "concentration": true,
         "classes": [
             "druid",
@@ -1240,7 +1297,9 @@
             "If your concentration is broken, the fey creature doesn’t disappear. Instead, you lose control of the fey creature, it becomes hostile toward you and your companions, and it might attack. An uncontrolled fey creature can’t be dismissed by you, and it disappears 1 hour after you summoned it.",
             "The DM has the fey creature’s statistics."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 7th level or higher, the challenge rating increases by 1 for each slot level above 6th.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 7th level or higher, the challenge rating increases by 1 for each slot level above 6th."
+        ],
         "concentration": true,
         "classes": [
             "druid",
@@ -1264,7 +1323,9 @@
             "The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.",
             "The DM has the creatures’ statistics."
         ],
-        "higher_levels": "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th level slot and three times as many with an 8th level slot.",
+        "higher_levels": [
+            "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th level slot and three times as many with an 8th level slot."
+        ],
         "concentration": true,
         "classes": [
             "druid",
@@ -1292,7 +1353,9 @@
             "The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which have their own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.",
             "The DM has the creatures’ statistics."
         ],
-        "higher_levels": "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th level slot and three times as many with an 8th level slot.",
+        "higher_levels": [
+            "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th level slot and three times as many with an 8th level slot."
+        ],
         "concentration": true,
         "classes": [
             "druid",
@@ -1314,7 +1377,7 @@
             "On a successful save, you can ask the entity up to five questions. You must ask your questions before the spell ends. The DM answers each question with one word, such as “yes,” “no,” “maybe,” “never,” “irrelevant,” or “unclear” (if the entity doesn’t know the answer to the question). If a one-word answer would be misleading, the DM might instead offer a short phrase as an answer."
         ],
         "ritual": true,
-        "attack_save": "intelligence_save",
+        "save": "intelligence",
         "classes": [
             "warlock",
             "wizard"
@@ -1342,7 +1405,7 @@
             "Seizure. The creature is overcome with shaking. The creature has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity.",
             "Slimy Doom. The creature begins to bleed uncontrollably. The creature has disadvantage on Constitution checks and Constitution saving throws. In addition, whenever the creature takes damage, it is stunned until the end of its next turn."
         ],
-        "attack_save": "melee_spell_attack",
+        "attack": "melee",
         "classes": [
             "cleric",
             "druid"
@@ -1421,7 +1484,7 @@
             "When a creature enters the vortex for the first time on a turn or starts its turn there, it must make a Strength saving throw. On a failed save, the creature takes 2d8 bludgeoning damage and is caught in the vortex until the spell ends. On a successful save, the creature takes half damage, and isn’t caught in the vortex. A creature caught in the vortex can use its action to try to swim away from the vortex as described above, but has disadvantage on the Strength (Athletics) check to do so.",
             "The first time each turn that an object enters the vortex, the object takes 2d8 bludgeoning damage; this damage occurs each round it remains in the vortex."
         ],
-        "attack_save": "strength_save",
+        "save": "strength",
         "concentration": true,
         "classes": [
             "cleric",
@@ -1435,7 +1498,8 @@
         "school": "transmutation",
         "casting_time": "10 minutes",
         "duration": "8 hours",
-        "range": "self (5-mile radius)",
+        "range": "self",
+        "area": "5-mile radius",
         "components": {
             "verbal": true,
             "somatic": true,
@@ -1470,7 +1534,9 @@
         "description": [
             "You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a success, the creature’s spell fails and has no effect."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used."
+        ],
         "reaction_trigger": "which you take when you see a creature within 60 feet of you casting a spell",
         "classes": [
             "sorcerer",
@@ -1517,7 +1583,9 @@
             "Create Water. You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range, extinguishing exposed flames in the area.",
             "Destroy Water. You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st."
+        ],
         "classes": [
             "cleric",
             "druid"
@@ -1543,7 +1611,9 @@
             "As a bonus action on each of your turns, you can mentally command any creature you animated with this spell if the creature is within 120 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete",
             "The creature is under your control for 24 hours, after which it stops obeying any command you have given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. This use of the spell reasserts your control over up to three creatures you have animated with this spell, rather than animating new one."
         ],
-        "higher_levels": "When you cast this spell using a 7th level spell slot, you can animate or reassert control over four ghouls. When you cast this spell using an 8th level spell slot, you can animate or reassert control over five ghouls or two ghasts or wights. When you cast this spell using a 9th level spell slot, you can animate or reassert control over six ghouls, three ghasts or wights, or two mummies.",
+        "higher_levels": [
+            "When you cast this spell using a 7th level spell slot, you can animate or reassert control over four ghouls. When you cast this spell using an 8th level spell slot, you can animate or reassert control over five ghouls or two ghasts or wights. When you cast this spell using a 9th level spell slot, you can animate or reassert control over six ghouls, three ghasts or wights, or two mummies."
+        ],
         "classes": [
             "cleric",
             "warlock",
@@ -1570,7 +1640,9 @@
             "The duration depends on the object’s material. If the object is composed of multiple materials, use the shortest duration.",
             "Material\tDuration\nVegetable matter\t1 day\nStone or crystal\t12 hours\nPrecious metals\t1 hour\nGems\t10 minutes\nAdamantine or mithral\t1 minute\nUsing any material created by this spell as another spell’s material component causes that spell to fail."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 6th level or higher, the cube increases by 5 feet for each slot level above 5th.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 6th level or higher, the cube increases by 5 feet for each slot level above 5th."
+        ],
         "classes": [
             "sorcerer",
             "wizard"
@@ -1590,7 +1662,9 @@
         "description": [
             "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st."
+        ],
         "classes": [
             "bard",
             "cleric",
@@ -1742,8 +1816,10 @@
             "If the glowing bead is touched before the interval has expired, the creature touching it must make a Dexterity saving throw. On a failed save, the spell ends immediately, causing the bead to erupt in flame. On a successful save, the creature can throw the bead up to 40 feet. When it strikes a creature or a solid object, the spell ends, and the bead explodes.",
             "The fire damages objects in the area and ignites flammable objects that aren’t being worn or carried."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 8th level or higher, the base damage increases by 1d6 for each slot level above 7th.",
-        "attack_save": "dexterity_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 8th level or higher, the base damage increases by 1d6 for each slot level above 7th."
+        ],
+        "save": "dexterity",
         "concentration": true,
         "classes": [
             "sorcerer",
@@ -1867,7 +1943,7 @@
             "You can also use this spell to detect the presence of thinking creatures you can’t see. When you cast the spell or as your action during the duration, you can search for thoughts within 30 feet of you. The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. You can’t detect a creature with an Intelligence of 3 or lower or one that doesn’t speak any language.",
             "Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can’t see it, but it must still be within range."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "bard",
@@ -1940,8 +2016,10 @@
             "A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a true resurrection or a wish spell.",
             "This spell automatically disintegrates a Large or smaller nonmagical object or a creation of magical force. If the target is a Huge or larger object or creation of force, this spell disintegrates a 10-foot-cube portion of it. A magic item is unaffected by this spell."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 3d6 for each slot level above 6th.",
-        "attack_save": "dexterity_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 3d6 for each slot level above 6th."
+        ],
+        "save": "dexterity",
         "classes": [
             "sorcerer",
             "wizard"
@@ -1988,7 +2066,9 @@
         "description": [
             "Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a successful check, the spell ends."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell’s level is equal to or less than the level of the spell slot you used.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell’s level is equal to or less than the level of the spell slot you used."
+        ],
         "classes": [
             "bard",
             "cleric",
@@ -2057,7 +2137,7 @@
             "You utter a divine word, imbued with the power that shaped the world at the dawn of creation. Choose any number of creatures you can see within range. Each creature that can hear you must make a Charisma saving throw. On a failed save, a creature suffers an effect based on its current hit points:\n50 hit points or fewer: deafened for 1 minute\n40 hit points or fewer: deafened and blinded for 10 minutes\n30 hit points or fewer: blinded, deafened, and stunned for 1 hour\n20 hit points or fewer: killed instantly",
             "Regardless of its current hit points, a celestial, an elemental, a fey, or a fiend that fails its save is forced back to its plane of origin (if it isn’t there already) and can’t return to your current plane for 24 hours by any means short of a wish spell."
         ],
-        "attack_save": "charisma_save",
+        "save": "charisma",
         "classes": [
             "cleric"
         ]
@@ -2079,8 +2159,10 @@
             "You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn’t do anything that you don’t allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.",
             "Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends."
         ],
-        "higher_levels": "When you cast this spell with a 5th level spell slot, the duration is concentration, up to 10 minutes. When you use a 6th level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 7th level or higher, the duration is concentration, up to 8 hours.",
-        "attack_save": "wisdom_save",
+        "higher_levels": [
+            "When you cast this spell with a 5th level spell slot, the duration is concentration, up to 10 minutes. When you use a 6th level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 7th level or higher, the duration is concentration, up to 8 hours."
+        ],
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "druid",
@@ -2104,8 +2186,10 @@
             "You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn’t do anything that you don’t allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.",
             "Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends."
         ],
-        "higher_levels": "When you cast this spell with a 9th level spell slot, the duration is concentration, up to 8 hours.",
-        "attack_save": "wisdom_save",
+        "higher_levels": [
+            "When you cast this spell with a 9th level spell slot, the duration is concentration, up to 8 hours."
+        ],
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "bard",
@@ -2131,8 +2215,10 @@
             "You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn’t do anything that you don’t allow it to do. During this time you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.",
             "Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends."
         ],
-        "higher_levels": "When you cast this spell using a 6th level spell slot, the duration is concentration, up to 10 minutes. When you use a 7th level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 8th level or higher, the duration is concentration, up to 8 hours.",
-        "attack_save": "wisdom_save",
+        "higher_levels": [
+            "When you cast this spell using a 6th level spell slot, the duration is concentration, up to 10 minutes. When you use a 7th level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 8th level or higher, the duration is concentration, up to 8 hours."
+        ],
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "bard",
@@ -2161,7 +2247,7 @@
             "You can make the messenger appear monstrous and terrifying to the target. If you do, the messenger can deliver a message of no more than ten words and then the target must make a Wisdom saving throw. On a failed save, echoes of the phantasmal monstrosity spawn a nightmare that lasts the duration of the target’s sleep and prevents the target from gaining any benefit from that rest. In addition, when the target wakes up, it takes 3d6 psychic damage.",
             "If you have a body part, lock of hair, clipping from a nail, or similar portion of the target’s body, the target makes its saving throw with disadvantage."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "classes": [
             "bard",
             "warlock",
@@ -2211,7 +2297,6 @@
             "A fissure that opens beneath a structure causes it to automatically collapse (see below).",
             "Structures. The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structure’s height must make a Dexterity saving throw. On a failed save, the creature takes 5d6 bludgeoning damage, is knocked prone, and is buried in the rubble, requiring a DC 20 Strength (Athletics) check as an action to escape. The DM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn’t fall prone or become buried."
         ],
-        "attack_save": "special",
         "concentration": true,
         "classes": [
             "cleric",
@@ -2234,7 +2319,7 @@
             "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.",
             "The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam."
         ],
-        "attack_save": "ranged_spell_attack",
+        "attack": "ranged",
         "classes": [
             "warlock"
         ]
@@ -2263,7 +2348,9 @@
             "Fox’s Cunning. The target has advantage on Intelligence checks.",
             "Owl’s Wisdom. The target has advantage on Wisdom checks."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+        ],
         "concentration": true,
         "classes": [
             "bard",
@@ -2293,7 +2380,7 @@
             "Enlarge. The target’s size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category—from Medium to Large, for example. If there isn’t enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The target’s weapons also grow to match its new size. While these weapons are enlarged, the target’s attacks with them deal 1d4 extra damage.",
             "Reduce. The target’s size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category—from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The target’s weapons also shrink to match its new size. While these weapons are reduced, the target’s attacks with them deal 1d4 less damage (this can’t reduce the damage below 1)."
         ],
-        "attack_save": "constitution_save",
+        "save": "constitution",
         "concentration": true,
         "classes": [
             "sorcerer",
@@ -2316,7 +2403,7 @@
             "A creature in the area when you cast the spell must succeed on a Strength saving throw or be restrained by the entangling plants until the spell ends. A creature restrained by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself.",
             "When the spell ends, the conjured plants wilt away."
         ],
-        "attack_save": "strength_save",
+        "save": "strength",
         "concentration": true,
         "classes": [
             "druid"
@@ -2336,7 +2423,7 @@
         "description": [
             "You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw. Any creature that can’t be charmed succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, the target has disadvantage on Wisdom (Perception) checks made to perceive any creature other than you until the spell ends or until the target can no longer hear you. The spell ends if you are incapacitated or can no longer speak."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "classes": [
             "bard",
             "warlock"
@@ -2347,7 +2434,7 @@
         "level": 7,
         "school": "transmutation",
         "casting_time": "action",
-        "duration": "up to 8 hours",
+        "duration": "8 hours",
         "range": "self",
         "components": {
             "verbal": true,
@@ -2360,7 +2447,9 @@
             "When the spell ends, you immediately return to the plane you originated from in the spot you currently occupy. If you occupy the same spot as a solid object or creature when this happens, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved.",
             "This spell has no effect if you cast it while you are on the Ethereal Plane or a plane that doesn’t border it, such as one of the Outer Planes."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 8th level or higher, you can target up to three willing creatures (including you) for each slot level above 7th. The creatures must be within 10 feet of you when you cast the spell.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 8th level or higher, you can target up to three willing creatures (including you) for each slot level above 7th. The creatures must be within 10 feet of you when you cast the spell."
+        ],
         "classes": [
             "bard",
             "cleric",
@@ -2407,7 +2496,7 @@
             "Panicked. The target is frightened of you. On each of its turns, the frightened creature must take the Dash action and move away from you by the safest and shortest available route, unless there is nowhere to move. If the target moves to a place at least 60 feet away from you where it can no longer see you, this effect ends.",
             "Sickened. The target has disadvantage on attack rolls and ability checks. At the end of each of its turns, it can make another Wisdom saving throw. If it succeeds, the effect ends."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "bard",
@@ -2450,7 +2539,7 @@
             "Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.",
             "Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can’t benefit from being invisible."
         ],
-        "attack_save": "dexterity_save",
+        "save": "dexterity",
         "concentration": true,
         "classes": [
             "bard",
@@ -2475,7 +2564,9 @@
         "description": [
             "Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st."
+        ],
         "classes": [
             "sorcerer",
             "wizard"
@@ -2487,7 +2578,8 @@
         "school": "illusion",
         "casting_time": "action",
         "duration": "1 minute",
-        "range": "self (30-foot cone)",
+        "range": "self",
+        "area": "30-foot cone",
         "components": {
             "verbal": true,
             "somatic": true,
@@ -2500,7 +2592,7 @@
             "You project a phantasmal image of a creature’s worst fears. Each creature in a 30-foot cone must succeed on a Wisdom saving throw or drop whatever it is holding and become frightened for the duration.",
             "While frightened by this spell, a creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn’t have line of sight to you, the creature can make a Wisdom saving throw. On a successful save, the spell ends for that creature."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "bard",
@@ -2554,7 +2646,7 @@
             "At the end of every 30 days, the creature can repeat its saving throw against this spell. If it succeeds on its saving throw, the spell ends.",
             "The spell can also be ended by greater restoration, heal, or wish."
         ],
-        "attack_save": "intelligence_save",
+        "save": "intelligence",
         "classes": [
             "bard",
             "druid",
@@ -2675,7 +2767,7 @@
             "You send negative energy coursing through a creature that you can see within range, causing it searing pain. The target must make a Constitution saving throw. It takes 7d8 + 30 necrotic damage on a failed save, or half as much damage on a successful one.",
             "A humanoid killed by this spell rises at the start of your next turn as a zombie that is permanently under your command, following your verbal orders to the best of its ability."
         ],
-        "attack_save": "constitution_save",
+        "save": "constitution",
         "classes": [
             "sorcerer",
             "warlock",
@@ -2701,8 +2793,10 @@
             "A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.",
             "The fire spreads around corners. It ignites flammable objects in the area that aren’t being worn or carried."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
-        "attack_save": "dexterity_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+        ],
+        "save": "dexterity",
         "classes": [
             "sorcerer",
             "wizard"
@@ -2723,7 +2817,7 @@
             "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn’t being worn or carried.",
             "This spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
         ],
-        "attack_save": "ranged_spell_attack",
+        "attack": "ranged",
         "classes": [
             "sorcerer",
             "wizard"
@@ -2768,7 +2862,7 @@
             "A storm made up of sheets of roaring flame appears in a location you choose within range. The area of the storm consists of up to ten 10-foot cubes, which you can arrange as you wish. Each cube must have at least one face adjacent to the face of another cube. Each creature in the area must make a Dexterity saving throw. It takes 7d10 fire damage on a failed save, or half as much damage on a successful one.",
             "The fire damages objects in the area and ignites flammable objects that aren’t being worn or carried. If you choose, plant life in the area is unaffected by this spell."
         ],
-        "attack_save": "dexterity_save",
+        "save": "dexterity",
         "classes": [
             "cleric",
             "druid",
@@ -2795,8 +2889,10 @@
             "You can use your action to make a melee spell attack with the fiery blade. On a hit, the target takes 3d6 fire damage.",
             "The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for every two slot levels above 2nd.",
-        "attack_save": "melee_spell_attack",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for every two slot levels above 2nd."
+        ],
+        "attack": "melee",
         "concentration": true,
         "classes": [
             "druid"
@@ -2820,8 +2916,10 @@
         "description": [
             "A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes 4d6 fire damage and 4d6 radiant damage on a failed save, or half as much damage on a successful one."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th.",
-        "attack_save": "dexterity_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th."
+        ],
+        "save": "dexterity",
         "classes": [
             "cleric"
         ]
@@ -2846,8 +2944,10 @@
             "As a bonus action, you can move the sphere up to 30 feet. If you ram the sphere into a creature, that creature must make the saving throw against the sphere’s damage, and the sphere stops moving this turn.",
             "When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 20-foot radius and dim light for an additional 20 feet."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.",
-        "attack_save": "dexterity_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd."
+        ],
+        "save": "dexterity",
         "concentration": true,
         "classes": [
             "druid",
@@ -2875,7 +2975,7 @@
             "If the creature is physically broken while petrified, it suffers from similar deformities if it reverts to its original state.",
             "If you maintain your concentration on this spell for the entire possible duration, the creature is turned to stone until the effect is removed."
         ],
-        "attack_save": "constitution_save",
+        "save": "constitution",
         "concentration": true,
         "classes": [
             "warlock",
@@ -2900,7 +3000,9 @@
         "description": [
             "You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd."
+        ],
         "concentration": true,
         "classes": [
             "sorcerer",
@@ -2922,7 +3024,9 @@
         "description": [
             "You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, the radius of the fog increases by 20 feet for each slot level above 1st.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, the radius of the fog increases by 20 feet for each slot level above 1st."
+        ],
         "concentration": true,
         "classes": [
             "druid",
@@ -2980,7 +3084,7 @@
             "A creature inside the cage can’t leave it by nonmagical means. If the creature tries to use teleportation or interplanar travel to leave the cage, it must first make a Charisma saving throw. On a success, the creature can use that magic to exit the cage. On a failure, the creature can’t exit the cage and wastes the use of the spell or effect. The cage also extends into the Ethereal Plane, blocking ethereal travel.",
             "This spell can’t be dispelled by dispel magic."
         ],
-        "attack_save": "charisma_save",
+        "save": "charisma",
         "classes": [
             "bard",
             "warlock",
@@ -3109,8 +3213,10 @@
             "You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends.",
             "You can end the spell early by using an action to dismiss it. A remove curse, greater restoration, or wish spell also ends it."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above.",
-        "attack_save": "wisdom_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above."
+        ],
+        "save": "wisdom",
         "classes": [
             "bard",
             "cleric",
@@ -3190,7 +3296,8 @@
         "school": "abjuration",
         "casting_time": "action",
         "duration": "1 minute",
-        "range": "self (10-foot radius)",
+        "range": "self",
+        "area": "10-foot radius",
         "components": {
             "verbal": true,
             "somatic": true,
@@ -3203,7 +3310,9 @@
             "An immobile, faintly shimmering barrier springs into existence in a 10-foot radius around you and remains for the duration.",
             "Any spell of 5th level or lower cast from outside the barrier can’t affect creatures or objects within it, even if the spell is cast using a higher level spell slot. Such a spell can target creatures and objects within the barrier, but the spell has no effect on them. Similarly, the area within the barrier is excluded from the areas affected by such spells."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 7th level or higher, the barrier blocks spells of one level higher for each slot level above 6th.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 7th level or higher, the barrier blocks spells of one level higher for each slot level above 6th."
+        ],
         "concentration": true,
         "classes": [
             "sorcerer",
@@ -3215,7 +3324,7 @@
         "level": 3,
         "school": "abjuration",
         "casting_time": "1 hour",
-        "duration": "until dispelled, or triggered",
+        "duration": "until dispelled",
         "range": "touch",
         "components": {
             "verbal": true,
@@ -3234,8 +3343,10 @@
             "Explosive Runes. When triggered, the glyph erupts with magical energy in a 20-foot-radius sphere centered on the glyph. The sphere spreads around corners. Each creature in the area must make a Dexterity saving throw. A creature takes 5d8 acid, cold, fire, lightning, or thunder damage on a failed saving throw (your choice when you create the glyph), or half as much damage on a successful one.",
             "Spell Glyph. You can store a prepared spell of 3rd level or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect when cast in this way. When the glyph is triggered, the stored spell is cast. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is centered on that creature. If the spell summons hostile creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell requires concentration, it lasts until the end of its full duration."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 4th level or higher, the damage of an explosive runes glyph increases by 1d8 for each slot level above 3rd. If you create a spell glyph, you can store any spell of up to the same level as the slot you use for the glyph of warding.",
-        "attack_save": "dexterity_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 4th level or higher, the damage of an explosive runes glyph increases by 1d8 for each slot level above 3rd. If you create a spell glyph, you can store any spell of up to the same level as the slot you use for the glyph of warding."
+        ],
+        "save": "dexterity",
         "classes": [
             "bard",
             "cleric",
@@ -3285,7 +3396,7 @@
             "Slick grease covers the ground in a 10-foot square centered on a point within range and turns it into difficult terrain for the duration.",
             "When the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a Dexterity saving throw or fall prone."
         ],
-        "attack_save": "dexterity_save",
+        "save": "dexterity",
         "classes": [
             "wizard"
         ]
@@ -3350,7 +3461,7 @@
             "A Large spectral guardian appears and hovers for the duration in an unoccupied space of your choice that you can see within range. The guardian occupies that space and is indistinct except for a gleaming sword and shield emblazoned with the symbol of your deity.",
             "Any creature hostile to you that moves to a space within 10 feet of the guardian for the first time on a turn must succeed on a Dexterity saving throw. The creature takes 20 radiant damage on a failed save, or half as much damage on a successful one. The guardian vanishes when it has dealt a total of 60 damage."
         ],
-        "attack_save": "dexterity_save",
+        "save": "dexterity",
         "classes": [
             "cleric"
         ]
@@ -3420,8 +3531,10 @@
         "description": [
             "A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes 4d6 radiant damage, and the next attack roll made against this target before the end of your next turn has advantage, thanks to the mystical dim light glittering on the target until then."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
-        "attack_save": "ranged_spell_attack",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
+        ],
+        "attack": "ranged",
         "classes": [
             "cleric"
         ]
@@ -3432,7 +3545,8 @@
         "school": "evocation",
         "casting_time": "action",
         "duration": "1 minute",
-        "range": "self (60-foot line)",
+        "range": "self",
+        "area": "60-foot line",
         "components": {
             "verbal": true,
             "somatic": true,
@@ -3447,7 +3561,7 @@
             "The gust disperses gas or vapor, and it extinguishes candles, torches, and similar unprotected flames in the area. It causes protected flames, such as those of lanterns, to dance wildly and has a 50 percent chance to extinguish them.",
             "As a bonus action on each of your turns before the spell ends, you can change the direction in which the line blasts from you."
         ],
-        "attack_save": "strength_save",
+        "save": "strength",
         "concentration": true,
         "classes": [
             "druid",
@@ -3485,7 +3599,7 @@
             "Silence. No sound can emanate from within the area, and no sound can reach into it.",
             "Tongues. Affected creatures can communicate with any other creature in the area, even if they don’t share a common language."
         ],
-        "attack_save": "charisma_save",
+        "save": "charisma",
         "classes": [
             "cleric"
         ]
@@ -3530,7 +3644,7 @@
         "description": [
             "You unleash a virulent disease on a creature that you can see within range. The target must make a Constitution saving throw. On a failed save, it takes 14d6 necrotic damage, or half as much damage on a successful save. The damage can’t reduce the target’s hit points below 1. If the target fails the saving throw, its hit point maximum is reduced for 1 hour by an amount equal to the necrotic damage it took. Any effect that removes a disease allows a creature’s hit point maximum to return to normal before that time passes."
         ],
-        "attack_save": "constitution_save",
+        "save": "constitution",
         "classes": [
             "cleric"
         ]
@@ -3574,7 +3688,9 @@
         "description": [
             "Choose a creature that you can see within range. A surge of positive energy washes through the creature, causing it to regain 70 hit points. This spell also ends blindness, deafness, and any diseases affecting the target. This spell has no effect on constructs or undead."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 7th level or higher, the amount of healing increases by 10 for each slot level above 6th.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 7th level or higher, the amount of healing increases by 10 for each slot level above 6th."
+        ],
         "classes": [
             "cleric",
             "druid"
@@ -3593,7 +3709,9 @@
         "description": [
             "A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st."
+        ],
         "classes": [
             "bard",
             "cleric",
@@ -3619,8 +3737,10 @@
             "Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes 2d8 fire damage when you cast the spell. Until the spell ends, you can use a bonus action on each of your subsequent turns to cause this damage again.",
             "If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can. If it doesn’t drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
-        "attack_save": "constitution_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd."
+        ],
+        "save": "constitution",
         "concentration": true,
         "classes": [
             "bard",
@@ -3641,8 +3761,10 @@
         "description": [
             "You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.",
-        "attack_save": "dexterity_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st."
+        ],
+        "save": "dexterity",
         "reaction_trigger": "which you take in response to being damaged by a creature within 60 feet of you that you can see",
         "classes": [
             "warlock"
@@ -3667,7 +3789,7 @@
             "You bring forth a great feast, including magnificent food and drink. The feast takes 1 hour to consume and disappears at the end of that time, and the beneficial effects don’t set in until this hour is over. Up to twelve creatures can partake of the feast.",
             "A creature that partakes of the feast gains several benefits. The creature is cured of all diseases and poison, becomes immune to poison and being frightened, and makes all Wisdom saving throws with advantage. Its hit point maximum also increases by 2d10, and it gains the same number of hit points. These benefits last for 24 hours."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "classes": [
             "cleric",
             "druid"
@@ -3687,7 +3809,9 @@
         "description": [
             "A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+        ],
         "concentration": true,
         "classes": [
             "bard",
@@ -3712,8 +3836,10 @@
         "description": [
             "Choose a creature that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. This spell has no effect on undead. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th. The creatures must be within 30 feet of each other when you target them.",
-        "attack_save": "wisdom_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th. The creatures must be within 30 feet of each other when you target them."
+        ],
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "bard",
@@ -3740,8 +3866,10 @@
         "description": [
             "Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.",
-        "attack_save": "wisdom_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them."
+        ],
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "bard",
@@ -3770,7 +3898,7 @@
         "description": [
             "Divine light washes out from you and coalesces in a soft radiance in a 30-foot radius around you. Creatures of your choice in that radius when you cast this spell shed dim light in a 5-foot radius and have advantage on all saving throws, and other creatures have disadvantage on attack rolls against them until the spell ends. In addition, when a fiend or an undead hits an affected creature with a melee attack, the aura flashes with brilliant light. The attacker must succeed on a Constitution saving throw or be blinded until the spell ends."
         ],
-        "attack_save": "constitution_save",
+        "save": "constitution",
         "concentration": true,
         "classes": [
             "cleric"
@@ -3789,7 +3917,9 @@
         "description": [
             "You choose a creature you can see within range and mystically mark it as your quarry. Until the spell ends, you deal an extra 1d6 damage to the target whenever you hit it with a weapon attack, and you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it. If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to mark a new creature."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 3rd or 4th level, you can maintain your concentration on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, you can maintain your concentration on the spell for up to 24 hours.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 3rd or 4th level, you can maintain your concentration on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, you can maintain your concentration on the spell for up to 24 hours."
+        ],
         "concentration": true,
         "classes": [
             "ranger"
@@ -3813,7 +3943,7 @@
             "You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Wisdom saving throw. On a failed save, the creature becomes charmed for the duration. While charmed by this spell, the creature is incapacitated and has a speed of 0.",
             "The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "bard",
@@ -3841,8 +3971,10 @@
             "A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one.",
             "Hailstones turn the storm’s area of effect into difficult terrain until the end of your next turn."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th.",
-        "attack_save": "dexterity_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th."
+        ],
+        "save": "dexterity",
         "classes": [
             "druid",
             "sorcerer",
@@ -3932,7 +4064,7 @@
             "A dispel magic spell can end the spell only if it is cast as a 9th level spell, targeting either the prison or the special component used to create it.",
             "You can use a particular special component to create only one prison at a time. If you cast the spell again using the same component, the target of the first casting is immediately freed from its binding."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "classes": [
             "warlock",
             "wizard"
@@ -3954,7 +4086,7 @@
             "When the cloud appears, each creature in it must make a Dexterity saving throw. A creature takes 10d8 fire damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell’s area for the first time on a turn or ends its turn there.",
             "The cloud moves 10 feet directly away from you in a direction that you choose at the start of each of your turns."
         ],
-        "attack_save": "dexterity_save",
+        "save": "dexterity",
         "concentration": true,
         "classes": [
             "sorcerer",
@@ -3975,8 +4107,10 @@
         "description": [
             "Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.",
-        "attack_save": "melee_spell_attack",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st."
+        ],
+        "attack": "melee",
         "classes": [
             "cleric"
         ]
@@ -4000,8 +4134,10 @@
             "Swarming, biting locusts fill a 20-foot-radius sphere centered on a point you choose within range. The sphere spreads around corners. The sphere remains for the duration, and its area is lightly obscured. The sphere’s area is difficult terrain.",
             "When the area appears, each creature in it must make a Constitution saving throw. A creature takes 4d10 piercing damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell’s area for the first time on a turn or ends its turn there."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d10 for each slot level above 5th.",
-        "attack_save": "constitution_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d10 for each slot level above 5th."
+        ],
+        "save": "constitution",
         "concentration": true,
         "classes": [
             "cleric",
@@ -4027,7 +4163,9 @@
         "description": [
             "A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target’s person. The spell ends for a target that attacks or casts a spell."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+        ],
         "concentration": true,
         "classes": [
             "bard",
@@ -4150,7 +4288,7 @@
             "The target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. You can change the target’s altitude by up to 20 feet in either direction on your turn. If you are the target, you can move up or down as part of your move. Otherwise, you can use your action to move the target, which must remain within the spell’s range.",
             "When the spell ends, the target floats gently to the ground if it is still aloft."
         ],
-        "attack_save": "constitution_save",
+        "save": "constitution",
         "concentration": true,
         "classes": [
             "sorcerer",
@@ -4175,7 +4313,7 @@
             "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.",
             "If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell."
         ],
-        "attack_save": "dexterity_save",
+        "save": "dexterity",
         "classes": [
             "bard",
             "cleric",
@@ -4189,7 +4327,8 @@
         "school": "evocation",
         "casting_time": "action",
         "duration": "instantaneous",
-        "range": "self (100-foot line)",
+        "range": "self",
+        "area": "100-foot line",
         "components": {
             "verbal": true,
             "somatic": true,
@@ -4202,8 +4341,10 @@
             "A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.",
             "The lightning ignites flammable objects in the area that aren’t being worn or carried."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
-        "attack_save": "dexterity_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+        ],
+        "save": "dexterity",
         "classes": [
             "sorcerer",
             "wizard"
@@ -4312,7 +4453,9 @@
         "description": [
             "You touch a creature. The target’s speed increases by 10 feet until the spell ends."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+        ],
         "classes": [
             "bard",
             "druid",
@@ -4386,8 +4529,10 @@
             "Choose one or more of the following types of creatures: celestials, elementals, fey, fiends, or undead. The circle affects a creature of the chosen type in the following ways:",
             "The creature can’t willingly enter the cylinder by nonmagical means. If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a Charisma saving throw.\nThe creature has disadvantage on attack rolls against targets within the cylinder.\nTargets within the cylinder can’t be charmed, frightened, or possessed by the creature.\nWhen you cast this spell, you can elect to cause its magic to operate in the reverse direction, preventing a creature of the specified type from leaving the cylinder and protecting targets outside it."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 hour for each slot level above 3rd.",
-        "attack_save": "charisma_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 hour for each slot level above 3rd."
+        ],
+        "save": "charisma",
         "classes": [
             "cleric",
             "paladin",
@@ -4419,7 +4564,7 @@
             "If the container is destroyed or the spell ends, your soul immediately returns to your body. If your body is more than 100 feet away from you or if your body is dead when you attempt to return to it, you die. If another creature’s soul is in the container when it is destroyed, the creature’s soul returns to its body if the body is alive and within 100 feet. Otherwise, that creature dies.",
             "When the spell ends, the container is destroyed."
         ],
-        "attack_save": "charisma_save",
+        "save": "charisma",
         "classes": [
             "wizard"
         ]
@@ -4438,7 +4583,9 @@
         "description": [
             "You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st."
+        ],
         "classes": [
             "sorcerer",
             "wizard"
@@ -4484,7 +4631,9 @@
         "description": [
             "You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 4th level or higher, the bonus increases to +2. When you use a spell slot of 6th level or higher, the bonus increases to +3.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 4th level or higher, the bonus increases to +2. When you use a spell slot of 6th level or higher, the bonus increases to +3."
+        ],
         "concentration": true,
         "classes": [
             "paladin",
@@ -4511,7 +4660,9 @@
             "As long as you are within range of the illusion, you can use your action to cause the image to move to any other spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking. Similarly, you can cause the illusion to make different sounds at different times, even making it carry on a conversation, for example.",
             "Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and its other sensory qualities become faint to the creature."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 6th level or higher, the spell lasts until dispelled, without requiring your concentration.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 6th level or higher, the spell lasts until dispelled, without requiring your concentration."
+        ],
         "concentration": true,
         "classes": [
             "bard",
@@ -4534,7 +4685,9 @@
         "description": [
             "A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 6th level or higher, the healing increases by 1d8 for each slot level above 5th.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 6th level or higher, the healing increases by 1d8 for each slot level above 5th."
+        ],
         "classes": [
             "bard",
             "cleric",
@@ -4572,7 +4725,9 @@
         "description": [
             "As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 4th level or higher, the healing increases by 1d4 for each slot level above 3rd.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 4th level or higher, the healing increases by 1d4 for each slot level above 3rd."
+        ],
         "classes": [
             "cleric"
         ]
@@ -4597,8 +4752,10 @@
             "You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a group of soldiers give all their money to the first beggar they meet. If the condition isn’t met before the spell ends, the activity isn’t performed.",
             "If you or any of your companions damage a creature affected by this spell, the spell ends for that creature."
         ],
-        "higher_levels": "When you cast this spell using a 7th level spell slot, the duration is 10 days. When you use an 8th level spell slot, the duration is 30 days. When you use a 9th level spell slot, the duration is a year and a day.",
-        "attack_save": "wisdom_save",
+        "higher_levels": [
+            "When you cast this spell using a 7th level spell slot, the duration is 10 days. When you use an 8th level spell slot, the duration is 30 days. When you use a 9th level spell slot, the duration is a year and a day."
+        ],
+        "save": "wisdom",
         "classes": [
             "bard",
             "sorcerer",
@@ -4716,7 +4873,7 @@
             "Blazing orbs of fire plummet to the ground at four different points you can see within range. Each creature in a 40-foot-radius sphere centered on each point you choose must make a Dexterity saving throw. The sphere spreads around corners. A creature takes 20d6 fire damage and 20d6 bludgeoning damage on a failed save, or half as much damage on a successful one. A creature in the area of more than one fiery burst is affected only once.",
             "The spell damages objects in the area and ignites flammable objects that aren’t being worn or carried."
         ],
-        "attack_save": "dexterity_save",
+        "save": "dexterity",
         "classes": [
             "sorcerer",
             "wizard"
@@ -4873,8 +5030,10 @@
             "A modified memory doesn’t necessarily affect how a creature behaves, particularly if the memory contradicts the creature’s natural inclinations, alignment, or beliefs. An illogical modified memory, such as implanting a memory of how much the creature enjoyed dousing itself in acid, is dismissed, perhaps as a bad dream. The DM might deem a modified memory too nonsensical to affect a creature in a significant manner.",
             "A remove curse or greater restoration spell cast on the target restores the creature’s true memory."
         ],
-        "higher_levels": "If you cast this spell using a spell slot of 6th level or higher, you can alter the target’s memories of an event that took place up to 7 days ago (6th level),30 days ago (7th level),1 year ago (8th level), or any time in the creature’s past (9th level).",
-        "attack_save": "wisdom_save",
+        "higher_levels": [
+            "If you cast this spell using a spell slot of 6th level or higher, you can alter the target’s memories of an event that took place up to 7 days ago (6th level),30 days ago (7th level),1 year ago (8th level), or any time in the creature’s past (9th level)."
+        ],
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "bard",
@@ -4902,8 +5061,10 @@
             "A shapechanger makes its saving throw with disadvantage. If it fails, it also instantly reverts to its original form and can’t assume a different form until it leaves the spell’s light.",
             "On your turns after you cast this spell, you can use an action to move the beam up to 60 feet in any direction."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd.",
-        "attack_save": "constitution_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd."
+        ],
+        "save": "constitution",
         "concentration": true,
         "classes": [
             "druid"
@@ -4928,7 +5089,7 @@
             "You create a sword-shaped plane of force that hovers within range. It lasts for the duration.",
             "When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes 3d10 force damage. Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 20 feet to a spot you can see and repeat this attack against the same target or a different one."
         ],
-        "attack_save": "melee_spell_attack",
+        "attack": "melee",
         "concentration": true,
         "classes": [
             "bard",
@@ -5002,7 +5163,7 @@
             "Choose one creature that you can see within range. The target begins a comic dance in place: shuffling, tapping its feet, and capering for the duration. Creatures that can’t be charmed are immune to this spell.",
             "A dancing creature must use all its movement to dance without leaving its space and has disadvantage on Dexterity saving throws and attack rolls. While the target is affected by this spell, other creatures have advantage on attack rolls against it. As an action, a dancing creature makes a Wisdom saving throw to regain control of itself. On a successful save, the spell ends."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "bard",
@@ -5070,8 +5231,10 @@
         "description": [
             "You tap into the nightmares of a creature you can see within range and create an illusory manifestation of its deepest fears, visible only to that creature. The target must make a Wisdom saving throw. On a failed save, the target becomes frightened for the duration. At the end of each of the target’s turns before the spell ends, the target must succeed on a Wisdom saving throw or take 4d10 psychic damage. On a successful save, the spell ends."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for each slot level above 4th.",
-        "attack_save": "wisdom_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for each slot level above 4th."
+        ],
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "wizard"
@@ -5139,8 +5302,10 @@
             "With this spell, you attempt to bind a celestial, an elemental, a fey, or a fiend to your service. The creature must be within range for the entire casting of the spell. (Typically, the creature is first summoned into the center of an inverted magic circle in order to keep it trapped while this spell is cast.) At the completion of the casting, the target must make a Charisma saving throw. On a failed save, it is bound to serve you for the duration. If the creature was summoned or created by another spell, that spell’s duration is extended to match the duration of this spell.",
             "A bound creature must follow your instructions to the best of its ability. You might command the creature to accompany you on an adventure, to guard a location, or to deliver a message. The creature obeys the letter of your instructions, but if the creature is hostile to you, it strives to twist your words to achieve its own objectives. If the creature carries out your instructions completely before the spell ends, it travels to you to report this fact if you are on the same plane of existence. If you are on a different plane of existence, it returns to the place where you bound it and remains there until the spell ends."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of a higher level, the duration increases to 10 days with a 6th level slot, to 30 days with a 7th level slot, to 180 days with an 8th level slot, and to a year and a day with a 9th level spell slot.",
-        "attack_save": "charisma_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of a higher level, the duration increases to 10 days with a 6th level slot, to 30 days with a 7th level slot, to 180 days with an 8th level slot, and to a year and a day with a 9th level spell slot."
+        ],
+        "save": "charisma",
         "classes": [
             "bard",
             "cleric",
@@ -5168,7 +5333,8 @@
             "Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle.",
             "You can use this spell to banish an unwilling creature to another plane. Choose a creature within your reach and make a melee spell attack against it. On a hit, the creature must make a Charisma saving throw. If the creature fails this save, it is transported to a random location on the plane of existence you specify. A creature so transported must find its own way back to your current plane of existence."
         ],
-        "attack_save": "special",
+        "attack": "melee",
+        "save": "charisma",
         "classes": [
             "cleric",
             "druid",
@@ -5181,7 +5347,7 @@
         "name": "Plant Growth",
         "level": 3,
         "school": "transmutation",
-        "casting_time": "action or 8 hours",
+        "casting_time": "action",
         "duration": "instantaneous",
         "range": "150 feet",
         "components": {
@@ -5215,7 +5381,7 @@
             "You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage.",
             "This spell’s damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12)."
         ],
-        "attack_save": "constitution_save",
+        "save": "constitution",
         "classes": [
             "druid",
             "sorcerer",
@@ -5245,7 +5411,7 @@
             "The creature is limited in the actions it can perform by the nature of its new form, and it can’t speak, cast spells, or take any other action that requires hands or speech.",
             "The target’s gear melds into the new form. The creature can’t activate, use, wield, or otherwise benefit from any of its equipment."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "bard",
@@ -5288,7 +5454,7 @@
             "You speak a word of power that can overwhelm the mind of one creature you can see within range, leaving it dumbfounded. If the target has 150 hit points or fewer, it is stunned. Otherwise, the spell has no effect.",
             "The stunned target must make a Constitution saving throw at the end of each of its turns. On a successful save, this stunning effect ends."
         ],
-        "attack_save": "constitution_save",
+        "save": "constitution",
         "classes": [
             "bard",
             "sorcerer",
@@ -5309,7 +5475,9 @@
         "description": [
             "Up to six creatures of your choice that you can see within range each regain hit points equal to 2d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d8 for each slot level above 2nd.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d8 for each slot level above 2nd."
+        ],
         "classes": [
             "cleric"
         ]
@@ -5319,7 +5487,7 @@
         "level": 0,
         "school": "transmutation",
         "casting_time": "action",
-        "duration": "up to 1 hour",
+        "duration": "1 hour",
         "range": "10 feet",
         "components": {
             "verbal": true,
@@ -5343,7 +5511,8 @@
         "school": "evocation",
         "casting_time": "action",
         "duration": "instantaneous",
-        "range": "self (60-foot cone)",
+        "range": "self",
+        "area": "60-foot cone",
         "components": {
             "verbal": true,
             "somatic": true
@@ -5359,7 +5528,6 @@
             "7. Violet. On a failed save, the target is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the DM’s choosing and is no longer blinded. (Typically, a creature that is on a plane that isn’t its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.)",
             "8. Special. The target is struck by two rays. Roll twice more, rerolling any 8."
         ],
-        "attack_save": "special",
         "classes": [
             "sorcerer",
             "wizard"
@@ -5389,7 +5557,6 @@
             "6. Indigo. On a failed save, the creature is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don’t need to be consecutive; keep track of both until the creature collects three of a kind.\n\nWhile this layer is in place, spells can’t be cast through the wall. The layer is destroyed by bright light shed by a daylight spell or a similar spell of equal or higher level.",
             "7. Violet. On a failed save, the creature is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of the DM’s choosing and is no longer blinded. (Typically, a creature that is on a plane that isn’t its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.) This layer is destroyed by a dispel magic spell or a similar spell of equal or higher level that can end spells and magical effects."
         ],
-        "attack_save": "special",
         "classes": [
             "wizard"
         ]
@@ -5410,7 +5577,7 @@
             "You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage.",
             "This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
         ],
-        "attack_save": "ranged_spell_attack",
+        "attack": "ranged",
         "classes": [
             "druid"
         ]
@@ -5603,7 +5770,7 @@
             "A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack against the target. On a hit, the target deals only half damage with weapon attacks that use Strength until the spell ends.",
             "At the end of each of the target’s turns, it can make a Constitution saving throw against the spell. On a success, the spell ends."
         ],
-        "attack_save": "ranged_spell_attack",
+        "attack": "ranged",
         "concentration": true,
         "classes": [
             "warlock",
@@ -5625,7 +5792,7 @@
             "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.",
             "The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
         ],
-        "attack_save": "ranged_spell_attack",
+        "attack": "ranged",
         "classes": [
             "sorcerer",
             "wizard"
@@ -5773,7 +5940,7 @@
             "If some solid object (such as a ceiling) is encountered in this fall, falling objects and creatures strike it just as they would during a normal downward fall. If an object or creature reaches the top of the area without striking anything, it remains there, oscillating slightly, for the duration.",
             "At the end of the duration, affected objects and creatures fall back down."
         ],
-        "attack_save": "dexterity_save",
+        "save": "dexterity",
         "concentration": true,
         "classes": [
             "druid",
@@ -5844,7 +6011,7 @@
             "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.",
             "The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
         ],
-        "attack_save": "dexterity_save",
+        "save": "dexterity",
         "classes": [
             "cleric"
         ]
@@ -5868,7 +6035,7 @@
             "You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn’t protect the warded creature from area effects, such as the explosion of a fireball.",
             "If the warded creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, this spell ends."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "classes": [
             "cleric"
         ]
@@ -5888,8 +6055,10 @@
             "You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several.",
             "Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.",
-        "attack_save": "ranged_spell_attack",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd."
+        ],
+        "attack": "ranged",
         "classes": [
             "sorcerer",
             "wizard"
@@ -5916,7 +6085,7 @@
             "On a failed save, the spell creates an invisible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. A creature that can see invisible objects sees the sensor as a luminous orb about the size of your fist.",
             "Instead of targeting a creature, you can choose a location you have seen before as the target of this spell. When you do, the sensor appears at that location and doesn’t move."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "bard",
@@ -5967,7 +6136,7 @@
             "The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to a creature’s outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel the creature’s head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair.",
             "A creature can use its action to inspect a target and make an Intelligence (Investigation) check against your spell save DC. If it succeeds, it becomes aware that the target is disguised."
         ],
-        "attack_save": "charisma_save",
+        "save": "charisma",
         "classes": [
             "bard",
             "sorcerer",
@@ -6071,8 +6240,10 @@
             "A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.",
             "A nonmagical object that isn’t being worn or carried also takes the damage if it’s in the spell’s area."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
-        "attack_save": "constitution_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd."
+        ],
+        "save": "constitution",
         "classes": [
             "bard",
             "sorcerer",
@@ -6161,7 +6332,7 @@
             "Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it can’t take reactions until the start of its next turn.",
             "The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
         ],
-        "attack_save": "melee_spell_attack",
+        "attack": "melee",
         "classes": [
             "sorcerer",
             "wizard"
@@ -6261,7 +6432,9 @@
             "Starting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for that creature to be affected.",
             "Undead and creatures immune to being charmed aren’t affected by this spell."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st.",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st."
+        ],
         "classes": [
             "bard",
             "sorcerer",
@@ -6288,7 +6461,6 @@
             "The ground in the area is covered with slick ice, making it difficult terrain. When a creature enters the spell’s area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. On a failed save, it falls prone.",
             "If a creature starts its turn in the spell's area and is concentrating on a spell, the creature must make a successful Constitution saving throw against your spell save DC or lose concentration."
         ],
-        "attack_save": "special",
         "concentration": true,
         "classes": [
             "druid",
@@ -6317,7 +6489,7 @@
             "If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn’t take effect until the creature’s next turn, and the creature must use its action on that turn to complete the spell. If it can’t, the spell is wasted.",
             "A creature affected by this spell makes another Wisdom saving throw at the end of each of its turns. On a successful save, the effect ends for it."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "sorcerer",
@@ -6393,7 +6565,8 @@
         "school": "transmutation",
         "casting_time": "action",
         "duration": "10 minutes",
-        "range": "self (30-foot radius)",
+        "range": "self",
+        "area": "30-foot radius",
         "components": {
             "verbal": true,
             "somatic": true
@@ -6467,7 +6640,8 @@
         "school": "conjuration",
         "casting_time": "action",
         "duration": "10 minutes",
-        "range": "self (15-foot radius)",
+        "range": "self",
+        "area": "15-foot radius",
         "components": {
             "verbal": true,
             "somatic": true,
@@ -6480,8 +6654,10 @@
             "You call forth spirits to protect you. They flit around you to a distance of 15 feet for the duration. If you are good or neutral, their spectral form appears angelic or fey (your choice). If you are evil, they appear fiendish.",
             "When you cast this spell, you can designate any number of creatures you can see to be unaffected by it. An affected creature’s speed is halved in the area, and when the creature enters the area for the first time on a turn or starts its turn there, it must make a Wisdom saving throw. On a failed save, the creature takes 3d8 radiant damage (if you are good or neutral) or 3d8 necrotic damage (if you are evil). On a successful save, the creature takes half as much damage."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.",
-        "attack_save": "wisdom_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd."
+        ],
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "cleric"
@@ -6503,8 +6679,10 @@
             "As a bonus action on your turn, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.",
             "The weapon can take whatever form you choose. Clerics of deities who are associated with a particular weapon (as St. Cuthbert is known for his mace and Thor for his hammer) make this spell’s effect resemble that weapon."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for every two slot levels above 2nd.",
-        "attack_save": "melee_spell_attack",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for every two slot levels above 2nd."
+        ],
+        "attack": "melee",
         "classes": [
             "cleric"
         ]
@@ -6529,7 +6707,7 @@
             "Each creature that is completely within the cloud at the start of its turn must make a Constitution saving throw against poison. On a failed save, the creature spends its action that turn retching and reeling. Creatures that don’t need to breathe or are immune to poison automatically succeed on this saving throw.",
             "A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds. A strong wind (at least 20 miles per hour) disperses it after 1 round."
         ],
-        "attack_save": "constitution_save",
+        "save": "constitution",
         "concentration": true,
         "classes": [
             "bard",
@@ -6606,7 +6784,6 @@
             "Round 4. Hailstones rain down from the cloud. Each creature under the cloud takes 2d6 bludgeoning damage.",
             "Round 5–10. Gusts and freezing rain assail the area under the cloud. The area becomes difficult terrain and is heavily obscured. Each creature there takes 1d6 cold damage. Ranged weapon attacks in the area are impossible. The wind and rain count as a severe distraction for the purposes of maintaining concentration on spells. Finally, gusts of strong wind (ranging from 20 to 50 miles per hour) automatically disperse fog, mists, and similar phenomena in the area, whether mundane or magical."
         ],
-        "attack_save": "special",
         "concentration": true,
         "classes": [
             "druid"
@@ -6632,7 +6809,7 @@
             "You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn’t met before the spell expires, the activity isn’t performed.",
             "If you or any of your companions damage the target, the spell ends."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "bard",
@@ -6647,7 +6824,8 @@
         "school": "evocation",
         "casting_time": "action",
         "duration": "1 minute",
-        "range": "self (60-foot line)",
+        "range": "self",
+        "area": "60-foot line",
         "components": {
             "verbal": true,
             "somatic": true,
@@ -6661,7 +6839,7 @@
             "You can create a new line of radiance as your action on any turn until the spell ends.",
             "For the duration, a mote of brilliant radiance shines in your hand. It sheds bright light in a 30-foot radius and dim light for an additional 30 feet. This light is sunlight."
         ],
-        "attack_save": "constitution_save",
+        "save": "constitution",
         "concentration": true,
         "classes": [
             "druid",
@@ -6689,7 +6867,7 @@
             "A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.",
             "This spell dispels any darkness in its area that was created by a spell."
         ],
-        "attack_save": "constitution_save",
+        "save": "constitution",
         "classes": [
             "druid",
             "sorcerer",
@@ -6701,7 +6879,7 @@
         "level": 7,
         "school": "abjuration",
         "casting_time": "1 minute",
-        "duration": "until dispelled, or triggered",
+        "duration": "until dispelled",
         "range": "touch",
         "components": {
             "verbal": true,
@@ -6726,7 +6904,6 @@
             "Sleep. Each target must make a Wisdom saving throw and falls unconscious for 10 minutes on a failed save. A creature awakens if it takes damage or if someone uses an action to shake or slap it awake.",
             "Stunning. Each target must make a Wisdom saving throw and becomes stunned for 1 minute on a failed save."
         ],
-        "attack_save": "special",
         "classes": [
             "bard",
             "cleric",
@@ -6815,7 +6992,7 @@
         "level": 0,
         "school": "transmutation",
         "casting_time": "action",
-        "duration": "up to 1 minute",
+        "duration": "1 minute",
         "range": "30 feet",
         "components": {
             "verbal": true
@@ -6834,7 +7011,8 @@
         "school": "evocation",
         "casting_time": "action",
         "duration": "instantaneous",
-        "range": "self (15-foot cube)",
+        "range": "self",
+        "area": "15-foot cube",
         "components": {
             "verbal": true,
             "somatic": true
@@ -6843,8 +7021,10 @@
             "A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn’t pushed.",
             "In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell’s effect, and the spell emits a thunderous boom audible out to 300 feet."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
-        "attack_save": "constitution_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st."
+        ],
+        "save": "constitution",
         "classes": [
             "bard",
             "druid",
@@ -6961,7 +7141,7 @@
             "If the spell becomes permanent, you no longer control the creature. It might remain friendly to you, depending on how you have treated it.",
             "Creature into Object. If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form, as long as the object's size is no larger than the creature's size. The creature’s statistics become those of the object, and the creature has no memory of time spent in this form, after the spell ends and it returns to its normal form."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "bard",
@@ -7082,8 +7262,10 @@
         "description": [
             "The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes 3d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the attack again on each of your turns as an action."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
-        "attack_save": "melee_spell_attack",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+        ],
+        "attack": "melee",
         "concentration": true,
         "classes": [
             "warlock",
@@ -7104,7 +7286,7 @@
             "You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.",
             "This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4)."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "classes": [
             "bard"
         ]
@@ -7129,8 +7311,10 @@
             "When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 5d8 fire damage, or half as much damage on a successful save.",
             "One side of the wall, selected by you when you cast this spell, deals 5d8 fire damage to each creature that ends its turn within 10 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. The other side of the wall deals no damage."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.",
-        "attack_save": "dexterity_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th."
+        ],
+        "save": "dexterity",
         "concentration": true,
         "classes": [
             "druid",
@@ -7182,8 +7366,9 @@
             "If the wall cuts through a creature’s space when it appears, the creature within its area is pushed to one side of the wall and must make a Dexterity saving throw. On a failed save, the creature takes 10d6 cold damage, or half as much damage on a successful save.",
             "The wall is an object that can be damaged and thus breached. It has AC 12 and 30 hit points per 10-foot section, and it is vulnerable to fire damage. Reducing a 10-foot section of wall to 0 hit points destroys it and leaves behind a sheet of frigid air in the space the wall occupied. A creature moving through the sheet of frigid air for the first time on a turn must make a Constitution saving throw. That creature takes 5d6 cold damage on a failed save, or half as much damage on a successful one."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 7th level or higher, the damage the wall deals when it appears increases by 2d6, and the damage from passing through the sheet of frigid air increases by 1d6, for each slot level above 6th.",
-        "attack_save": "special",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 7th level or higher, the damage the wall deals when it appears increases by 2d6, and the damage from passing through the sheet of frigid air increases by 1d6, for each slot level above 6th."
+        ],
         "concentration": true,
         "classes": [
             "wizard"
@@ -7212,7 +7397,7 @@
             "The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the DM’s discretion.",
             "If you maintain your concentration on this spell for its whole duration, the wall becomes permanent and can’t be dispelled. Otherwise, the wall disappears when the spell ends."
         ],
-        "attack_save": "dexterity_save",
+        "save": "dexterity",
         "concentration": true,
         "classes": [
             "druid",
@@ -7240,8 +7425,10 @@
             "When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 7d8 piercing damage, or half as much damage on a successful save.",
             "A creature can move through the wall, albeit slowly and painfully. For every 1 foot a creature moves through the wall, it must spend 4 feet of movement. Furthermore, the first time a creature enters the wall on a turn or ends its turn there, the creature must make a Dexterity saving throw. It takes 7d8 slashing damage on a failed save, or half as much damage on a successful one."
         ],
-        "higher_levels": "When you cast this spell using a spell slot of 7th level or higher, both types of damage increase by 1d8 for each slot level above 6th.",
-        "attack_save": "dexterity_save",
+        "higher_levels": [
+            "When you cast this spell using a spell slot of 7th level or higher, both types of damage increase by 1d8 for each slot level above 6th."
+        ],
+        "save": "dexterity",
         "concentration": true,
         "classes": [
             "druid"
@@ -7345,7 +7532,7 @@
             "A creature restrained by the webs can use its action to make a Strength check against your spell save DC. If it succeeds, it is no longer restrained.",
             "The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature that starts its turn in the fire."
         ],
-        "attack_save": "dexterity_save",
+        "save": "dexterity",
         "concentration": true,
         "classes": [
             "sorcerer",
@@ -7366,7 +7553,7 @@
         "description": [
             "Drawing on the deepest fears of a group of creatures, you create illusory creatures in their minds, visible only to them. Each creature in a 30-foot-radius sphere centered on a point of your choice within range must make a Wisdom saving throw. On a failed save, a creature becomes frightened for the duration. The illusion calls on the creature’s deepest fears, manifesting its worst nightmares as an implacable threat. At the end of each of the frightened creature’s turns, it must succeed on a Wisdom saving throw or take 4d10 psychic damage. On a successful save, the spell ends for that creature."
         ],
-        "attack_save": "wisdom_save",
+        "save": "wisdom",
         "concentration": true,
         "classes": [
             "wizard"
@@ -7415,7 +7602,7 @@
             "When the wall appears, each creature within its area must make a Strength saving throw. A creature takes 3d8 bludgeoning damage on a failed save, or half as much damage on a successful one.",
             "The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can’t pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by giants or siege engines, and similar projectiles, are unaffected.) Creatures in gaseous form can’t pass through it."
         ],
-        "attack_save": "strength_save",
+        "save": "strength",
         "concentration": true,
         "classes": [
             "druid",
@@ -7477,7 +7664,7 @@
             "You create a magical zone that guards against deception in a 15-foot-radius sphere centered on a point of your choice within range. Until the spell ends, a creature that enters the spell’s area for the first time on a turn or starts its turn there must make a Charisma saving throw. On a failed save, a creature can’t speak a deliberate lie while in the radius. You know whether each creature succeeds or fails on its saving throw.",
             "An affected creature is aware of the spell and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as it remains within the boundaries of the truth."
         ],
-        "attack_save": "charisma_save",
+        "save": "charisma",
         "classes": [
             "bard",
             "cleric",

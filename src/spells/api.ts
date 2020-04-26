@@ -1,9 +1,10 @@
-import Spell, { SpellcasterClass, School } from '../models/Spell';
+import Spell, { School } from '../models/Spell';
 import spellData from '../../public/spells.json';
+import { ClassType } from '../shared/Classes';
 
 export class Query {
     name?: string;
-    classes?: SpellcasterClass[];
+    classes?: ClassType[];
     levels?: number[];
     schools?: School[];
 }
@@ -11,7 +12,7 @@ export class Query {
 export default class API {
 
     private spellByName = new Map<string, Spell>();
-    private spellsByClass = new Map<SpellcasterClass, string[]>();
+    private spellsByClass = new Map<ClassType, string[]>();
     private spellsByLevel = new Map<number, string[]>();
     private spellsBySchool = new Map<School, string[]>()
 

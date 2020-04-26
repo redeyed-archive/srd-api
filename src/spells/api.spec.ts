@@ -1,5 +1,9 @@
 import SpellAPI, { Query } from './api';
-import { SpellcasterClass, School } from '../models/Spell';
+import { School, Area } from '../models/Spell';
+import { ClassType } from '../shared/Classes';
+import * as t from 'io-ts';
+import { ThrowReporter } from 'io-ts/lib/ThrowReporter';
+import { optional } from '../../lib/test';
 
 describe('spells.api.get', () => {
 
@@ -47,6 +51,16 @@ describe('spells.api.get', () => {
     });
 });
 
+describe('spells.api.list', () => {
+
+    const spellAPI = new SpellAPI();
+
+    const spellList = spellAPI.list();
+
+    expect(spellList).toBeDefined();
+    expect(spellList.length).toEqual(304);
+});
+
 describe('spells.api.query', () => {
 
     const tests: {
@@ -69,7 +83,7 @@ describe('spells.api.query', () => {
                 name: 'list wizard spells',
                 query: {
                     classes: [
-                        SpellcasterClass.Wizard,
+                        ClassType.Wizard,
                     ]
                 },
                 expected: {
@@ -91,7 +105,7 @@ describe('spells.api.query', () => {
                 name: 'list wizard cantrips',
                 query: {
                     classes: [
-                        SpellcasterClass.Wizard,
+                        ClassType.Wizard,
                     ],
                     levels: [
                         0,
@@ -105,7 +119,7 @@ describe('spells.api.query', () => {
                 name: 'list wizard evocation cantrips',
                 query: {
                     classes: [
-                        SpellcasterClass.Wizard,
+                        ClassType.Wizard,
                     ],
                     levels: [
                         0,
@@ -172,4 +186,120 @@ describe('spells.api.query', () => {
             done();
         })
     });
+});
+
+describe('validation', () => {
+
+    const spellInterface = t.interface({
+        name: t.string,
+        level: t.number,
+        school: t.union([
+            t.literal('abjuration'),
+            t.literal('conjuration'),
+            t.literal('divination'),
+            t.literal('enchantment'),
+            t.literal('evocation'),
+            t.literal('illusion'),
+            t.literal('necromancy'),
+            t.literal('transmutation'),
+        ]),
+        casting_time: t.union([
+            t.literal('reaction'),
+            t.literal('bonus action'),
+            t.literal('action'),
+            t.literal('1 minute'),
+            t.literal('10 minutes'),
+            t.literal('1 hour'),
+            t.literal('8 hours'),
+            t.literal('12 hours'),
+            t.literal('24 hours'),
+        ]),
+        duration: t.union([
+            t.literal('instantaneous'),
+            t.literal('1 round'),
+            t.literal('1 minute'),
+            t.literal('10 minutes'),
+            t.literal('1 hour'),
+            t.literal('2 hours'),
+            t.literal('8 hours'),
+            t.literal('12 hours'),
+            t.literal('24 hours'),
+            t.literal('1 day'),
+            t.literal('7 days'),
+            t.literal('10 days'),
+            t.literal('30 days'),
+            t.literal('special'),
+            t.literal('until dispelled'),
+        ]),
+        range: t.union([
+            t.literal('self'),
+            t.literal('touch'),
+            t.literal('sight'),
+            t.literal('5 feet'),
+            t.literal('10 feet'),
+            t.literal('30 feet'),
+            t.literal('60 feet'),
+            t.literal('90 feet'),
+            t.literal('100 feet'),
+            t.literal('120 feet'),
+            t.literal('150 feet'),
+            t.literal('300 feet'),
+            t.literal('500 feet'),
+            t.literal('1 mile'),
+            t.literal('500 miles'),
+            t.literal('special'),
+            t.literal('unlimited'),
+        ]),
+        area: optional(t.union([
+            t.literal('10-foot radius'),
+            t.literal('15-foot radius'),
+            t.literal('30-foot radius'),
+            t.literal('5-mile radius'),
+            t.literal('15-foot cone'),
+            t.literal('30-foot cone'),
+            t.literal('60-foot cone'),
+            t.literal('15-foot cube'),
+            t.literal('60-foot line'),
+            t.literal('100-foot line'),
+        ])),
+        components: t.any,
+        description: t.array(t.string),
+        higher_levels: optional(t.array(t.string)),
+        ritual: optional(t.boolean),
+        attack: optional(t.union([
+            t.literal('melee'),
+            t.literal('ranged'),
+        ])),
+        save: optional(t.union([
+            t.literal('strength'),
+            t.literal('dexterity'),
+            t.literal('constitution'),
+            t.literal('intelligence'),
+            t.literal('wisdom'),
+            t.literal('charisma'),
+        ])),
+        concentration: optional(t.boolean),
+        reaction_trigger: optional(t.string),
+        classes: t.array(t.union([
+            t.literal('bard'),
+            t.literal('cleric'),
+            t.literal('druid'),
+            t.literal('paladin'),
+            t.literal('ranger'),
+            t.literal('sorcerer'),
+            t.literal('warlock'),
+            t.literal('wizard'),
+        ])),
+    });
+
+    const spellAPI = new SpellAPI();
+    const spellList = spellAPI.list();
+
+    spellList.forEach((spell) => {
+        it(spell.name, (done) => {
+            const result = spellInterface.decode(spell);
+            ThrowReporter.report(result);
+            done();
+        });
+    })
 });
