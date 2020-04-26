@@ -4,13 +4,15 @@ import { ClassType } from '../shared/Classes';
 import { Ability } from '../shared/Abilities';
 import { AttackType } from '../shared/Attacks';
 
-export class Query {
+export interface Query {
     name?: string;
     classes?: ClassType[];
     levels?: number[];
     schools?: School[];
     attackTypes?: AttackType[];
     saveTypes?: Ability[];
+    concentration?: boolean;
+    ritual?: boolean;
 }
 
 export default class API {
@@ -21,6 +23,8 @@ export default class API {
     private spellsBySchool = new Map<School, string[]>();
     private spellsByAttackType = new Map<AttackType, string[]>();
     private spellsBySaveType = new Map<Ability, string[]>();
+    private concentrationSpells = new Array<string>();
+    private ritualSpells = new Array<string>();
 
     constructor() {
         this.init();
@@ -37,7 +41,7 @@ export default class API {
     public query(query: Query): Spell[] {
         let spellList = new Array<Spell>();
 
-        let spellNameList = new Array<string>();
+        let spellNameList = Array.from(this.spellByName.keys());
         if (query.classes !== undefined && query.classes.length > 0) {
             let array = new Array<string>();
             query.classes.forEach((classType) => {
@@ -47,9 +51,10 @@ export default class API {
                 }
             })
             if (array.length > 0) {
-                spellNameList.push(...array);
+                spellNameList = spellNameList.filter((value) => array.includes(value));
             }
         }
+
         if (query.levels !== undefined && query.levels.length > 0) {
             let array = new Array<string>();
             query.levels.forEach((level) => {
@@ -59,11 +64,7 @@ export default class API {
                 }
             })
             if (array.length > 0) {
-                if (spellNameList.length > 0) {
-                    spellNameList = spellNameList.filter((value) => array.includes(value));
-                } else {
-                    spellNameList.push(...array);
-                }
+                spellNameList = spellNameList.filter((value) => array.includes(value));
             }
         }
         if (query.schools !== undefined) {
@@ -75,11 +76,7 @@ export default class API {
                 }
             })
             if (array.length > 0) {
-                if (spellNameList.length > 0) {
-                    spellNameList = spellNameList.filter((value) => array.includes(value));
-                } else {
-                    spellNameList.push(...array);
-                }
+                spellNameList = spellNameList.filter((value) => array.includes(value));
             }
         }
 
@@ -92,11 +89,7 @@ export default class API {
                 }
             })
             if (array.length > 0) {
-                if (spellNameList.length > 0) {
-                    spellNameList = spellNameList.filter((value) => array.includes(value));
-                } else {
-                    spellNameList.push(...array);
-                }
+                spellNameList = spellNameList.filter((value) => array.includes(value));
             }
         }
 
@@ -109,19 +102,28 @@ export default class API {
                 }
             })
             if (array.length > 0) {
-                if (spellNameList.length > 0) {
-                    spellNameList = spellNameList.filter((value) => array.includes(value));
-                } else {
-                    spellNameList.push(...array);
-                }
+                spellNameList = spellNameList.filter((value) => array.includes(value));
+            }
+        }
+
+        if (query.concentration !== undefined) {
+            if (query.concentration) {
+                spellNameList = spellNameList.filter((value) => this.concentrationSpells.includes(value));
+            } else {
+                spellNameList = spellNameList.filter((value) => !this.concentrationSpells.includes(value));
+            }
+        }
+
+        if (query.ritual !== undefined) {
+            if (query.ritual) {
+                spellNameList = spellNameList.filter((value) => this.ritualSpells.includes(value));
+            } else {
+                spellNameList = spellNameList.filter((value) => !this.ritualSpells.includes(value));
             }
         }
 
         if (query.name !== undefined && query.name !== '') {
             const regex = new RegExp(`.*${query.name}.*`, 'gmi');
-            if (spellNameList.length === 0) {
-                spellNameList = Array.from(this.spellByName.keys());
-            }
             spellNameList = spellNameList.filter((value) => value.match(regex))
         }
 
@@ -174,6 +176,14 @@ export default class API {
                     let array = this.spellsBySaveType.get(spell.save) || [];
                     array.push(key);
                     this.spellsBySaveType.set(spell.save, array)
+                }
+
+                if (spell.concentration) {
+                    this.concentrationSpells.push(key);
+                }
+
+                if (spell.ritual) {
+                    this.ritualSpells.push(key);
                 }
             });
         }

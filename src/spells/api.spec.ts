@@ -230,6 +230,55 @@ describe('spells.api.query', () => {
                     results: 48,
                 }
             },
+            {
+                name: 'concentration spells',
+                query: {
+                    concentration: true,
+                },
+                expected: {
+                    results: 122,
+                }
+            },
+            {
+                name: 'non-concentration spells',
+                query: {
+                    concentration: false,
+                },
+                expected: {
+                    results: 182,
+                }
+            },
+            {
+                name: 'ritual spells',
+                query: {
+                    ritual: true,
+                },
+                expected: {
+                    results: 25,
+                }
+            },
+            {
+                name: 'non-ritual spells',
+                query: {
+                    ritual: false,
+                },
+                expected: {
+                    results: 279,
+                }
+            },
+            {
+                name: 'paladin cantrips that require concentration',
+                query: {
+                    concentration: true,
+                    classes: [
+                        ClassType.Paladin,
+                    ],
+                    levels: [0],
+                },
+                expected: {
+                    results: 0,
+                }
+            }
         ];
 
     const spellAPI = new SpellAPI();
