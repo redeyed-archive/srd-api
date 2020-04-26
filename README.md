@@ -31,7 +31,7 @@ Query the available spells in the collection.
 
 You can state one or more of the following filters:
 
-- classes: one or more SpellcasterClass that the spells could belong to.
+- classes: one or more classType that the spells could belong to.
 - levels: one or more spell levels that the spell could have.
 - name: a string to compare to part or the whole of a name of a spell. This is case insensitive.
 - schools: one or more spell School that the spell could have.

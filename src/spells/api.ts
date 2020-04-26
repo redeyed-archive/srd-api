@@ -34,8 +34,8 @@ export default class API {
         let spellNameList = new Array<string>();
         if (query.classes !== undefined && query.classes.length > 0) {
             let array = new Array<string>();
-            query.classes.forEach((spellcasterClass) => {
-                let subArray = this.spellsByClass.get(spellcasterClass) || [];
+            query.classes.forEach((classType) => {
+                let subArray = this.spellsByClass.get(classType) || [];
                 if (subArray.length > 0) {
                     array.push(...subArray)
                 }
