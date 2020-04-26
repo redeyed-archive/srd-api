@@ -1,5 +1,5 @@
 import SpellAPI, { Query } from './api';
-import { School, Area } from '../models/Spell';
+import { School, Area, CastingTime } from '../models/Spell';
 import { ClassType } from '../shared/Classes';
 import * as io_ts from 'io-ts';
 import { ThrowReporter } from 'io-ts/lib/ThrowReporter';
@@ -277,6 +277,40 @@ describe('spells.api.query', () => {
                 },
                 expected: {
                     results: 0,
+                }
+            },
+            {
+                name: 'reaction spells',
+                query: {
+                    castingTime: [
+                        CastingTime.Reaction,
+                    ],
+                },
+                expected: {
+                    results: 4,
+                }
+            },
+            {
+                name: 'bonus action spells',
+                query: {
+                    castingTime: [
+                        CastingTime.BonusAction,
+                    ],
+                },
+                expected: {
+                    results: 14,
+                }
+            },
+            {
+                name: 'bonus action and reaction spells',
+                query: {
+                    castingTime: [
+                        CastingTime.Reaction,
+                        CastingTime.BonusAction,
+                    ],
+                },
+                expected: {
+                    results: 18,
                 }
             }
         ];

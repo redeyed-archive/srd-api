@@ -1,4 +1,4 @@
-import Spell, { School } from '../models/Spell';
+import Spell, { School, CastingTime } from '../models/Spell';
 import spellData from '../../public/spells.json';
 import { ClassType } from '../shared/Classes';
 import { Ability } from '../shared/Abilities';
@@ -13,6 +13,7 @@ export interface Query {
     saveTypes?: Ability[];
     concentration?: boolean;
     ritual?: boolean;
+    castingTime?: CastingTime[];
 }
 
 export default class API {
@@ -25,6 +26,7 @@ export default class API {
     private spellsBySaveType = new Map<Ability, string[]>();
     private concentrationSpells = new Array<string>();
     private ritualSpells = new Array<string>();
+    private spellsByCastingTime = new Map<CastingTime, string[]>();
 
     constructor() {
         this.init();
@@ -122,6 +124,19 @@ export default class API {
             }
         }
 
+        if (query.castingTime !== undefined && query.castingTime.length > 0) {
+            let array = new Array<string>();
+            query.castingTime.forEach((castingTime) => {
+                let subArray = this.spellsByCastingTime.get(castingTime) || [];
+                if (subArray.length > 0) {
+                    array.push(...subArray)
+                }
+            })
+            if (array.length > 0) {
+                spellNameList = spellNameList.filter((value) => array.includes(value));
+            }
+        }
+
         if (query.name !== undefined && query.name !== '') {
             const regex = new RegExp(`.*${query.name}.*`, 'gmi');
             spellNameList = spellNameList.filter((value) => value.match(regex))
@@ -185,6 +200,10 @@ export default class API {
                 if (spell.ritual) {
                     this.ritualSpells.push(key);
                 }
+
+                let castingTimeArray = this.spellsByCastingTime.get(spell.casting_time) || [];
+                castingTimeArray.push(key);
+                this.spellsByCastingTime.set(spell.casting_time, castingTimeArray);
             });
         }
     }
