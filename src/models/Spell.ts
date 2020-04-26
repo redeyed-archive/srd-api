@@ -73,17 +73,18 @@ export enum Range {
     Unlimited = 'unlimited',
 }
 
-export enum Area {
-    Radius10Foot = '10-foot radius',
-    Radius15Foot = '15-foot radius',
-    Radius30Foot = '30-foot radius',
-    Radius5Mile = '5-mile radius',
-    Cone15Foot = '15-foot cone',
-    Cone30Foot = '30-foot cone',
-    Cone60Foot = '60-foot cone',
-    Cube15Foot = '15-foot cube',
-    Line60Foot = '60-foot line',
-    Line100Foot = '100-foot line',
+export enum AreaShape {
+    Cone = 'cone',
+    Cube = 'cube',
+    Cylinder = 'cylinder',
+    Line = 'line',
+    Sphere = 'sphere',
+}
+
+export interface Area {
+    shape: AreaShape;
+    size: number;
+    unit: 'feet' | 'miles';
 }
 
 export default interface Spell {

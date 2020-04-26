@@ -249,7 +249,11 @@
         "casting_time": "action",
         "duration": "1 hour",
         "range": "self",
-        "area": "10-foot radius",
+        "area": {
+            "shape": "sphere",
+            "size": 10,
+            "unit": "feet"
+        },
         "components": {
             "verbal": true,
             "somatic": true
@@ -272,7 +276,11 @@
         "casting_time": "action",
         "duration": "1 hour",
         "range": "self",
-        "area": "10-foot radius",
+        "area": {
+            "shape": "sphere",
+            "size": 10,
+            "unit": "feet"
+        },
         "components": {
             "verbal": true,
             "somatic": true,
@@ -777,7 +785,11 @@
         "casting_time": "action",
         "duration": "instantaneous",
         "range": "self",
-        "area": "15-foot cone",
+        "area": {
+            "shape": "cone",
+            "size": 15,
+            "unit": "feet"
+        },
         "components": {
             "verbal": true,
             "somatic": true
@@ -1048,7 +1060,11 @@
         "casting_time": "action",
         "duration": "1 round",
         "range": "self",
-        "area": "15-foot cone",
+        "area": {
+            "shape": "cone",
+            "size": 15,
+            "unit": "feet"
+        },
         "components": {
             "verbal": true,
             "somatic": true,
@@ -1208,7 +1224,11 @@
         "casting_time": "action",
         "duration": "instantaneous",
         "range": "self",
-        "area": "60-foot cone",
+        "area": {
+            "shape": "cone",
+            "size": 60,
+            "unit": "feet"
+        },
         "components": {
             "verbal": true,
             "somatic": true,
@@ -1578,7 +1598,11 @@
         "casting_time": "10 minutes",
         "duration": "8 hours",
         "range": "self",
-        "area": "5-mile radius",
+        "area": {
+            "shape": "sphere",
+            "size": 5,
+            "unit": "miles"
+        },
         "components": {
             "verbal": true,
             "somatic": true,
@@ -2721,7 +2745,11 @@
         "casting_time": "action",
         "duration": "1 minute",
         "range": "self",
-        "area": "30-foot cone",
+        "area": {
+            "shape": "cone",
+            "size": 30,
+            "unit": "feet"
+        },
         "components": {
             "verbal": true,
             "somatic": true,
@@ -3482,7 +3510,11 @@
         "casting_time": "action",
         "duration": "1 minute",
         "range": "self",
-        "area": "10-foot radius",
+        "area": {
+            "shape": "sphere",
+            "size": 10,
+            "unit": "feet"
+        },
         "components": {
             "verbal": true,
             "somatic": true,
@@ -3748,7 +3780,11 @@
         "casting_time": "action",
         "duration": "1 minute",
         "range": "self",
-        "area": "60-foot line",
+        "area": {
+            "shape": "line",
+            "size": 60,
+            "unit": "feet"
+        },
         "components": {
             "verbal": true,
             "somatic": true,
@@ -4575,7 +4611,11 @@
         "casting_time": "action",
         "duration": "instantaneous",
         "range": "self",
-        "area": "100-foot line",
+        "area": {
+            "shape": "line",
+            "size": 100,
+            "unit": "feet"
+        },
         "components": {
             "verbal": true,
             "somatic": true,
@@ -5837,7 +5877,11 @@
         "casting_time": "action",
         "duration": "instantaneous",
         "range": "self",
-        "area": "60-foot cone",
+        "area": {
+            "shape": "cone",
+            "size": 60,
+            "unit": "feet"
+        },
         "components": {
             "verbal": true,
             "somatic": true
@@ -6961,7 +7005,11 @@
         "casting_time": "action",
         "duration": "10 minutes",
         "range": "self",
-        "area": "30-foot radius",
+        "area": {
+            "shape": "sphere",
+            "size": 30,
+            "unit": "feet"
+        },
         "components": {
             "verbal": true,
             "somatic": true
@@ -7040,7 +7088,11 @@
         "casting_time": "action",
         "duration": "10 minutes",
         "range": "self",
-        "area": "15-foot radius",
+        "area": {
+            "shape": "sphere",
+            "size": 15,
+            "unit": "feet"
+        },
         "components": {
             "verbal": true,
             "somatic": true,
@@ -7233,7 +7285,11 @@
         "casting_time": "action",
         "duration": "1 minute",
         "range": "self",
-        "area": "60-foot line",
+        "area": {
+            "shape": "line",
+            "size": 60,
+            "unit": "feet"
+        },
         "components": {
             "verbal": true,
             "somatic": true,
@@ -7432,7 +7488,11 @@
         "casting_time": "action",
         "duration": "instantaneous",
         "range": "self",
-        "area": "15-foot cube",
+        "area": {
+            "shape": "cube",
+            "size": 15,
+            "unit": "feet"
+        },
         "components": {
             "verbal": true,
             "somatic": true
