@@ -5,15 +5,20 @@ import { Ability } from '../shared/Abilities';
 import { AttackType } from '../shared/Attacks';
 
 export interface Query {
-    name?: string;
-    classes?: ClassType[];
-    levels?: number[];
-    schools?: School[];
     attackTypes?: AttackType[];
-    saveTypes?: Ability[];
-    concentration?: boolean;
-    ritual?: boolean;
     castingTime?: CastingTime[];
+    classes?: ClassType[];
+    components?: {
+        material?: boolean;
+        somatic?: boolean;
+        verbal?: boolean;
+    },
+    concentration?: boolean;
+    levels?: number[];
+    name?: string;
+    ritual?: boolean;
+    saveTypes?: Ability[];
+    schools?: School[];
 }
 
 export default class API {
@@ -27,6 +32,9 @@ export default class API {
     private concentrationSpells = new Array<string>();
     private ritualSpells = new Array<string>();
     private spellsByCastingTime = new Map<CastingTime, string[]>();
+    private materialSpells = new Array<string>();
+    private somaticSpells = new Array<string>();
+    private verbalSpells = new Array<string>();
 
     constructor() {
         this.init();
@@ -142,6 +150,33 @@ export default class API {
             spellNameList = spellNameList.filter((value) => value.match(regex))
         }
 
+        if (query.components !== undefined) {
+
+            if (query.components.material !== undefined) {
+                if (query.components.material) {
+                    spellNameList = spellNameList.filter((value) => this.materialSpells.includes(value));
+                } else {
+                    spellNameList = spellNameList.filter((value) => !this.materialSpells.includes(value));
+                }
+            }
+
+            if (query.components.somatic !== undefined) {
+                if (query.components.somatic) {
+                    spellNameList = spellNameList.filter((value) => this.somaticSpells.includes(value));
+                } else {
+                    spellNameList = spellNameList.filter((value) => !this.somaticSpells.includes(value));
+                }
+            }
+
+            if (query.components.verbal !== undefined) {
+                if (query.components.verbal) {
+                    spellNameList = spellNameList.filter((value) => this.verbalSpells.includes(value));
+                } else {
+                    spellNameList = spellNameList.filter((value) => !this.verbalSpells.includes(value));
+                }
+            }
+        }
+
         spellNameList.forEach((spellName) => {
             const spell = this.spellByName.get(spellName);
             if (spell !== undefined) {
@@ -199,6 +234,18 @@ export default class API {
 
                 if (spell.ritual) {
                     this.ritualSpells.push(key);
+                }
+
+                if (spell.components.material !== undefined) {
+                    this.materialSpells.push(key);
+                }
+
+                if (spell.components.somatic) {
+                    this.somaticSpells.push(key);
+                }
+
+                if (spell.components.verbal) {
+                    this.verbalSpells.push(key);
                 }
 
                 let castingTimeArray = this.spellsByCastingTime.get(spell.casting_time) || [];

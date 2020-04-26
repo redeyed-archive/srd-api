@@ -312,6 +312,77 @@ describe('spells.api.query', () => {
                 expected: {
                     results: 18,
                 }
+            },
+            {
+                name: 'spells with verbal components',
+                query: {
+                    components: {
+                        verbal: true,
+                    }
+                },
+                expected: {
+                    results: 297,
+                }
+            },
+            {
+                name: 'spells with ONLY verbal components',
+                query: {
+                    components: {
+                        material: false,
+                        somatic: false,
+                        verbal: true,
+                    }
+                },
+                expected: {
+                    results: 26,
+                }
+            },
+            {
+                name: 'spells without verbal components',
+                query: {
+                    components: {
+                        verbal: false,
+                    }
+                },
+                expected: {
+                    results: 7,
+                }
+            },
+            {
+                name: 'spells without material components',
+                query: {
+                    components: {
+                        material: false,
+                    }
+                },
+                expected: {
+                    results: 135,
+                }
+            },
+            {
+                name: 'spells with verbal and material components',
+                query: {
+                    components: {
+                        material: true,
+                        verbal: true,
+                    }
+                },
+                expected: {
+                    results: 166,
+                }
+            },
+            {
+                name: 'spells with ONLY verbal and material components',
+                query: {
+                    components: {
+                        material: true,
+                        somatic: false,
+                        verbal: true,
+                    }
+                },
+                expected: {
+                    results: 7,
+                }
             }
         ];
 

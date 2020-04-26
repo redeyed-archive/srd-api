@@ -31,9 +31,15 @@ Query the available spells in the collection.
 
 You can state one or more of the following filters:
 
-- classes: one or more classType that the spells could belong to.
+- attackTypes: one or more AttackType that the spell may use.
+- castingTime: one or more CastingTime that the spell may use.
+- classes: one or more ClassType that the spells could belong to.
+- components: state the components the spell uses, verbal, somatic, and material.
+- concentration: state if the spell would require concentration or not.
 - levels: one or more spell levels that the spell could have.
 - name: a string to compare to part or the whole of a name of a spell. This is case insensitive.
+- ritual: state if the spell can be cast as a ritual or not.
+- saveTypes: one or more Ability that the spell may force a saving through on.
 - schools: one or more spell School that the spell could have.
 for example, you can request all cantrips (level 0) for Wizards and Warlocks, and all the spells returned will have level 0 and the wizard and/or warlock values in classes
 
