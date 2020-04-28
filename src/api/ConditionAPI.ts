@@ -1,4 +1,4 @@
-import Condition, { ConditionType } from '../models/Conditions';
+import Condition, { ConditionType } from '../models/Condition';
 import conditionData from '../../public/conditions.json';
 
 export default class ConditionAPI {

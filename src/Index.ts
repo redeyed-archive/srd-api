@@ -1,7 +1,7 @@
 import SpellAPI, { Query as SpellQuery } from './api/SpellAPI';
 import ConditionAPI from './api/ConditionAPI';
 import Spell from './models/Spell';
-import Condition, { ConditionType } from './models/Conditions';
+import Condition, { ConditionType } from './models/Condition';
 
 export {
     SpellAPI,

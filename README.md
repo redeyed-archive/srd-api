@@ -46,7 +46,7 @@ You can state one or more of the following filters:
 - concentration: state if the spells would require concentration or not.
 - conditions: one or more ConditionType that the spells is associated with.
 - damageTypes: one or more DamageType that the spells could cause.
-- durations?: one or more Duration that the spells could be maintained for.
+- durations: one or more Duration that the spells could be maintained for.
 - levels: one or more spell levels that the spells could have.
 - name: a string to compare to part or the whole of a name of a spell. This is case insensitive.
 - ritual: state if the spells can be cast as a ritual or not.
@@ -54,9 +54,25 @@ You can state one or more of the following filters:
 - schools: one or more spell School that the spells could have.
 for example, you can request all cantrips (level 0) for Wizards and Warlocks, and all the spells returned will have level 0 and the wizard and/or warlock values in classes
 
-### Spell
+### Spell
 
 The `Spell` object returned by the `SpellAPI` is detailed further [here](docs/Spell.md)
+
+## ConditionAPI
+
+You can access the ConditionAPI functions using the default client `srdClient.conditions` or by creating a new instance of the ConditionAPI `const conditionAPI = new ConditionAPI();`
+
+The following functions are available in the ConditionAPI
+
+### get
+Gets the named condition.
+
+### list
+Gets all the available conditions in the collection.
+
+### Condition
+
+The `Condition` object returned by the `ConditionAPI` is detailed further [here](docs/Condition.md)
 
 # Licence
 

@@ -3,7 +3,7 @@ import { Ability } from '../shared/Abilities';
 import { AttackType } from '../shared/Attacks';
 import { DamageType } from '../shared/DamageType';
 import { Description } from '../shared/Description';
-import { ConditionType } from './Conditions';
+import { ConditionType } from './Condition';
 
 export enum Duration {
     Instantaneous = 'instantaneous',

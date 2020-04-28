@@ -4,7 +4,7 @@ import { ClassType } from '../shared/Classes';
 import { Ability } from '../shared/Abilities';
 import { AttackType } from '../shared/Attacks';
 import { DamageType } from '../shared/DamageType';
-import { ConditionType } from '../models/Conditions';
+import { ConditionType } from '../models/Condition';
 
 export interface Query {
     attackTypes?: AttackType[];

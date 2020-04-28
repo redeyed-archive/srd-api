@@ -1,5 +1,5 @@
 import ConditionAPI from './ConditionAPI';
-import { ConditionType } from '../models/Conditions';
+import { ConditionType } from '../models/Condition';
 import * as io_ts from 'io-ts';
 import { optional, descriptionInterface, conditionUnion } from '../../lib/test';
 import { ThrowReporter } from 'io-ts/lib/ThrowReporter';

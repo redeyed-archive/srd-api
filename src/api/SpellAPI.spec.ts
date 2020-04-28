@@ -7,7 +7,7 @@ import { optional, descriptionInterface, conditionUnion } from '../../lib/test';
 import { AttackType } from '../shared/Attacks';
 import { Ability } from '../shared/Abilities';
 import { DamageType } from '../shared/DamageType';
-import { ConditionType } from '../models/Conditions';
+import { ConditionType } from '../models/Condition';
 
 describe('spells.get', () => {
 
