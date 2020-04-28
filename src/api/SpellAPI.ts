@@ -1,4 +1,4 @@
-import Spell, { School, CastingTime } from '../models/Spell';
+import Spell, { School, CastingTime, Duration } from '../models/Spell';
 import spellData from '../../public/spells.json';
 import { ClassType } from '../shared/Classes';
 import { Ability } from '../shared/Abilities';
@@ -23,6 +23,7 @@ export interface Query {
     saveTypes?: Ability[];
     schools?: School[];
     conditions?: ConditionType[];
+    durations?: Duration[];
 }
 
 export default class SpellAPI {
@@ -41,6 +42,7 @@ export default class SpellAPI {
     private verbalSpells = new Array<string>();
     private spellsByDamageType = new Map<DamageType, string[]>();
     private spellsByConditionType = new Map<ConditionType, string[]>();
+    private spellsByDuration = new Map<Duration, string[]>();
 
     constructor() {
         this.init();
@@ -209,6 +211,19 @@ export default class SpellAPI {
             }
         }
 
+        if (query.durations !== undefined && query.durations.length > 0) {
+            let array = new Array<string>();
+            query.durations.forEach((duration) => {
+                let subArray = this.spellsByDuration.get(duration) || [];
+                if (subArray.length > 0) {
+                    array.push(...subArray)
+                }
+            })
+            if (array.length > 0) {
+                spellNameList = spellNameList.filter((value) => array.includes(value));
+            }
+        }
+
         spellNameList.forEach((spellName) => {
             const spell = this.spellByName.get(spellName);
             if (spell !== undefined) {
@@ -226,27 +241,18 @@ export default class SpellAPI {
                 this.spellByName.set(key, spell);
 
                 spell.classes.forEach((spellcaster) => {
-                    let classArray = this.spellsByClass.get(spellcaster);
-                    if (classArray === undefined) {
-                        classArray = new Array<string>();
-                        this.spellsByClass.set(spellcaster, classArray);
-                    }
+                    let classArray = this.spellsByClass.get(spellcaster) || [];
                     classArray.push(key);
+                    this.spellsByClass.set(spellcaster, classArray);
                 });
 
-                let levelArray = this.spellsByLevel.get(spell.level);
-                if (levelArray === undefined) {
-                    levelArray = new Array<string>();
-                    this.spellsByLevel.set(spell.level, levelArray);
-                }
+                let levelArray = this.spellsByLevel.get(spell.level) || [];
                 levelArray.push(key);
+                this.spellsByLevel.set(spell.level, levelArray);
 
-                let schoolArray = this.spellsBySchool.get(spell.school);
-                if (schoolArray === undefined) {
-                    schoolArray = new Array<string>();
-                    this.spellsBySchool.set(spell.school, schoolArray);
-                }
+                let schoolArray = this.spellsBySchool.get(spell.school) || [];
                 schoolArray.push(key);
+                this.spellsBySchool.set(spell.school, schoolArray);
 
                 if (spell.attack !== undefined) {
                     let array = this.spellsByAttackType.get(spell.attack) || [];
@@ -280,22 +286,21 @@ export default class SpellAPI {
                     this.verbalSpells.push(key);
                 }
 
-                if (spell.damageType !== undefined && spell.damageType.length > 0) {
-                    spell.damageType.forEach((damageType) => {
-                        let array = this.spellsByDamageType.get(damageType) || [];
-                        array.push(key);
-                        this.spellsByDamageType.set(damageType, array)
-                    });
-                }
+                spell.damageType?.forEach((damageType) => {
+                    let array = this.spellsByDamageType.get(damageType) || [];
+                    array.push(key);
+                    this.spellsByDamageType.set(damageType, array)
+                });
 
                 spell.conditions?.forEach((condition) => {
-                    let array = this.spellsByConditionType.get(condition);
-                    if (array === undefined) {
-                        array = new Array<string>();
-                        this.spellsByConditionType.set(condition, array);
-                    }
+                    let array = this.spellsByConditionType.get(condition) || [];
                     array.push(key);
+                    this.spellsByConditionType.set(condition, array);
                 });
+
+                const durationArray = this.spellsByDuration.get(spell.duration) || [];
+                durationArray.push(key);
+                this.spellsByDuration.set(spell.duration, durationArray);
 
                 let castingTimeArray = this.spellsByCastingTime.get(spell.castingTime) || [];
                 castingTimeArray.push(key);

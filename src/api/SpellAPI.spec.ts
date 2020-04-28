@@ -1,5 +1,5 @@
 import SpellAPI, { Query } from './SpellAPI';
-import Spell, { School, Area, CastingTime } from '../models/Spell';
+import Spell, { School, Area, CastingTime, Duration } from '../models/Spell';
 import { ClassType } from '../shared/Classes';
 import * as io_ts from 'io-ts';
 import { ThrowReporter } from 'io-ts/lib/ThrowReporter';
@@ -452,6 +452,29 @@ describe('spells.query', () => {
                 },
                 expected: {
                     results: 28,
+                }
+            },
+            {
+                name: '8 hour spells',
+                query: {
+                    durations: [
+                        Duration.Hours8,
+                    ]
+                },
+                expected: {
+                    results: 15,
+                }
+            },
+            {
+                name: '8 or 24 hours spells',
+                query: {
+                    durations: [
+                        Duration.Hours8,
+                        Duration.Hours24,
+                    ]
+                },
+                expected: {
+                    results: 24,
                 }
             }
         ];
