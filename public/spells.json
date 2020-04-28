@@ -139,7 +139,10 @@
             "ranger"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "charmed"
+        ]
     },
     {
         "name": "Animal Messenger",
@@ -191,7 +194,10 @@
         "classes": [
             "druid"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "unconscious"
+        ]
     },
     {
         "name": "Animate Dead",
@@ -374,7 +380,10 @@
             "cleric",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "invisible"
+        ]
     },
     {
         "name": "Antipathy/Sympathy",
@@ -405,7 +414,10 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "frightened"
+        ]
     },
     {
         "name": "Arcane Eye",
@@ -431,7 +443,10 @@
         "classes": [
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "invisible"
+        ]
     },
     {
         "name": "Arcane Lock",
@@ -487,7 +502,10 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "unconscious"
+        ]
     },
     {
         "name": "Augury",
@@ -548,7 +566,10 @@
             "druid"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "charmed"
+        ]
     },
     {
         "name": "Bane",
@@ -611,7 +632,10 @@
             "warlock",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "incapacitated"
+        ]
     },
     {
         "name": "Barkskin",
@@ -807,7 +831,11 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "blinded",
+            "deafened"
+        ]
     },
     {
         "name": "Blink",
@@ -874,7 +902,10 @@
         "classes": [
             "paladin"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "invisible"
+        ]
     },
     {
         "name": "Burning Hands",
@@ -966,7 +997,11 @@
             "bard",
             "cleric"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "charmed",
+            "frightened"
+        ]
     },
     {
         "name": "Chain Lightning",
@@ -1027,7 +1062,10 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "charmed"
+        ]
     },
     {
         "name": "Chill Touch",
@@ -1117,7 +1155,10 @@
             "sorcerer",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "invisible"
+        ]
     },
     {
         "name": "Clone",
@@ -1206,7 +1247,11 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "blinded",
+            "unconscious"
+        ]
     },
     {
         "name": "Command",
@@ -1236,7 +1281,10 @@
             "paladin"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "prone"
+        ]
     },
     {
         "name": "Commune",
@@ -1345,7 +1393,10 @@
         "classes": [
             "bard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "charmed"
+        ]
     },
     {
         "name": "Cone of Cold",
@@ -1691,7 +1742,12 @@
             "druid"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "blinded",
+            "poisoned",
+            "stunned"
+        ]
     },
     {
         "name": "Contingency",
@@ -2508,7 +2564,11 @@
             "cleric",
             "paladin"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "charmed",
+            "frightened"
+        ]
     },
     {
         "name": "Dispel Magic",
@@ -2644,7 +2704,10 @@
             "druid",
             "sorcerer"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "charmed"
+        ]
     },
     {
         "name": "Dominate Monster",
@@ -2674,7 +2737,10 @@
             "warlock",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "charmed"
+        ]
     },
     {
         "name": "Dominate Person",
@@ -2703,7 +2769,10 @@
             "sorcerer",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "charmed"
+        ]
     },
     {
         "name": "Dream",
@@ -2800,7 +2869,10 @@
             "druid",
             "sorcerer"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "prone"
+        ]
     },
     {
         "name": "Eldritch Blast",
@@ -2861,7 +2933,10 @@
             "druid",
             "sorcerer"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "incapacitated"
+        ]
     },
     {
         "name": "Enlarge/Reduce",
@@ -2913,7 +2988,10 @@
         "classes": [
             "druid"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "restrained"
+        ]
     },
     {
         "name": "Enthrall",
@@ -2935,7 +3013,11 @@
             "warlock"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "charmed",
+            "incapacitated"
+        ]
     },
     {
         "name": "Etherealness",
@@ -3018,7 +3100,11 @@
             "warlock",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "frightened",
+            "unconscious"
+        ]
     },
     {
         "name": "Fabricate",
@@ -3062,7 +3148,10 @@
             "bard",
             "druid"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "invisible"
+        ]
     },
     {
         "name": "False Life",
@@ -3124,7 +3213,10 @@
             "warlock",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "frightened"
+        ]
     },
     {
         "name": "Feather Fall",
@@ -3559,7 +3651,11 @@
             "warlock",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "petrified",
+            "restrained"
+        ]
     },
     {
         "name": "Fly",
@@ -3677,7 +3773,10 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "invisible"
+        ]
     },
     {
         "name": "Foresight",
@@ -3733,7 +3832,12 @@
             "ranger"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "grappled",
+            "paralyzed",
+            "restrained"
+        ]
     },
     {
         "name": "Gaseous Form",
@@ -3761,7 +3865,11 @@
             "warlock",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "incapacitated",
+            "stunned"
+        ]
     },
     {
         "name": "Gate",
@@ -3822,7 +3930,10 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "charmed"
+        ]
     },
     {
         "name": "Gentle Repose",
@@ -3967,7 +4078,10 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "invisible"
+        ]
     },
     {
         "name": "Goodberry",
@@ -4019,7 +4133,10 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "prone"
+        ]
     },
     {
         "name": "Greater Invisibility",
@@ -4041,7 +4158,10 @@
             "sorcerer",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "invisible"
+        ]
     },
     {
         "name": "Greater Restoration",
@@ -4076,7 +4196,10 @@
             "druid"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "exhaustion"
+        ]
     },
     {
         "name": "Guardian of Faith",
@@ -4263,7 +4386,11 @@
             "cleric"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "charmed",
+            "frightened"
+        ]
     },
     {
         "name": "Hallucinatory Terrain",
@@ -4477,7 +4604,10 @@
             "druid"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "frightened"
+        ]
     },
     {
         "name": "Heroism",
@@ -4501,7 +4631,10 @@
             "bard",
             "paladin"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "frightened"
+        ]
     },
     {
         "name": "Hold Monster",
@@ -4532,7 +4665,10 @@
             "warlock",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "paralyzed"
+        ]
     },
     {
         "name": "Hold Person",
@@ -4565,7 +4701,10 @@
             "warlock",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "paralyzed"
+        ]
     },
     {
         "name": "Holy Aura",
@@ -4590,7 +4729,10 @@
         "classes": [
             "cleric"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "blinded"
+        ]
     },
     {
         "name": "Hunter’s Mark",
@@ -4640,7 +4782,11 @@
             "warlock",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "charmed",
+            "incapacitated"
+        ]
     },
     {
         "name": "Ice Storm",
@@ -4768,7 +4914,10 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "restrained"
+        ]
     },
     {
         "name": "Incendiary Cloud",
@@ -4886,7 +5035,10 @@
             "warlock",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "invisible"
+        ]
     },
     {
         "name": "Jump",
@@ -4988,7 +5140,13 @@
             "ranger"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "blinded",
+            "deafened",
+            "paralyzed",
+            "poisoned"
+        ]
     },
     {
         "name": "Levitate",
@@ -5477,7 +5635,11 @@
             "cleric"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "blinded",
+            "deafened"
+        ]
     },
     {
         "name": "Mass Healing Word",
@@ -5532,7 +5694,10 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "charmed"
+        ]
     },
     {
         "name": "Maze",
@@ -5580,7 +5745,10 @@
             "cleric",
             "druid"
         ],
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "prone"
+        ]
     },
     {
         "name": "Mending",
@@ -5684,7 +5852,10 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "charmed"
+        ]
     },
     {
         "name": "Minor Illusion",
@@ -5786,7 +5957,12 @@
             "bard",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "blinded",
+            "deafened",
+            "invisible"
+        ]
     },
     {
         "name": "Misty Step",
@@ -5836,7 +6012,11 @@
             "bard",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "charmed",
+            "incapacitated"
+        ]
     },
     {
         "name": "Moonbeam",
@@ -5978,7 +6158,10 @@
             "bard",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "charmed"
+        ]
     },
     {
         "name": "Pass without Trace",
@@ -6055,7 +6238,10 @@
         "classes": [
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "frightened"
+        ]
     },
     {
         "name": "Phantom Steed",
@@ -6250,7 +6436,10 @@
             "sorcerer",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "unconscious"
+        ]
     },
     {
         "name": "Power Word Kill",
@@ -6296,7 +6485,10 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "stunned"
+        ]
     },
     {
         "name": "Prayer of Healing",
@@ -6394,7 +6586,12 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "blinded",
+            "petrified",
+            "restrained"
+        ]
     },
     {
         "name": "Prismatic Wall",
@@ -6431,7 +6628,12 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "blinded",
+            "petrified",
+            "restrained"
+        ]
     },
     {
         "name": "Produce Flame",
@@ -6513,7 +6715,11 @@
             "bard",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "blinded",
+            "deafened"
+        ]
     },
     {
         "name": "Protection from Energy",
@@ -6565,7 +6771,11 @@
             "warlock",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "charmed",
+            "frightened"
+        ]
     },
     {
         "name": "Protection from Poison",
@@ -6589,7 +6799,10 @@
             "ranger"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "poisoned"
+        ]
     },
     {
         "name": "Purify Food and Drink",
@@ -6965,7 +7178,10 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "invisible"
+        ]
     },
     {
         "name": "Sacred Flame",
@@ -7114,7 +7330,10 @@
             "warlock",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "invisible"
+        ]
     },
     {
         "name": "See Invisibility",
@@ -7140,7 +7359,10 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "invisible"
+        ]
     },
     {
         "name": "Seeming",
@@ -7219,7 +7441,10 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "invisible"
+        ]
     },
     {
         "name": "Shapechange",
@@ -7249,7 +7474,10 @@
             "druid",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "unconscious"
+        ]
     },
     {
         "name": "Shatter",
@@ -7306,7 +7534,10 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "invisible"
+        ]
     },
     {
         "name": "Shield of Faith",
@@ -7403,6 +7634,9 @@
             "bard",
             "cleric",
             "ranger"
+        ],
+        "conditions": [
+            "deafened"
         ]
     },
     {
@@ -7489,7 +7723,11 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "charmed",
+            "unconscious"
+        ]
     },
     {
         "name": "Sleet Storm",
@@ -7517,7 +7755,10 @@
             "sorcerer",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "prone"
+        ]
     },
     {
         "name": "Slow",
@@ -7645,7 +7886,10 @@
             "ranger"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "restrained"
+        ]
     },
     {
         "name": "Spider Climb",
@@ -7880,7 +8124,10 @@
         "classes": [
             "druid"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "deafened"
+        ]
     },
     {
         "name": "Suggestion",
@@ -7910,7 +8157,10 @@
             "warlock",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "charmed"
+        ]
     },
     {
         "name": "Sunbeam",
@@ -7947,7 +8197,10 @@
             "sorcerer",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "blinded"
+        ]
     },
     {
         "name": "Sunburst",
@@ -7979,7 +8232,10 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "blinded"
+        ]
     },
     {
         "name": "Symbol",
@@ -8020,7 +8276,14 @@
             "wizard"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "frightened",
+            "incapacitated",
+            "invisible",
+            "stunned",
+            "unconscious"
+        ]
     },
     {
         "name": "Telekinesis",
@@ -8046,7 +8309,10 @@
             "sorcerer",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "restrained"
+        ]
     },
     {
         "name": "Teleport",
@@ -8358,7 +8624,10 @@
             "warlock",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "unconscious"
+        ]
     },
     {
         "name": "True Resurrection",
@@ -8463,7 +8732,10 @@
             "warlock",
             "wizard"
         ],
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "invisible"
+        ]
     },
     {
         "name": "Vampiric Touch",
@@ -8575,7 +8847,10 @@
         "classes": [
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "invisible"
+        ]
     },
     {
         "name": "Wall of Ice",
@@ -8785,7 +9060,10 @@
             "sorcerer",
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "restrained"
+        ]
     },
     {
         "name": "Weird",
@@ -8809,7 +9087,10 @@
         "classes": [
             "wizard"
         ],
-        "ritual": false
+        "ritual": false,
+        "conditions": [
+            "frightened"
+        ]
     },
     {
         "name": "Wind Walk",
@@ -8834,7 +9115,10 @@
             "druid"
         ],
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "conditions": [
+            "incapacitated"
+        ]
     },
     {
         "name": "Wind Wall",

@@ -1,21 +1,21 @@
 import { Description } from '../shared/Description';
 
 export enum ConditionType {
-    Blinded = 'Blinded',
-    Charmed = 'Charmed',
-    Deafened = 'Deafened',
-    Exhaustion = 'Exhaustion',
-    Frightened = 'Frightened',
-    Grappled = 'Grappled',
-    Incapacitated = 'Incapacitated',
-    Invisible = 'Invisible',
-    Paralyzed = 'Paralyzed',
-    Petrified = 'Petrified',
-    Poisoned = 'Poisoned',
-    Prone = 'Prone',
-    Restrained = 'Restrained',
-    Stunned = 'Stunned',
-    Unconscious = 'Unconscious',
+    Blinded = 'blinded',
+    Charmed = 'charmed',
+    Deafened = 'deafened',
+    Exhaustion = 'exhaustion',
+    Frightened = 'frightened',
+    Grappled = 'grappled',
+    Incapacitated = 'incapacitated',
+    Invisible = 'invisible',
+    Paralyzed = 'paralyzed',
+    Petrified = 'petrified',
+    Poisoned = 'poisoned',
+    Prone = 'prone',
+    Restrained = 'restrained',
+    Stunned = 'stunned',
+    Unconscious = 'unconscious',
 }
 
 export default interface Condition {

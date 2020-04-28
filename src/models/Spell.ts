@@ -3,6 +3,7 @@ import { Ability } from '../shared/Abilities';
 import { AttackType } from '../shared/Attacks';
 import { DamageType } from '../shared/DamageType';
 import { Description } from '../shared/Description';
+import { ConditionType } from './Conditions';
 
 export enum Duration {
     Instantaneous = 'instantaneous',
@@ -107,4 +108,5 @@ export default interface Spell {
     concentration: boolean;
     reactionTrigger?: string;
     classes: ClassType[];
+    conditions?: ConditionType[];
 }

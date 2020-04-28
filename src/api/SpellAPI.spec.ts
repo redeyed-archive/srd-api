@@ -1,9 +1,9 @@
 import SpellAPI, { Query } from './SpellAPI';
-import { School, Area, CastingTime } from '../models/Spell';
+import Spell, { School, Area, CastingTime } from '../models/Spell';
 import { ClassType } from '../shared/Classes';
 import * as io_ts from 'io-ts';
 import { ThrowReporter } from 'io-ts/lib/ThrowReporter';
-import { optional, descriptionInterface } from '../../lib/test';
+import { optional, descriptionInterface, conditionUnion } from '../../lib/test';
 import { AttackType } from '../shared/Attacks';
 import { Ability } from '../shared/Abilities';
 import { DamageType } from '../shared/DamageType';
@@ -570,6 +570,7 @@ describe('validation', () => {
             io_ts.literal('warlock'),
             io_ts.literal('wizard'),
         ])),
+        conditions: optional(io_ts.array(conditionUnion)),
     });
 
     const spellAPI = new SpellAPI();

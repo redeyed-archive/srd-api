@@ -1,6 +1,6 @@
 [
     {
-        "name": "Blinded",
+        "name": "blinded",
         "description": [
             {
                 "type": "list",
@@ -12,7 +12,7 @@
         ]
     },
     {
-        "name": "Charmed",
+        "name": "charmed",
         "description": [
             {
                 "type": "list",
@@ -24,7 +24,7 @@
         ]
     },
     {
-        "name": "Deafened",
+        "name": "deafened",
         "description": [
             {
                 "type": "list",
@@ -35,7 +35,7 @@
         ]
     },
     {
-        "name": "Exhaustion",
+        "name": "exhaustion",
         "description": [
             "Some special abilities and environmental hazards, such as starvation and the long-term effects of freezing or scorching temperatures, can lead to a special condition called exhaustion. Exhaustion is measured in six levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect's description.",
             {
@@ -78,7 +78,7 @@
         ]
     },
     {
-        "name": "Frightened",
+        "name": "frightened",
         "description": [
             {
                 "type": "list",
@@ -90,7 +90,7 @@
         ]
     },
     {
-        "name": "Grappled",
+        "name": "grappled",
         "description": [
             {
                 "type": "list",
@@ -102,11 +102,11 @@
             }
         ],
         "linkedConditions": [
-            "Incapacitated"
+            "incapacitated"
         ]
     },
     {
-        "name": "Incapacitated",
+        "name": "incapacitated",
         "description": [
             {
                 "type": "list",
@@ -117,7 +117,7 @@
         ]
     },
     {
-        "name": "Invisible",
+        "name": "invisible",
         "description": [
             {
                 "type": "list",
@@ -129,7 +129,7 @@
         ]
     },
     {
-        "name": "Paralyzed",
+        "name": "paralyzed",
         "description": [
             {
                 "type": "list",
@@ -141,11 +141,11 @@
             }
         ],
         "linkedConditions": [
-            "Incapacitated"
+            "incapacitated"
         ]
     },
     {
-        "name": "Petrified",
+        "name": "petrified",
         "description": [
             {
                 "type": "list",
@@ -160,11 +160,11 @@
             }
         ],
         "linkedConditions": [
-            "Incapacitated"
+            "incapacitated"
         ]
     },
     {
-        "name": "Poisoned",
+        "name": "poisoned",
         "description": [
             {
                 "type": "list",
@@ -175,7 +175,7 @@
         ]
     },
     {
-        "name": "Prone",
+        "name": "prone",
         "description": [
             {
                 "type": "list",
@@ -188,7 +188,7 @@
         ]
     },
     {
-        "name": "Restrained",
+        "name": "restrained",
         "description": [
             {
                 "type": "list",
@@ -201,7 +201,7 @@
         ]
     },
     {
-        "name": "Stunned",
+        "name": "stunned",
         "description": [
             {
                 "type": "list",
@@ -213,11 +213,11 @@
             }
         ],
         "linkedConditions": [
-            "Incapacitated"
+            "incapacitated"
         ]
     },
     {
-        "name": "Unconscious",
+        "name": "unconscious",
         "description": [
             {
                 "type": "list",
@@ -231,8 +231,8 @@
             }
         ],
         "linkedConditions": [
-            "Incapacitated",
-            "Prone"
+            "incapacitated",
+            "prone"
         ]
     }
 ]

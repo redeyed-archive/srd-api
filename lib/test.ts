@@ -26,3 +26,21 @@ export const descriptionInterface = io_ts.union([
     })
 ]
 );
+
+export const conditionUnion = io_ts.union([
+    io_ts.literal('blinded'),
+    io_ts.literal('charmed'),
+    io_ts.literal('deafened'),
+    io_ts.literal('exhaustion'),
+    io_ts.literal('frightened'),
+    io_ts.literal('grappled'),
+    io_ts.literal('incapacitated'),
+    io_ts.literal('invisible'),
+    io_ts.literal('paralyzed'),
+    io_ts.literal('petrified'),
+    io_ts.literal('poisoned'),
+    io_ts.literal('prone'),
+    io_ts.literal('restrained'),
+    io_ts.literal('stunned'),
+    io_ts.literal('unconscious'),
+]);

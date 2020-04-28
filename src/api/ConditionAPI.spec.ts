@@ -1,5 +1,8 @@
 import ConditionAPI from './ConditionAPI';
 import { ConditionType } from '../models/Conditions';
+import * as io_ts from 'io-ts';
+import { optional, descriptionInterface, conditionUnion } from '../../lib/test';
+import { ThrowReporter } from 'io-ts/lib/ThrowReporter';
 
 describe('conditions.get', () => {
 
@@ -98,6 +101,27 @@ describe('conditions.list', () => {
 
         expect(actual).toBeDefined();
         expect(actual).toHaveLength(15);
+    })
+
+});
+
+describe('validate', () => {
+
+    const objectInterface = io_ts.interface({
+        name: conditionUnion,
+        description: io_ts.array(descriptionInterface),
+        linkedConditions: optional(io_ts.array(conditionUnion)),
+    });
+
+    const conditionAPI = new ConditionAPI();
+    const conditionList = conditionAPI.list();
+
+    conditionList.forEach((condition) => {
+        it(condition.name, (done) => {
+            const result = objectInterface.decode(condition);
+            ThrowReporter.report(result);
+            done();
+        });
     })
 
 });
