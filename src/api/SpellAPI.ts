@@ -23,7 +23,7 @@ export interface Query {
     schools?: School[];
 }
 
-export default class API {
+export default class SpellAPI {
 
     private spellByName = new Map<string, Spell>();
     private spellsByClass = new Map<ClassType, string[]>();

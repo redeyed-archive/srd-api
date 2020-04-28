@@ -1,14 +1,14 @@
-import SpellAPI, { Query } from './api';
+import SpellAPI, { Query } from './SpellAPI';
 import { School, Area, CastingTime } from '../models/Spell';
 import { ClassType } from '../shared/Classes';
 import * as io_ts from 'io-ts';
 import { ThrowReporter } from 'io-ts/lib/ThrowReporter';
-import { optional } from '../../lib/test';
+import { optional, descriptionInterface } from '../../lib/test';
 import { AttackType } from '../shared/Attacks';
 import { Ability } from '../shared/Abilities';
 import { DamageType } from '../shared/DamageType';
 
-describe('spells.api.get', () => {
+describe('spells.get', () => {
 
     const tests: {
         name: string,
@@ -54,7 +54,7 @@ describe('spells.api.get', () => {
     });
 });
 
-describe('spells.api.list', () => {
+describe('spells.list', () => {
 
     const spellAPI = new SpellAPI();
 
@@ -64,7 +64,7 @@ describe('spells.api.list', () => {
     expect(spellList.length).toEqual(304);
 });
 
-describe('spells.api.query', () => {
+describe('spells.query', () => {
 
     const tests: {
         name: string,
@@ -448,21 +448,6 @@ describe('spells.api.query', () => {
 });
 
 describe('validation', () => {
-
-    const descriptionInterface = io_ts.union([
-        io_ts.string,
-        io_ts.interface({
-            type: io_ts.literal('list'),
-            title: optional(io_ts.string),
-            content: io_ts.array(io_ts.string),
-        }),
-        io_ts.interface({
-            type: io_ts.literal('table'),
-            title: optional(io_ts.string),
-            content: io_ts.array(io_ts.array(io_ts.string)),
-        })
-    ]
-    );
 
     const spellInterface = io_ts.interface({
         name: io_ts.string,

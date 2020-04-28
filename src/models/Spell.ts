@@ -2,6 +2,7 @@ import { ClassType } from '../shared/Classes';
 import { Ability } from '../shared/Abilities';
 import { AttackType } from '../shared/Attacks';
 import { DamageType } from '../shared/DamageType';
+import { Description } from '../shared/Description';
 
 export enum Duration {
     Instantaneous = 'instantaneous',
@@ -87,20 +88,6 @@ export interface Area {
     size: number;
     unit: 'feet' | 'miles';
 }
-
-export interface DescriptionList {
-    type: 'list',
-    title?: string,
-    content: string[],
-}
-
-export interface DescriptionTable {
-    type: 'title',
-    title?: string,
-    content: string[][],
-}
-
-export type Description = string | DescriptionList | DescriptionTable;
 
 export default interface Spell {
     name: string;

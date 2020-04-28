@@ -1,5 +1,7 @@
-import SpellAPI, { Query as SpellQuery } from './spells/api';
+import SpellAPI, { Query as SpellQuery } from './api/SpellAPI';
+import ConditionAPI from './api/ConditionAPI';
 import Spell from './models/Spell';
+import Condition, { ConditionType } from './models/Conditions';
 
 export {
     SpellAPI,
@@ -8,8 +10,23 @@ export {
 }
 
 let spellAPI: SpellAPI;
+let conditionAPI: ConditionAPI;
 
 export default {
+    conditions: {
+        get: (conditionType: ConditionType): Condition | undefined => {
+            if (conditionAPI === undefined) {
+                conditionAPI = new ConditionAPI();
+            }
+            return conditionAPI.get(conditionType);
+        },
+        list: (): Condition[] => {
+            if (conditionAPI === undefined) {
+                conditionAPI = new ConditionAPI();
+            }
+            return conditionAPI.list();
+        }
+    },
     spells: {
         get: (name: string): Spell | undefined => {
             if (spellAPI === undefined) {
