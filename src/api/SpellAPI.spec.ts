@@ -7,6 +7,7 @@ import { optional, descriptionInterface, conditionUnion } from '../../lib/test';
 import { AttackType } from '../shared/Attacks';
 import { Ability } from '../shared/Abilities';
 import { DamageType } from '../shared/DamageType';
+import { ConditionType } from '../models/Conditions';
 
 describe('spells.get', () => {
 
@@ -418,6 +419,40 @@ describe('spells.query', () => {
                 expected: {
                     results: 22
                 },
+            },
+            {
+                name: 'exhaustion spells',
+                query: {
+                    conditions: [
+                        ConditionType.Exhaustion
+                    ]
+                },
+                expected: {
+                    results: 1,
+                }
+            },
+            {
+                name: 'charmed spells',
+                query: {
+                    conditions: [
+                        ConditionType.Charmed
+                    ]
+                },
+                expected: {
+                    results: 20,
+                }
+            },
+            {
+                name: 'charmed and frightened spells',
+                query: {
+                    conditions: [
+                        ConditionType.Charmed,
+                        ConditionType.Frightened
+                    ]
+                },
+                expected: {
+                    results: 28,
+                }
             }
         ];
 

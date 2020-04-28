@@ -4,6 +4,7 @@ import { ClassType } from '../shared/Classes';
 import { Ability } from '../shared/Abilities';
 import { AttackType } from '../shared/Attacks';
 import { DamageType } from '../shared/DamageType';
+import { ConditionType } from '../models/Conditions';
 
 export interface Query {
     attackTypes?: AttackType[];
@@ -21,6 +22,7 @@ export interface Query {
     ritual?: boolean;
     saveTypes?: Ability[];
     schools?: School[];
+    conditions?: ConditionType[];
 }
 
 export default class SpellAPI {
@@ -38,6 +40,7 @@ export default class SpellAPI {
     private somaticSpells = new Array<string>();
     private verbalSpells = new Array<string>();
     private spellsByDamageType = new Map<DamageType, string[]>();
+    private spellsByConditionType = new Map<ConditionType, string[]>();
 
     constructor() {
         this.init();
@@ -193,6 +196,19 @@ export default class SpellAPI {
             }
         }
 
+        if (query.conditions !== undefined && query.conditions.length > 0) {
+            let array = new Array<string>();
+            query.conditions.forEach((condition) => {
+                let subArray = this.spellsByConditionType.get(condition) || [];
+                if (subArray.length > 0) {
+                    array.push(...subArray)
+                }
+            })
+            if (array.length > 0) {
+                spellNameList = spellNameList.filter((value) => array.includes(value));
+            }
+        }
+
         spellNameList.forEach((spellName) => {
             const spell = this.spellByName.get(spellName);
             if (spell !== undefined) {
@@ -271,6 +287,15 @@ export default class SpellAPI {
                         this.spellsByDamageType.set(damageType, array)
                     });
                 }
+
+                spell.conditions?.forEach((condition) => {
+                    let array = this.spellsByConditionType.get(condition);
+                    if (array === undefined) {
+                        array = new Array<string>();
+                        this.spellsByConditionType.set(condition, array);
+                    }
+                    array.push(key);
+                });
 
                 let castingTimeArray = this.spellsByCastingTime.get(spell.castingTime) || [];
                 castingTimeArray.push(key);
