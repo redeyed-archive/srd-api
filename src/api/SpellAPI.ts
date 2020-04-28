@@ -16,14 +16,14 @@ export interface Query {
         verbal?: boolean;
     },
     concentration?: boolean;
+    conditions?: ConditionType[];
     damageTypes?: DamageType[];
+    durations?: Duration[];
     levels?: number[];
     name?: string;
     ritual?: boolean;
     saveTypes?: Ability[];
     schools?: School[];
-    conditions?: ConditionType[];
-    durations?: Duration[];
 }
 
 export default class SpellAPI {

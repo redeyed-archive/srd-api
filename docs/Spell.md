@@ -81,3 +81,7 @@ If the spell has a casting time of `reaction`, this details what the reaction tr
 ## Classes
 
 An array of ClassType values that denote what spellcasting classes normally have access to this spell.
+
+## Conditions
+
+The name of any conditions that the spell could cause, resist, or remove.

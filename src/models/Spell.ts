@@ -92,21 +92,21 @@ export interface Area {
 
 export default interface Spell {
     name: string;
-    level: number;
-    school: School;
-    castingTime: CastingTime;
-    duration: Duration;
-    range: Range;
     area?: Area;
+    attack?: AttackType;
+    castingTime: CastingTime;
+    classes: ClassType[];
     components: Components;
+    concentration: boolean;
+    conditions?: ConditionType[];
     damageType?: DamageType[];
     description: Description[];
+    duration: Duration;
     higherLevels?: Description[];
-    ritual: boolean;
-    attack?: AttackType;
-    save?: Ability;
-    concentration: boolean;
+    level: number;
+    range: Range;
     reactionTrigger?: string;
-    classes: ClassType[];
-    conditions?: ConditionType[];
+    ritual: boolean;
+    save?: Ability;
+    school: School;
 }
