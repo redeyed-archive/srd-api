@@ -1,0 +1,117 @@
+[
+    {
+        "name": "abyssal",
+        "typicalSpeakers": [
+            "Demons"
+        ],
+        "script": "infernal"
+    },
+    {
+        "name": "celestial",
+        "typicalSpeakers": [
+            "Celestials"
+        ],
+        "script": "celestial"
+    },
+    {
+        "name": "common",
+        "typicalSpeakers": [
+            "Humans"
+        ],
+        "script": "common"
+    },
+    {
+        "name": "deep speech",
+        "typicalSpeakers": [
+            "Aboleths",
+            "cloakers"
+        ],
+        "script": "none"
+    },
+    {
+        "name": "draconic",
+        "typicalSpeakers": [
+            "Dragons",
+            "dragonborn"
+        ],
+        "script": "draconic"
+    },
+    {
+        "name": "dwarvish",
+        "typicalSpeakers": [
+            "Dwarves"
+        ],
+        "script": "dwarvish"
+    },
+    {
+        "name": "elvish",
+        "typicalSpeakers": [
+            "Elves"
+        ],
+        "script": "elvish"
+    },
+    {
+        "name": "giant",
+        "typicalSpeakers": [
+            "Ogres",
+            "giants"
+        ],
+        "script": "dwarvish"
+    },
+    {
+        "name": "gnomish",
+        "typicalSpeakers": [
+            "Gnomes"
+        ],
+        "script": "dwarvish"
+    },
+    {
+        "name": "goblin",
+        "typicalSpeakers": [
+            "Goblinoids"
+        ],
+        "script": "dwarvish"
+    },
+    {
+        "name": "halfling",
+        "typicalSpeakers": [
+            "Halflings"
+        ],
+        "script": "common"
+    },
+    {
+        "name": "infernal",
+        "typicalSpeakers": [
+            "Devils"
+        ],
+        "script": "infernal"
+    },
+    {
+        "name": "orc",
+        "typicalSpeakers": [
+            "Orcs"
+        ],
+        "script": "dwarvish"
+    },
+    {
+        "name": "primordial",
+        "typicalSpeakers": [
+            "Elementals"
+        ],
+        "script": "dwarvish"
+    },
+    {
+        "name": "sylvan",
+        "typicalSpeakers": [
+            "Fey creatures"
+        ],
+        "script": "elvish"
+    },
+    {
+        "name": "undercommon",
+        "typicalSpeakers": [
+            "Underworld traders"
+        ],
+        "script": "elvish"
+    }
+]
