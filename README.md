@@ -22,6 +22,44 @@ or you can import the individual API clients instead:
 
 `import { SpellAPI } from '@evilmonkeyinc/srd-api';`
 
+## ConditionAPI
+
+You can access the ConditionAPI functions using the default client `srdClient.conditions` or by creating a new instance of the ConditionAPI `const conditionAPI = new ConditionAPI();`
+
+The following functions are available in the ConditionAPI
+
+### get
+Gets the named condition.
+
+### list
+Gets all the available conditions in the collection.
+
+### Condition
+
+The `Condition` object returned by the `ConditionAPI` is detailed further [here](docs/Condition.md)
+
+## LanguageAPI
+
+You can access the LanguageAPI functions using the default client `srdClient.languages` or by creating a new instance of the LanguageAPI `const languageAPI = new LanguageAPI();`
+
+### get
+Gets the named language.
+
+### list
+Gets all the available language in the collection.
+
+### query
+Query the available languages in the collection.
+
+You can state one or more of the following filters:
+
+- types: one or more LanguageType that the language may use.
+- scripts: one or more ScriptType that the language may use.
+
+### Language
+
+The `Language` object returned by the `LanguageAPI` is detailed further [here](docs/Language.md)
+
 ## SpellAPI
 
 You can access the SpellAPI functions using the default client `srdClient.spells` or by creating a new instance of the SpellAPI `const spellAPI = new SpellAPI();`
@@ -57,22 +95,6 @@ for example, you can request all cantrips (level 0) for Wizards and Warlocks, an
 ### Spell
 
 The `Spell` object returned by the `SpellAPI` is detailed further [here](docs/Spell.md)
-
-## ConditionAPI
-
-You can access the ConditionAPI functions using the default client `srdClient.conditions` or by creating a new instance of the ConditionAPI `const conditionAPI = new ConditionAPI();`
-
-The following functions are available in the ConditionAPI
-
-### get
-Gets the named condition.
-
-### list
-Gets all the available conditions in the collection.
-
-### Condition
-
-The `Condition` object returned by the `ConditionAPI` is detailed further [here](docs/Condition.md)
 
 # Licence
 
