@@ -1,6 +1,6 @@
 {
   "name": "@evilmonkeyinc/srd-api",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "description": "Tools and helpers to query SRD content",
   "main": "dist/src/Index.js",
   "types": "dist/src/Index.d.ts",

@@ -53,7 +53,7 @@ export default class SpellAPI {
     }
 
     public list(): Spell[] {
-        return spellData as Spell[];
+        return Array.from(this.spellByName.values());
     }
 
     public query(query: Query): Spell[] {
@@ -85,6 +85,7 @@ export default class SpellAPI {
                 spellNameList = spellNameList.filter((value) => array.includes(value));
             }
         }
+
         if (query.schools !== undefined) {
             let array = new Array<string>();
             query.schools.forEach((school) => {
@@ -154,7 +155,7 @@ export default class SpellAPI {
         }
 
         if (query.name !== undefined && query.name !== '') {
-            const regex = new RegExp(`.*${query.name}.*`, 'gmi');
+            const regex = new RegExp(`.*${query.name.split(' ').join('.*')}.*`, 'gmi');
             spellNameList = spellNameList.filter((value) => value.match(regex))
         }
 
