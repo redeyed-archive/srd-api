@@ -1,13 +1,12 @@
+import spells from '../../public/spells.json';
 import SpellAPI, { Query } from './SpellAPI';
 import Spell, { School, Area, CastingTime, Duration } from '../models/Spell';
-import { ClassType } from '../shared/Classes';
 import * as io_ts from 'io-ts';
 import { ThrowReporter } from 'io-ts/lib/ThrowReporter';
-import { optional, descriptionInterface, conditionUnion } from '../../lib/test';
+import { optional, descriptionInterface } from '../../lib/test';
 import { AttackType } from '../shared/Attacks';
 import { Ability } from '../shared/Abilities';
 import { DamageType } from '../shared/DamageType';
-import { ConditionType } from '../models/Condition';
 
 describe('spells.get', () => {
 
@@ -37,7 +36,7 @@ describe('spells.get', () => {
             }
         ];
 
-    const spellAPI = new SpellAPI();
+    const spellAPI = new SpellAPI(spells as Spell[]);
 
     tests.forEach((test) => {
         it(test.name, (done) => {
@@ -57,7 +56,7 @@ describe('spells.get', () => {
 
 describe('spells.list', () => {
 
-    const spellAPI = new SpellAPI();
+    const spellAPI = new SpellAPI(spells as Spell[]);
 
     const spellList = spellAPI.list();
 
@@ -114,7 +113,7 @@ describe('spells.query', () => {
                 name: 'list wizard spells',
                 query: {
                     classes: [
-                        ClassType.Wizard,
+                        'Wizard',
                     ]
                 },
                 expected: {
@@ -384,7 +383,7 @@ describe('spells.query', () => {
                 name: 'list wizard cantrips',
                 query: {
                     classes: [
-                        ClassType.Wizard,
+                        'Wizard',
                     ],
                     levels: [
                         0,
@@ -414,7 +413,31 @@ describe('spells.query', () => {
                 name: 'list wizard evocation cantrips',
                 query: {
                     classes: [
-                        ClassType.Wizard,
+                        'Wizard',
+                    ],
+                    levels: [
+                        0,
+                    ],
+                    schools: [
+                        School.Evocation,
+                    ]
+                },
+                expected: {
+                    names: [
+                        'Dancing Lights',
+                        'Fire Bolt',
+                        'Light',
+                        'Ray of Frost',
+                        'Shocking Grasp',
+                    ],
+                    results: 5,
+                }
+            },
+            {
+                name: 'list wizard evocation cantrips, lowercase',
+                query: {
+                    classes: [
+                        'wizard',
                     ],
                     levels: [
                         0,
@@ -1440,7 +1463,7 @@ describe('spells.query', () => {
                 query: {
                     concentration: true,
                     classes: [
-                        ClassType.Paladin,
+                        'Paladin',
                     ],
                     levels: [0],
                 },
@@ -2340,7 +2363,21 @@ describe('spells.query', () => {
                 name: 'exhaustion spells',
                 query: {
                     conditions: [
-                        ConditionType.Exhaustion
+                        'Exhaustion'
+                    ]
+                },
+                expected: {
+                    names: [
+                        'Greater Restoration'
+                    ],
+                    results: 1,
+                }
+            },
+            {
+                name: 'exhaustion spells, lowercase',
+                query: {
+                    conditions: [
+                        'exhaustion'
                     ]
                 },
                 expected: {
@@ -2354,7 +2391,7 @@ describe('spells.query', () => {
                 name: 'charmed spells',
                 query: {
                     conditions: [
-                        ConditionType.Charmed
+                        'Charmed'
                     ]
                 },
                 expected: {
@@ -2387,8 +2424,8 @@ describe('spells.query', () => {
                 name: 'charmed and frightened spells',
                 query: {
                     conditions: [
-                        ConditionType.Charmed,
-                        ConditionType.Frightened
+                        'Charmed',
+                        'Frightened'
                     ]
                 },
                 expected: {
@@ -2529,7 +2566,7 @@ describe('spells.query', () => {
             }
         ];
 
-    const spellAPI = new SpellAPI();
+    const spellAPI = new SpellAPI(spells as Spell[]);
 
     tests.forEach((test) => {
         it(test.name, (done) => {
@@ -2543,7 +2580,8 @@ describe('spells.query', () => {
                 expect(spell.name.toLowerCase()).toContain(test.expected.names[index].toLowerCase());
 
                 if (test.query.classes !== undefined && test.query.classes.length > 0) {
-                    const filteredList = test.query.classes.filter((value) => spell.classes.includes(value));
+                    const lowercaseList = spell.classes.map((value) => value.toLowerCase());
+                    const filteredList = test.query.classes.filter((value) => lowercaseList.includes(value.toLowerCase()));
                     expect(filteredList.length).toBeGreaterThan(0);
                 }
                 if (test.query.levels !== undefined && test.query.levels.length > 0) {
@@ -2671,23 +2709,11 @@ describe('validation', () => {
         ])),
         concentration: io_ts.boolean,
         reactionTrigger: optional(io_ts.string),
-        classes: io_ts.array(io_ts.union([
-            io_ts.literal('bard'),
-            io_ts.literal('cleric'),
-            io_ts.literal('druid'),
-            io_ts.literal('paladin'),
-            io_ts.literal('ranger'),
-            io_ts.literal('sorcerer'),
-            io_ts.literal('warlock'),
-            io_ts.literal('wizard'),
-        ])),
-        conditions: optional(io_ts.array(conditionUnion)),
+        classes: io_ts.array(io_ts.string),
+        conditions: optional(io_ts.array(io_ts.string)),
     });
 
-    const spellAPI = new SpellAPI();
-    const spellList = spellAPI.list();
-
-    spellList.forEach((spell) => {
+    (spells as Spell[]).forEach((spell) => {
         it(spell.name, (done) => {
             const result = spellInterface.decode(spell);
             ThrowReporter.report(result);

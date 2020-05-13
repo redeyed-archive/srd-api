@@ -1,5 +1,4 @@
 import Race from '../models/Race';
-import races from '../../public/races.json';
 
 export interface Query {
     name?: string;
@@ -9,8 +8,13 @@ export default class RaceAPI {
 
     private raceByName = new Map<string, Race>();
 
-    constructor() {
-        this.init();
+    constructor(races: Race[]) {
+        if (this.raceByName.size === 0) {
+            races.forEach((race: Race) => {
+                const key = race.name.toLowerCase();
+                this.raceByName.set(key, race);
+            });
+        }
     }
 
     public get(name: string): Race | undefined {
@@ -39,16 +43,5 @@ export default class RaceAPI {
         })
 
         return list;
-    }
-
-    private init() {
-        if (this.raceByName.size === 0) {
-            (races as Race[]).forEach((race: Race) => {
-
-                const key = race.name.toLowerCase();
-
-                this.raceByName.set(key, race);
-            });
-        }
     }
 }

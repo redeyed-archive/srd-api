@@ -1,9 +1,7 @@
-import { ClassType } from '../shared/Classes';
 import { Ability } from '../shared/Abilities';
 import { AttackType } from '../shared/Attacks';
 import { DamageType } from '../shared/DamageType';
 import { Description } from '../shared/Description';
-import { ConditionType } from './Condition';
 
 export enum Duration {
     Instantaneous = 'instantaneous',
@@ -95,10 +93,10 @@ export default interface Spell {
     area?: Area;
     attack?: AttackType;
     castingTime: CastingTime;
-    classes: ClassType[];
+    classes: string[];
     components: Components;
     concentration: boolean;
-    conditions?: ConditionType[];
+    conditions?: string[];
     damageType?: DamageType[];
     description: Description[];
     duration: Duration;

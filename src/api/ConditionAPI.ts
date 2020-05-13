@@ -1,27 +1,20 @@
-import Condition, { ConditionType } from '../models/Condition';
-import conditionData from '../../public/conditions.json';
+import Condition from '../models/Condition';
 
 export default class ConditionAPI {
 
-    private conditionByType = new Map<ConditionType, Condition>();
+    private conditionByType = new Map<string, Condition>();
 
-    constructor() {
-        this.init();
+    constructor(conditions: Condition[]) {
+        conditions.forEach((condition: Condition) => {
+            this.conditionByType.set(condition.name.toLowerCase(), condition);
+        });
     }
 
-    public get(conditionType: ConditionType): Condition | undefined {
-        return this.conditionByType.get(conditionType);
+    public get(conditionType: string): Condition | undefined {
+        return this.conditionByType.get(conditionType.toLowerCase());
     }
 
     public list(): Condition[] {
-        return conditionData as Condition[];
-    }
-
-    private init() {
-        if (this.conditionByType.size === 0) {
-            (conditionData as Condition[]).forEach((condition: Condition) => {
-                this.conditionByType.set(condition.name, condition);
-            });
-        }
+        return Array.from(this.conditionByType.values());
     }
 }

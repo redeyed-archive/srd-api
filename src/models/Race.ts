@@ -1,7 +1,6 @@
 import Movement from '../shared/Movement';
 import { Size } from '../shared/Size';
 import { Description } from '../shared/Description';
-import { LanguageType } from './Language';
 
 
 export interface RacialTrait {
@@ -14,7 +13,7 @@ export interface Subrace {
     description?: Description[];
     size?: Size;
     speed?: Movement;
-    languages?: (LanguageType | 'choice')[];
+    languages?: string[];
     traits: RacialTrait[];
 }
 
@@ -23,7 +22,7 @@ export default interface Race {
     description?: Description[];
     size: Size;
     speed: Movement;
-    languages: (LanguageType | 'choice')[];
+    languages: string[];
     traits: RacialTrait[];
     subraces?: Subrace[];
 }

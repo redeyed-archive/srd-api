@@ -1,8 +1,10 @@
 
 import * as io_ts from 'io-ts';
-import { optional, descriptionInterface, sizeUnion, languageUnion, movementInterface } from '../../lib/test';
+import { optional, descriptionInterface, sizeUnion, movementInterface } from '../../lib/test';
 import { ThrowReporter } from 'io-ts/lib/ThrowReporter';
 import RaceAPI, { Query } from './RaceAPI';
+import races from '../../public/races.json';
+import Race from '../models/Race';
 
 describe('races.get', () => {
 
@@ -32,7 +34,7 @@ describe('races.get', () => {
             }
         ];
 
-    const api = new RaceAPI();
+    const api = new RaceAPI(races as Race[]);
 
     tests.forEach((test) => {
         it(test.name, (done) => {
@@ -51,7 +53,7 @@ describe('races.get', () => {
 });
 
 describe('races.list', () => {
-    const api = new RaceAPI();
+    const api = new RaceAPI(races as Race[]);
     it('count', (done) => {
         const list = api.list();
         expect(list).toBeDefined();
@@ -98,7 +100,7 @@ describe('races.query', () => {
             }
         ];
 
-    const api = new RaceAPI();
+    const api = new RaceAPI(races as Race[]);
 
     tests.forEach((test) => {
         it(test.name, (done) => {
@@ -126,7 +128,7 @@ describe('validate', () => {
         description: optional(io_ts.array(descriptionInterface)),
         size: optional(sizeUnion),
         speed: optional(movementInterface),
-        languages: optional(io_ts.array(languageUnion)),
+        languages: optional(io_ts.array(io_ts.string)),
         traits: io_ts.array(traitUnion),
     });
 
@@ -135,18 +137,13 @@ describe('validate', () => {
         description: optional(io_ts.array(descriptionInterface)),
         size: sizeUnion,
         speed: movementInterface,
-        languages: io_ts.array(io_ts.union([
-            io_ts.literal('choice'),
-            languageUnion,
-        ])),
+        languages: io_ts.array(io_ts.string),
         traits: io_ts.array(traitUnion),
         subraces: optional(io_ts.array(subraceInterface)),
     });
 
-    const api = new RaceAPI();
-    const list = api.list();
 
-    list.forEach((item) => {
+    (races as Race[]).forEach((item) => {
         it(item.name, (done) => {
             const result = raceInterface.decode(item);
             ThrowReporter.report(result);

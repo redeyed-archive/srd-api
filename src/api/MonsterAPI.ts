@@ -14,7 +14,7 @@ export default class MonsterAPI {
     }
 
     public listTypes(): MonsterTypeDefinition[] {
-        return typeData as MonsterTypeDefinition[];
+        return Array.from(this.monsterTypeDefinition.values());
     }
 
     private init() {

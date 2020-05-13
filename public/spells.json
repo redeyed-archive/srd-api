@@ -22,8 +22,8 @@
         "ritual": false,
         "save": "dexterity",
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "concentration": false
     },
@@ -50,8 +50,8 @@
         ],
         "ritual": false,
         "classes": [
-            "cleric",
-            "paladin"
+            "Cleric",
+            "Paladin"
         ],
         "concentration": false
     },
@@ -77,8 +77,8 @@
         ],
         "ritual": true,
         "classes": [
-            "ranger",
-            "wizard"
+            "Ranger",
+            "Wizard"
         ],
         "concentration": false
     },
@@ -106,8 +106,8 @@
         ],
         "concentration": true,
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -134,14 +134,14 @@
         ],
         "save": "wisdom",
         "classes": [
-            "bard",
-            "druid",
-            "ranger"
+            "Bard",
+            "Druid",
+            "Ranger"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "charmed"
+            "Charmed"
         ]
     },
     {
@@ -168,9 +168,9 @@
         ],
         "ritual": true,
         "classes": [
-            "bard",
-            "druid",
-            "ranger"
+            "Bard",
+            "Druid",
+            "Ranger"
         ],
         "concentration": false
     },
@@ -192,11 +192,11 @@
         ],
         "concentration": true,
         "classes": [
-            "druid"
+            "Druid"
         ],
         "ritual": false,
         "conditions": [
-            "unconscious"
+            "Unconscious"
         ]
     },
     {
@@ -223,8 +223,8 @@
             "When you cast this spell using a spell slot of 4th level or higher, you animate or reassert control over two additional undead creatures for each slot level above 3rd. Each of the creatures must come from a different corpse or pile of bones."
         ],
         "classes": [
-            "cleric",
-            "wizard"
+            "Cleric",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -310,9 +310,9 @@
         ],
         "concentration": true,
         "classes": [
-            "bard",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -339,7 +339,7 @@
         ],
         "concentration": true,
         "classes": [
-            "druid"
+            "Druid"
         ],
         "ritual": false
     },
@@ -377,12 +377,12 @@
         ],
         "concentration": true,
         "classes": [
-            "cleric",
-            "wizard"
+            "Cleric",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "invisible"
+            "Invisible"
         ]
     },
     {
@@ -410,13 +410,13 @@
         ],
         "save": "wisdom",
         "classes": [
-            "druid",
-            "wizard"
+            "Druid",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "frightened"
+            "Frightened"
         ]
     },
     {
@@ -441,11 +441,11 @@
         ],
         "concentration": true,
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "invisible"
+            "Invisible"
         ]
     },
     {
@@ -468,7 +468,7 @@
             "While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10."
         ],
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -497,14 +497,14 @@
             "If you are returned to your body prematurely, your companions remain in their astral forms and must find their own way back to their bodies, usually by dropping to 0 hit points."
         ],
         "classes": [
-            "cleric",
-            "warlock",
-            "wizard"
+            "Cleric",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "unconscious"
+            "Unconscious"
         ]
     },
     {
@@ -538,7 +538,7 @@
         ],
         "ritual": true,
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "concentration": false
     },
@@ -562,13 +562,13 @@
             "The awakened beast or plant is charmed by you for 30 days or until you or your companions do anything harmful to it. When the charmed condition ends, the awakened creature chooses whether to remain friendly to you, based on how you treated it while it was charmed."
         ],
         "classes": [
-            "bard",
-            "druid"
+            "Bard",
+            "Druid"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "charmed"
+            "Charmed"
         ]
     },
     {
@@ -595,8 +595,8 @@
         "save": "charisma",
         "concentration": true,
         "classes": [
-            "bard",
-            "cleric"
+            "Bard",
+            "Cleric"
         ],
         "ritual": false
     },
@@ -626,15 +626,15 @@
         "save": "charisma",
         "concentration": true,
         "classes": [
-            "cleric",
-            "paladin",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Cleric",
+            "Paladin",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "incapacitated"
+            "Incapacitated"
         ]
     },
     {
@@ -657,8 +657,8 @@
         ],
         "concentration": true,
         "classes": [
-            "druid",
-            "ranger"
+            "Druid",
+            "Ranger"
         ],
         "ritual": false
     },
@@ -679,7 +679,7 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false
     },
@@ -716,9 +716,9 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "bard",
-            "cleric",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -743,7 +743,7 @@
         "save": "dexterity",
         "concentration": true,
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false
     },
@@ -770,8 +770,8 @@
         ],
         "concentration": true,
         "classes": [
-            "cleric",
-            "paladin"
+            "Cleric",
+            "Paladin"
         ],
         "ritual": false
     },
@@ -799,10 +799,10 @@
         ],
         "save": "constitution",
         "classes": [
-            "druid",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Druid",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -825,16 +825,16 @@
         ],
         "save": "constitution",
         "classes": [
-            "bard",
-            "cleric",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "blinded",
-            "deafened"
+            "Blinded",
+            "Deafened"
         ]
     },
     {
@@ -853,8 +853,8 @@
             "While on the Ethereal Plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can’t see anything there more than 60 feet away. You can only affect and be affected by other creatures on the Ethereal Plane. Creatures that aren’t there can’t perceive you or interact with you, unless they have the ability to do so."
         ],
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -874,8 +874,8 @@
         ],
         "concentration": true,
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -900,11 +900,11 @@
         ],
         "concentration": true,
         "classes": [
-            "paladin"
+            "Paladin"
         ],
         "ritual": false,
         "conditions": [
-            "invisible"
+            "Invisible"
         ]
     },
     {
@@ -935,8 +935,8 @@
         ],
         "save": "dexterity",
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -971,7 +971,7 @@
         "save": "dexterity",
         "concentration": true,
         "classes": [
-            "druid"
+            "Druid"
         ],
         "ritual": false
     },
@@ -994,13 +994,13 @@
         "save": "charisma",
         "concentration": true,
         "classes": [
-            "bard",
-            "cleric"
+            "Bard",
+            "Cleric"
         ],
         "ritual": false,
         "conditions": [
-            "charmed",
-            "frightened"
+            "Charmed",
+            "Frightened"
         ]
     },
     {
@@ -1030,8 +1030,8 @@
         ],
         "save": "dexterity",
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -1055,16 +1055,16 @@
         ],
         "save": "wisdom",
         "classes": [
-            "bard",
-            "druid",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Druid",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "charmed"
+            "Charmed"
         ]
     },
     {
@@ -1088,9 +1088,9 @@
         ],
         "attack": "ranged",
         "classes": [
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -1121,9 +1121,9 @@
         ],
         "save": "constitution",
         "classes": [
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -1150,14 +1150,14 @@
         ],
         "concentration": true,
         "classes": [
-            "bard",
-            "cleric",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "invisible"
+            "Invisible"
         ]
     },
     {
@@ -1180,7 +1180,7 @@
             "At any time after the clone matures, if the original creature dies, its soul transfers to the clone, provided that the soul is free and willing to return. The clone is physically identical to the original and has the same personality, memories, and abilities, but none of the original’s equipment. The original creature’s physical remains, if they still exist, become inert and can’t thereafter be restored to life, since the creature’s soul is elsewhere."
         ],
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -1210,8 +1210,8 @@
         "save": "constitution",
         "concentration": true,
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -1243,14 +1243,14 @@
             "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st."
         ],
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "blinded",
-            "unconscious"
+            "Blinded",
+            "Unconscious"
         ]
     },
     {
@@ -1277,13 +1277,13 @@
         ],
         "save": "wisdom",
         "classes": [
-            "cleric",
-            "paladin"
+            "Cleric",
+            "Paladin"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "prone"
+            "Prone"
         ]
     },
     {
@@ -1308,7 +1308,7 @@
         ],
         "ritual": true,
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "concentration": false
     },
@@ -1340,8 +1340,8 @@
         ],
         "ritual": true,
         "classes": [
-            "druid",
-            "ranger"
+            "Druid",
+            "Ranger"
         ],
         "concentration": false
     },
@@ -1366,10 +1366,10 @@
         ],
         "ritual": true,
         "classes": [
-            "bard",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "concentration": false
     },
@@ -1391,11 +1391,11 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "bard"
+            "Bard"
         ],
         "ritual": false,
         "conditions": [
-            "charmed"
+            "Charmed"
         ]
     },
     {
@@ -1430,8 +1430,8 @@
         ],
         "save": "constitution",
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -1487,10 +1487,10 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "bard",
-            "druid",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Druid",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -1525,8 +1525,8 @@
         ],
         "concentration": true,
         "classes": [
-            "druid",
-            "ranger"
+            "Druid",
+            "Ranger"
         ],
         "ritual": false
     },
@@ -1551,7 +1551,7 @@
         ],
         "concentration": true,
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false
     },
@@ -1581,8 +1581,8 @@
         ],
         "concentration": true,
         "classes": [
-            "druid",
-            "wizard"
+            "Druid",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -1608,8 +1608,8 @@
         ],
         "concentration": true,
         "classes": [
-            "druid",
-            "warlock"
+            "Druid",
+            "Warlock"
         ],
         "ritual": false
     },
@@ -1644,8 +1644,8 @@
         ],
         "concentration": true,
         "classes": [
-            "druid",
-            "wizard"
+            "Druid",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -1684,8 +1684,8 @@
         ],
         "concentration": true,
         "classes": [
-            "druid",
-            "ranger"
+            "Druid",
+            "Ranger"
         ],
         "ritual": false
     },
@@ -1709,8 +1709,8 @@
         "ritual": true,
         "save": "intelligence",
         "classes": [
-            "warlock",
-            "wizard"
+            "Warlock",
+            "Wizard"
         ],
         "concentration": false
     },
@@ -1738,15 +1738,15 @@
         ],
         "attack": "melee",
         "classes": [
-            "cleric",
-            "druid"
+            "Cleric",
+            "Druid"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "blinded",
-            "poisoned",
-            "stunned"
+            "Blinded",
+            "Poisoned",
+            "Stunned"
         ]
     },
     {
@@ -1770,7 +1770,7 @@
             "The contingent spell takes effect only on you, even if it can normally target others. You can use only one contingency spell at a time. If you cast this spell again, the effect of another contingency spell on you ends. Also, contingency ends on you if its material component is ever not on your person."
         ],
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -1794,8 +1794,8 @@
             "A flame, equivalent in brightness to a torch, springs forth from an object that you touch. The effect looks like a regular flame, but it creates no heat and doesn’t use oxygen. A continual flame can be covered or hidden but not smothered or quenched."
         ],
         "classes": [
-            "cleric",
-            "wizard"
+            "Cleric",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -1832,9 +1832,9 @@
         "save": "strength",
         "concentration": true,
         "classes": [
-            "cleric",
-            "druid",
-            "wizard"
+            "Cleric",
+            "Druid",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -1959,9 +1959,9 @@
         ],
         "concentration": true,
         "classes": [
-            "cleric",
-            "druid",
-            "wizard"
+            "Cleric",
+            "Druid",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -1983,9 +1983,9 @@
         ],
         "reactionTrigger": "which you take when you see a creature within 60 feet of you casting a spell",
         "classes": [
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -2005,8 +2005,8 @@
             "You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn’t go bad."
         ],
         "classes": [
-            "cleric",
-            "paladin"
+            "Cleric",
+            "Paladin"
         ],
         "ritual": false,
         "concentration": false
@@ -2035,8 +2035,8 @@
             "When you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st."
         ],
         "classes": [
-            "cleric",
-            "druid"
+            "Cleric",
+            "Druid"
         ],
         "ritual": false,
         "concentration": false
@@ -2065,9 +2065,9 @@
             "When you cast this spell using a 7th level spell slot, you can animate or reassert control over four ghouls. When you cast this spell using an 8th level spell slot, you can animate or reassert control over five ghouls or two ghasts or wights. When you cast this spell using a 9th level spell slot, you can animate or reassert control over six ghouls, three ghasts or wights, or two mummies."
         ],
         "classes": [
-            "cleric",
-            "warlock",
-            "wizard"
+            "Cleric",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -2125,8 +2125,8 @@
             "When you cast this spell using a spell slot of 6th level or higher, the cube increases by 5 feet for each slot level above 5th."
         ],
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -2149,11 +2149,11 @@
             "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st."
         ],
         "classes": [
-            "bard",
-            "cleric",
-            "druid",
-            "paladin",
-            "ranger"
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Paladin",
+            "Ranger"
         ],
         "ritual": false,
         "concentration": false
@@ -2179,9 +2179,9 @@
         ],
         "concentration": true,
         "classes": [
-            "bard",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -2206,9 +2206,9 @@
         ],
         "concentration": true,
         "classes": [
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -2231,10 +2231,10 @@
             "You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet."
         ],
         "classes": [
-            "druid",
-            "ranger",
-            "sorcerer",
-            "wizard"
+            "Druid",
+            "Ranger",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -2256,11 +2256,11 @@
             "If any of this spell’s area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled."
         ],
         "classes": [
-            "cleric",
-            "druid",
-            "paladin",
-            "ranger",
-            "sorcerer"
+            "Cleric",
+            "Druid",
+            "Paladin",
+            "Ranger",
+            "Sorcerer"
         ],
         "ritual": false,
         "concentration": false
@@ -2282,8 +2282,8 @@
             "If the spell is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spell ends."
         ],
         "classes": [
-            "cleric",
-            "paladin"
+            "Cleric",
+            "Paladin"
         ],
         "ritual": false,
         "concentration": false
@@ -2318,8 +2318,8 @@
         "save": "dexterity",
         "concentration": true,
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -2338,8 +2338,8 @@
             "Each time you cast this spell, you can create a new demiplane, or have the shadowy door connect to a demiplane you created with a previous casting of this spell. Additionally, if you know the nature and contents of a demiplane created by a casting of this spell by another creature, you can have the shadowy door connect to its demiplane instead."
         ],
         "classes": [
-            "warlock",
-            "wizard"
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -2361,8 +2361,8 @@
         ],
         "concentration": true,
         "classes": [
-            "cleric",
-            "paladin"
+            "Cleric",
+            "Paladin"
         ],
         "ritual": false
     },
@@ -2384,13 +2384,13 @@
         "ritual": true,
         "concentration": true,
         "classes": [
-            "bard",
-            "cleric",
-            "druid",
-            "paladin",
-            "ranger",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Paladin",
+            "Ranger",
+            "Sorcerer",
+            "Wizard"
         ]
     },
     {
@@ -2415,10 +2415,10 @@
         "ritual": true,
         "concentration": true,
         "classes": [
-            "cleric",
-            "druid",
-            "paladin",
-            "ranger"
+            "Cleric",
+            "Druid",
+            "Paladin",
+            "Ranger"
         ]
     },
     {
@@ -2446,9 +2446,9 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "bard",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -2471,10 +2471,10 @@
             "If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take 4d6 force damage, and the spell fails to teleport you."
         ],
         "classes": [
-            "bard",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -2496,9 +2496,9 @@
             "To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC."
         ],
         "classes": [
-            "bard",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -2532,8 +2532,8 @@
         ],
         "save": "dexterity",
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -2561,13 +2561,13 @@
         ],
         "concentration": true,
         "classes": [
-            "cleric",
-            "paladin"
+            "Cleric",
+            "Paladin"
         ],
         "ritual": false,
         "conditions": [
-            "charmed",
-            "frightened"
+            "Charmed",
+            "Frightened"
         ]
     },
     {
@@ -2588,13 +2588,13 @@
             "When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell’s level is equal to or less than the level of the spell slot you used."
         ],
         "classes": [
-            "bard",
-            "cleric",
-            "druid",
-            "paladin",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Paladin",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -2621,7 +2621,7 @@
         ],
         "ritual": true,
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "concentration": false
     },
@@ -2644,7 +2644,7 @@
         ],
         "concentration": true,
         "classes": [
-            "paladin"
+            "Paladin"
         ],
         "ritual": false
     },
@@ -2673,7 +2673,7 @@
         ],
         "save": "charisma",
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false
@@ -2701,12 +2701,12 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "druid",
-            "sorcerer"
+            "Druid",
+            "Sorcerer"
         ],
         "ritual": false,
         "conditions": [
-            "charmed"
+            "Charmed"
         ]
     },
     {
@@ -2732,14 +2732,14 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "bard",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "charmed"
+            "Charmed"
         ]
     },
     {
@@ -2765,13 +2765,13 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "bard",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "charmed"
+            "Charmed"
         ]
     },
     {
@@ -2800,9 +2800,9 @@
         ],
         "save": "wisdom",
         "classes": [
-            "bard",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -2831,7 +2831,7 @@
             }
         ],
         "classes": [
-            "druid"
+            "Druid"
         ],
         "ritual": false,
         "concentration": false
@@ -2865,13 +2865,13 @@
         ],
         "concentration": true,
         "classes": [
-            "cleric",
-            "druid",
-            "sorcerer"
+            "Cleric",
+            "Druid",
+            "Sorcerer"
         ],
         "ritual": false,
         "conditions": [
-            "prone"
+            "Prone"
         ]
     },
     {
@@ -2894,7 +2894,7 @@
         ],
         "attack": "ranged",
         "classes": [
-            "warlock"
+            "Warlock"
         ],
         "ritual": false,
         "concentration": false
@@ -2928,14 +2928,14 @@
         ],
         "concentration": true,
         "classes": [
-            "bard",
-            "cleric",
-            "druid",
-            "sorcerer"
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Sorcerer"
         ],
         "ritual": false,
         "conditions": [
-            "incapacitated"
+            "Incapacitated"
         ]
     },
     {
@@ -2962,8 +2962,8 @@
         "save": "constitution",
         "concentration": true,
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -2986,11 +2986,11 @@
         "save": "strength",
         "concentration": true,
         "classes": [
-            "druid"
+            "Druid"
         ],
         "ritual": false,
         "conditions": [
-            "restrained"
+            "Restrained"
         ]
     },
     {
@@ -3009,14 +3009,14 @@
         ],
         "save": "wisdom",
         "classes": [
-            "bard",
-            "warlock"
+            "Bard",
+            "Warlock"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "charmed",
-            "incapacitated"
+            "Charmed",
+            "Incapacitated"
         ]
     },
     {
@@ -3044,11 +3044,11 @@
             "When you cast this spell using a spell slot of 8th level or higher, you can target up to three willing creatures (including you) for each slot level above 7th. The creatures must be within 10 feet of you when you cast the spell."
         ],
         "classes": [
-            "bard",
-            "cleric",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -3069,9 +3069,9 @@
         ],
         "concentration": true,
         "classes": [
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -3095,15 +3095,15 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "bard",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "frightened",
-            "unconscious"
+            "Frightened",
+            "Unconscious"
         ]
     },
     {
@@ -3123,7 +3123,7 @@
             "Creatures or magic items can’t be created or transmuted by this spell. You also can’t use it to create items that ordinarily require a high degree of craftsmanship, such as jewelry, weapons, glass, or armor, unless you have proficiency with the type of artisan’s tools used to craft such objects."
         ],
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -3145,12 +3145,12 @@
         "save": "dexterity",
         "concentration": true,
         "classes": [
-            "bard",
-            "druid"
+            "Bard",
+            "Druid"
         ],
         "ritual": false,
         "conditions": [
-            "invisible"
+            "Invisible"
         ]
     },
     {
@@ -3175,8 +3175,8 @@
             "When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st."
         ],
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -3208,14 +3208,14 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "bard",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "frightened"
+            "Frightened"
         ]
     },
     {
@@ -3237,9 +3237,9 @@
         ],
         "reactionTrigger": "which you take when you or a creature within 60 feet of you falls",
         "classes": [
-            "bard",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -3270,10 +3270,10 @@
         ],
         "save": "intelligence",
         "classes": [
-            "bard",
-            "druid",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Druid",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -3304,7 +3304,7 @@
         ],
         "ritual": true,
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "concentration": false
     },
@@ -3327,7 +3327,7 @@
             "You can’t have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear."
         ],
         "classes": [
-            "paladin"
+            "Paladin"
         ],
         "ritual": false,
         "concentration": false
@@ -3353,9 +3353,9 @@
         ],
         "concentration": true,
         "classes": [
-            "bard",
-            "cleric",
-            "druid"
+            "Bard",
+            "Cleric",
+            "Druid"
         ],
         "ritual": false
     },
@@ -3375,9 +3375,9 @@
             "This spell merely reveals that a trap is present. You don’t learn the location of each trap, but you do learn the general nature of the danger posed by a trap you sense."
         ],
         "classes": [
-            "cleric",
-            "druid",
-            "ranger"
+            "Cleric",
+            "Druid",
+            "Ranger"
         ],
         "ritual": false,
         "concentration": false
@@ -3402,9 +3402,9 @@
         ],
         "save": "constitution",
         "classes": [
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -3436,8 +3436,8 @@
         ],
         "save": "dexterity",
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -3462,8 +3462,8 @@
         ],
         "attack": "ranged",
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -3493,7 +3493,7 @@
             "In addition, whenever a creature within 5 feet of you hits you with a melee attack, the shield erupts with flame. The attacker takes 2d8 fire damage from a warm shield, or 2d8 cold damage from a cold shield."
         ],
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -3518,9 +3518,9 @@
         ],
         "save": "dexterity",
         "classes": [
-            "cleric",
-            "druid",
-            "sorcerer"
+            "Cleric",
+            "Druid",
+            "Sorcerer"
         ],
         "ritual": false,
         "concentration": false
@@ -3554,7 +3554,7 @@
         "attack": "melee",
         "concentration": true,
         "classes": [
-            "druid"
+            "Druid"
         ],
         "ritual": false
     },
@@ -3585,7 +3585,7 @@
         ],
         "save": "dexterity",
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false
@@ -3619,8 +3619,8 @@
         "save": "dexterity",
         "concentration": true,
         "classes": [
-            "druid",
-            "wizard"
+            "Druid",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -3648,13 +3648,13 @@
         "save": "constitution",
         "concentration": true,
         "classes": [
-            "warlock",
-            "wizard"
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "petrified",
-            "restrained"
+            "Petrified",
+            "Restrained"
         ]
     },
     {
@@ -3680,9 +3680,9 @@
         ],
         "concentration": true,
         "classes": [
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -3705,10 +3705,10 @@
         ],
         "concentration": true,
         "classes": [
-            "druid",
-            "ranger",
-            "sorcerer",
-            "wizard"
+            "Druid",
+            "Ranger",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -3739,7 +3739,7 @@
         ],
         "ritual": true,
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "concentration": false
     },
@@ -3768,14 +3768,14 @@
         ],
         "save": "charisma",
         "classes": [
-            "bard",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "invisible"
+            "Invisible"
         ]
     },
     {
@@ -3798,10 +3798,10 @@
             "This spell immediately ends if you cast it again before its duration ends."
         ],
         "classes": [
-            "bard",
-            "druid",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Druid",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -3826,17 +3826,17 @@
             "The target can also spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature that has it grappled. Finally, being underwater imposes no penalties on the target’s movement or attacks."
         ],
         "classes": [
-            "bard",
-            "cleric",
-            "druid",
-            "ranger"
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Ranger"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "grappled",
-            "paralyzed",
-            "restrained"
+            "Grappled",
+            "Paralyzed",
+            "Restrained"
         ]
     },
     {
@@ -3861,14 +3861,14 @@
         ],
         "concentration": true,
         "classes": [
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "incapacitated",
-            "stunned"
+            "Incapacitated",
+            "Stunned"
         ]
     },
     {
@@ -3894,9 +3894,9 @@
         ],
         "concentration": true,
         "classes": [
-            "cleric",
-            "sorcerer",
-            "wizard"
+            "Cleric",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -3923,16 +3923,16 @@
         ],
         "save": "wisdom",
         "classes": [
-            "bard",
-            "cleric",
-            "druid",
-            "paladin",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Paladin",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "charmed"
+            "Charmed"
         ]
     },
     {
@@ -3956,8 +3956,8 @@
         ],
         "ritual": true,
         "classes": [
-            "cleric",
-            "wizard"
+            "Cleric",
+            "Wizard"
         ],
         "concentration": false
     },
@@ -3980,7 +3980,7 @@
         ],
         "concentration": true,
         "classes": [
-            "druid"
+            "Druid"
         ],
         "ritual": false
     },
@@ -3998,8 +3998,8 @@
             "Until the spell ends, when you make a Charisma check, you can replace the number you roll with a 15. Additionally, no matter what you say, magic that would determine if you are telling the truth indicates that you are being truthful."
         ],
         "classes": [
-            "bard",
-            "warlock"
+            "Bard",
+            "Warlock"
         ],
         "ritual": false,
         "concentration": false
@@ -4033,8 +4033,8 @@
         ],
         "concentration": true,
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -4073,14 +4073,14 @@
         ],
         "save": "dexterity",
         "classes": [
-            "bard",
-            "cleric",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "invisible"
+            "Invisible"
         ]
     },
     {
@@ -4103,8 +4103,8 @@
             "The berries lose their potency if they have not been consumed within 24 hours of the casting of this spell."
         ],
         "classes": [
-            "druid",
-            "ranger"
+            "Druid",
+            "Ranger"
         ],
         "ritual": false,
         "concentration": false
@@ -4130,12 +4130,12 @@
         ],
         "save": "dexterity",
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "prone"
+            "Prone"
         ]
     },
     {
@@ -4154,13 +4154,13 @@
         ],
         "concentration": true,
         "classes": [
-            "bard",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "invisible"
+            "Invisible"
         ]
     },
     {
@@ -4191,14 +4191,14 @@
             }
         ],
         "classes": [
-            "bard",
-            "cleric",
-            "druid"
+            "Bard",
+            "Cleric",
+            "Druid"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "exhaustion"
+            "Exhaustion"
         ]
     },
     {
@@ -4220,7 +4220,7 @@
         ],
         "save": "dexterity",
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false
@@ -4262,8 +4262,8 @@
             "You can create a permanently guarded and warded structure by casting this spell there every day for one year."
         ],
         "classes": [
-            "bard",
-            "wizard"
+            "Bard",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -4284,8 +4284,8 @@
         ],
         "concentration": true,
         "classes": [
-            "cleric",
-            "druid"
+            "Cleric",
+            "Druid"
         ],
         "ritual": false
     },
@@ -4311,7 +4311,7 @@
         ],
         "attack": "ranged",
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false
@@ -4345,9 +4345,9 @@
         "save": "strength",
         "concentration": true,
         "classes": [
-            "druid",
-            "sorcerer",
-            "wizard"
+            "Druid",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -4383,13 +4383,13 @@
         ],
         "save": "charisma",
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "charmed",
-            "frightened"
+            "Charmed",
+            "Frightened"
         ]
     },
     {
@@ -4412,10 +4412,10 @@
             "The tactile characteristics of the terrain are unchanged, so creatures entering the area are likely to see through the illusion. If the difference isn’t obvious by touch, a creature carefully examining the illusion can attempt an Intelligence (Investigation) check against your spell save DC to disbelieve it. A creature who discerns the illusion for what it is, sees it as a vague image superimposed on the terrain."
         ],
         "classes": [
-            "bard",
-            "druid",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Druid",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -4439,7 +4439,7 @@
         ],
         "save": "constitution",
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false
@@ -4465,8 +4465,8 @@
         ],
         "concentration": true,
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -4488,8 +4488,8 @@
             "When you cast this spell using a spell slot of 7th level or higher, the amount of healing increases by 10 for each slot level above 6th."
         ],
         "classes": [
-            "cleric",
-            "druid"
+            "Cleric",
+            "Druid"
         ],
         "ritual": false,
         "concentration": false
@@ -4511,9 +4511,9 @@
             "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st."
         ],
         "classes": [
-            "bard",
-            "cleric",
-            "druid"
+            "Bard",
+            "Cleric",
+            "Druid"
         ],
         "ritual": false,
         "concentration": false
@@ -4546,8 +4546,8 @@
         "save": "constitution",
         "concentration": true,
         "classes": [
-            "bard",
-            "druid"
+            "Bard",
+            "Druid"
         ],
         "ritual": false
     },
@@ -4574,7 +4574,7 @@
         "save": "dexterity",
         "reactionTrigger": "which you take in response to being damaged by a creature within 60 feet of you that you can see",
         "classes": [
-            "warlock"
+            "Warlock"
         ],
         "ritual": false,
         "concentration": false
@@ -4600,13 +4600,13 @@
         ],
         "save": "wisdom",
         "classes": [
-            "cleric",
-            "druid"
+            "Cleric",
+            "Druid"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "frightened"
+            "Frightened"
         ]
     },
     {
@@ -4628,12 +4628,12 @@
         ],
         "concentration": true,
         "classes": [
-            "bard",
-            "paladin"
+            "Bard",
+            "Paladin"
         ],
         "ritual": false,
         "conditions": [
-            "frightened"
+            "Frightened"
         ]
     },
     {
@@ -4660,14 +4660,14 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "bard",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "paralyzed"
+            "Paralyzed"
         ]
     },
     {
@@ -4694,16 +4694,16 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "bard",
-            "cleric",
-            "druid",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "paralyzed"
+            "Paralyzed"
         ]
     },
     {
@@ -4727,11 +4727,11 @@
         "save": "constitution",
         "concentration": true,
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false,
         "conditions": [
-            "blinded"
+            "Blinded"
         ]
     },
     {
@@ -4752,7 +4752,7 @@
         ],
         "concentration": true,
         "classes": [
-            "ranger"
+            "Ranger"
         ],
         "ritual": false
     },
@@ -4777,15 +4777,15 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "bard",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "charmed",
-            "incapacitated"
+            "Charmed",
+            "Incapacitated"
         ]
     },
     {
@@ -4816,9 +4816,9 @@
         ],
         "save": "dexterity",
         "classes": [
-            "druid",
-            "sorcerer",
-            "wizard"
+            "Druid",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -4844,8 +4844,8 @@
         ],
         "ritual": true,
         "classes": [
-            "bard",
-            "wizard"
+            "Bard",
+            "Wizard"
         ],
         "concentration": false
     },
@@ -4871,9 +4871,9 @@
         ],
         "ritual": true,
         "classes": [
-            "bard",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Warlock",
+            "Wizard"
         ],
         "concentration": false
     },
@@ -4910,13 +4910,13 @@
         ],
         "save": "wisdom",
         "classes": [
-            "warlock",
-            "wizard"
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "restrained"
+            "Restrained"
         ]
     },
     {
@@ -4941,8 +4941,8 @@
         "save": "dexterity",
         "concentration": true,
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -4968,7 +4968,7 @@
         ],
         "attack": "melee",
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false
@@ -5001,9 +5001,9 @@
         "save": "constitution",
         "concentration": true,
         "classes": [
-            "cleric",
-            "druid",
-            "sorcerer"
+            "Cleric",
+            "Druid",
+            "Sorcerer"
         ],
         "ritual": false
     },
@@ -5030,14 +5030,14 @@
         ],
         "concentration": true,
         "classes": [
-            "bard",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "invisible"
+            "Invisible"
         ]
     },
     {
@@ -5059,10 +5059,10 @@
             "You touch a creature. The creature’s jump distance is tripled until the spell ends."
         ],
         "classes": [
-            "druid",
-            "ranger",
-            "sorcerer",
-            "wizard"
+            "Druid",
+            "Ranger",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -5084,9 +5084,9 @@
             "When you cast the spell, a loud knock, audible from as far away as 300 feet, emanates from the target object."
         ],
         "classes": [
-            "bard",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -5111,9 +5111,9 @@
             "The information you learn is accurate but might be couched in figurative language. For example, if you have a mysterious magic axe on hand, the spell might yield this information: “Woe to the evildoer whose hand touches the axe, for even the haft slices the hand of the evil ones. Only a true Child of Stone, lover and beloved of Moradin, may awaken the true powers of the axe, and only with the sacred word Rudnogg on the lips."
         ],
         "classes": [
-            "bard",
-            "cleric",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -5133,19 +5133,19 @@
             "You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned."
         ],
         "classes": [
-            "bard",
-            "cleric",
-            "druid",
-            "paladin",
-            "ranger"
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Paladin",
+            "Ranger"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "blinded",
-            "deafened",
-            "paralyzed",
-            "poisoned"
+            "Blinded",
+            "Deafened",
+            "Paralyzed",
+            "Poisoned"
         ]
     },
     {
@@ -5171,8 +5171,8 @@
         "save": "constitution",
         "concentration": true,
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -5196,10 +5196,10 @@
         ],
         "save": "dexterity",
         "classes": [
-            "bard",
-            "cleric",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -5236,8 +5236,8 @@
         ],
         "save": "dexterity",
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -5262,9 +5262,9 @@
         ],
         "ritual": true,
         "classes": [
-            "bard",
-            "druid",
-            "ranger"
+            "Bard",
+            "Druid",
+            "Ranger"
         ],
         "concentration": false
     },
@@ -5290,12 +5290,12 @@
         ],
         "concentration": true,
         "classes": [
-            "bard",
-            "cleric",
-            "druid",
-            "paladin",
-            "ranger",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Paladin",
+            "Ranger",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -5321,12 +5321,12 @@
         ],
         "concentration": true,
         "classes": [
-            "bard",
-            "cleric",
-            "druid",
-            "paladin",
-            "ranger",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Paladin",
+            "Ranger",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -5352,10 +5352,10 @@
             "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
         ],
         "classes": [
-            "bard",
-            "druid",
-            "ranger",
-            "wizard"
+            "Bard",
+            "Druid",
+            "Ranger",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -5379,8 +5379,8 @@
             "You touch a willing creature who isn’t wearing armor, and a protective magical force surrounds it until the spell ends. The target’s base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action."
         ],
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -5402,10 +5402,10 @@
             "The hand can’t attack, activate magic items, or carry more than 10 pounds."
         ],
         "classes": [
-            "bard",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -5443,10 +5443,10 @@
         ],
         "save": "charisma",
         "classes": [
-            "cleric",
-            "paladin",
-            "warlock",
-            "wizard"
+            "Cleric",
+            "Paladin",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -5477,7 +5477,7 @@
         ],
         "save": "charisma",
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -5503,8 +5503,8 @@
             "When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st."
         ],
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -5531,8 +5531,8 @@
         ],
         "ritual": true,
         "classes": [
-            "bard",
-            "wizard"
+            "Bard",
+            "Wizard"
         ],
         "concentration": false
     },
@@ -5555,8 +5555,8 @@
         ],
         "concentration": true,
         "classes": [
-            "paladin",
-            "wizard"
+            "Paladin",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -5585,10 +5585,10 @@
         ],
         "concentration": true,
         "classes": [
-            "bard",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -5610,9 +5610,9 @@
             "When you cast this spell using a spell slot of 6th level or higher, the healing increases by 1d8 for each slot level above 5th."
         ],
         "classes": [
-            "bard",
-            "cleric",
-            "druid"
+            "Bard",
+            "Cleric",
+            "Druid"
         ],
         "ritual": false,
         "concentration": false
@@ -5632,13 +5632,13 @@
             "A flood of healing energy flows from you into injured creatures around you. You restore up to 700 hit points, divided as you choose among any number of creatures that you can see within range. Creatures healed by this spell are also cured of all diseases and any effect making them blinded or deafened. This spell has no effect on undead or constructs."
         ],
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "blinded",
-            "deafened"
+            "Blinded",
+            "Deafened"
         ]
     },
     {
@@ -5658,7 +5658,7 @@
             "When you cast this spell using a spell slot of 4th level or higher, the healing increases by 1d4 for each slot level above 3rd."
         ],
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false
@@ -5688,15 +5688,15 @@
         ],
         "save": "wisdom",
         "classes": [
-            "bard",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "charmed"
+            "Charmed"
         ]
     },
     {
@@ -5717,7 +5717,7 @@
         ],
         "concentration": true,
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "ritual": false
     },
@@ -5742,12 +5742,12 @@
         ],
         "ritual": true,
         "classes": [
-            "cleric",
-            "druid"
+            "Cleric",
+            "Druid"
         ],
         "concentration": false,
         "conditions": [
-            "prone"
+            "Prone"
         ]
     },
     {
@@ -5770,11 +5770,11 @@
             "This spell can physically repair a magic item or construct, but the spell can’t restore magic to such an object."
         ],
         "classes": [
-            "bard",
-            "cleric",
-            "druid",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -5799,9 +5799,9 @@
             "You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesn’t have to follow a straight line and can travel freely around corners or through openings."
         ],
         "classes": [
-            "bard",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -5827,8 +5827,8 @@
         ],
         "save": "dexterity",
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -5848,13 +5848,13 @@
             "Until the spell ends, one willing creature you touch is immune to psychic damage, any effect that would sense its emotions or read its thoughts, divination spells, and the charmed condition. The spell even foils wish spells and spells or effects of similar power used to affect the target’s mind or to gain information about the target."
         ],
         "classes": [
-            "bard",
-            "wizard"
+            "Bard",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "charmed"
+            "Charmed"
         ]
     },
     {
@@ -5878,10 +5878,10 @@
             "If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusionbecomes faint to the creature."
         ],
         "classes": [
-            "bard",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -5904,9 +5904,9 @@
             "Creatures with truesight can see through the illusion to the terrain’s true form; however, all other elements of the illusion remain, so while the creature is aware of the illusion ’s presence, the creature can still physically interact with the illusion."
         ],
         "classes": [
-            "bard",
-            "druid",
-            "wizard"
+            "Bard",
+            "Druid",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -5930,9 +5930,9 @@
             "A creature is unaffected by this spell if it can’t see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with truesight."
         ],
         "classes": [
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -5954,14 +5954,14 @@
         ],
         "concentration": true,
         "classes": [
-            "bard",
-            "wizard"
+            "Bard",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "blinded",
-            "deafened",
-            "invisible"
+            "Blinded",
+            "Deafened",
+            "Invisible"
         ]
     },
     {
@@ -5978,9 +5978,9 @@
             "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see."
         ],
         "classes": [
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -6009,13 +6009,13 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "bard",
-            "wizard"
+            "Bard",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "charmed",
-            "incapacitated"
+            "Charmed",
+            "Incapacitated"
         ]
     },
     {
@@ -6048,7 +6048,7 @@
         "save": "constitution",
         "concentration": true,
         "classes": [
-            "druid"
+            "Druid"
         ],
         "ritual": false
     },
@@ -6077,8 +6077,8 @@
         "attack": "melee",
         "concentration": true,
         "classes": [
-            "bard",
-            "wizard"
+            "Bard",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -6106,9 +6106,9 @@
         ],
         "concentration": true,
         "classes": [
-            "druid",
-            "sorcerer",
-            "wizard"
+            "Druid",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -6131,9 +6131,9 @@
             "For the duration, you hide a target that you touch from divination  magic. The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. The target can’t be targeted by any divination magic or perceived through magical scrying sensors."
         ],
         "classes": [
-            "bard",
-            "ranger",
-            "wizard"
+            "Bard",
+            "Ranger",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -6155,12 +6155,12 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "bard",
-            "wizard"
+            "Bard",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "charmed"
+            "Charmed"
         ]
     },
     {
@@ -6183,8 +6183,8 @@
         ],
         "concentration": true,
         "classes": [
-            "druid",
-            "ranger"
+            "Druid",
+            "Ranger"
         ],
         "ritual": false
     },
@@ -6208,7 +6208,7 @@
             "When the opening disappears, any creatures or objects still in the passage created by the spell are safely ejected to an unoccupied space nearest to the surface on which you cast the spell."
         ],
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -6236,11 +6236,11 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "frightened"
+            "Frightened"
         ]
     },
     {
@@ -6260,7 +6260,7 @@
         ],
         "ritual": true,
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "concentration": false
     },
@@ -6284,7 +6284,7 @@
             "A creature enlisted to join your group counts as a member of it, receiving a full share of experience points awarded."
         ],
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false
@@ -6313,10 +6313,10 @@
         ],
         "save": "charisma",
         "classes": [
-            "bard",
-            "cleric",
-            "druid",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -6344,11 +6344,11 @@
         "attack": "melee",
         "save": "charisma",
         "classes": [
-            "cleric",
-            "druid",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Cleric",
+            "Druid",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -6371,9 +6371,9 @@
             "If you cast this spell over 8 hours, you enrich the land. All plants in a half-mile radius centered on a point within range become enriched for 1 year. The plants yield twice the normal amount of food when harvested."
         ],
         "classes": [
-            "bard",
-            "druid",
-            "ranger"
+            "Bard",
+            "Druid",
+            "Ranger"
         ],
         "ritual": false,
         "concentration": false
@@ -6398,10 +6398,10 @@
         ],
         "save": "constitution",
         "classes": [
-            "druid",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Druid",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -6431,14 +6431,14 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "bard",
-            "druid",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Druid",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "unconscious"
+            "Unconscious"
         ]
     },
     {
@@ -6455,10 +6455,10 @@
             "You utter a word of power that can compel one creature you can see within range to die instantly. If the creature you choose has 100 hit points or fewer, it dies. Otherwise, the spell has no effect."
         ],
         "classes": [
-            "bard",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -6479,15 +6479,15 @@
         ],
         "save": "constitution",
         "classes": [
-            "bard",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "stunned"
+            "Stunned"
         ]
     },
     {
@@ -6507,7 +6507,7 @@
             "When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d8 for each slot level above 2nd."
         ],
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false
@@ -6539,10 +6539,10 @@
             "If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
         ],
         "classes": [
-            "bard",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -6582,15 +6582,15 @@
             "8. Special. The target is struck by two rays. Roll twice more, rerolling any 8."
         ],
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "blinded",
-            "petrified",
-            "restrained"
+            "Blinded",
+            "Petrified",
+            "Restrained"
         ]
     },
     {
@@ -6625,14 +6625,14 @@
             "7. Violet. On a failed save, the creature is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of the DM’s choosing and is no longer blinded. (Typically, a creature that is on a plane that isn’t its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.) This layer is destroyed by a dispel magic spell or a similar spell of equal or higher level that can end spells and magical effects."
         ],
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "blinded",
-            "petrified",
-            "restrained"
+            "Blinded",
+            "Petrified",
+            "Restrained"
         ]
     },
     {
@@ -6656,7 +6656,7 @@
         ],
         "attack": "ranged",
         "classes": [
-            "druid"
+            "Druid"
         ],
         "ritual": false,
         "concentration": false
@@ -6683,8 +6683,8 @@
             "Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion, for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature."
         ],
         "classes": [
-            "bard",
-            "wizard"
+            "Bard",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -6712,13 +6712,13 @@
         ],
         "concentration": true,
         "classes": [
-            "bard",
-            "wizard"
+            "Bard",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "blinded",
-            "deafened"
+            "Blinded",
+            "Deafened"
         ]
     },
     {
@@ -6737,11 +6737,11 @@
         ],
         "concentration": true,
         "classes": [
-            "cleric",
-            "druid",
-            "ranger",
-            "sorcerer",
-            "wizard"
+            "Cleric",
+            "Druid",
+            "Ranger",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -6766,15 +6766,15 @@
         ],
         "concentration": true,
         "classes": [
-            "cleric",
-            "paladin",
-            "warlock",
-            "wizard"
+            "Cleric",
+            "Paladin",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "charmed",
-            "frightened"
+            "Charmed",
+            "Frightened"
         ]
     },
     {
@@ -6793,15 +6793,15 @@
             "For the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage."
         ],
         "classes": [
-            "cleric",
-            "druid",
-            "paladin",
-            "ranger"
+            "Cleric",
+            "Druid",
+            "Paladin",
+            "Ranger"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "poisoned"
+            "Poisoned"
         ]
     },
     {
@@ -6820,9 +6820,9 @@
         ],
         "ritual": true,
         "classes": [
-            "cleric",
-            "druid",
-            "paladin"
+            "Cleric",
+            "Druid",
+            "Paladin"
         ],
         "concentration": false
     },
@@ -6848,9 +6848,9 @@
             "Coming back from the dead is an ordeal. The target takes a −4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears."
         ],
         "classes": [
-            "bard",
-            "cleric",
-            "paladin"
+            "Bard",
+            "Cleric",
+            "Paladin"
         ],
         "ritual": false,
         "concentration": false
@@ -6873,8 +6873,8 @@
         "attack": "ranged",
         "concentration": true,
         "classes": [
-            "warlock",
-            "wizard"
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -6898,8 +6898,8 @@
         ],
         "attack": "ranged",
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -6924,9 +6924,9 @@
             "The target’s severed body members (fingers, legs, tails, and so on), if any, are restored after 2 minutes. If you have the severed part and hold it to the stump, the spell instantaneously causes the limb to knit to the stump."
         ],
         "classes": [
-            "bard",
-            "cleric",
-            "druid"
+            "Bard",
+            "Cleric",
+            "Druid"
         ],
         "ritual": false,
         "concentration": false
@@ -7017,7 +7017,7 @@
             "The reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original race for the new one and changes its racial traits accordingly."
         ],
         "classes": [
-            "druid"
+            "Druid"
         ],
         "ritual": false,
         "concentration": false
@@ -7037,10 +7037,10 @@
             "At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner’s attunement to the object so it can be removed or discarded."
         ],
         "classes": [
-            "cleric",
-            "paladin",
-            "warlock",
-            "wizard"
+            "Cleric",
+            "Paladin",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -7065,8 +7065,8 @@
         ],
         "concentration": true,
         "classes": [
-            "cleric",
-            "druid"
+            "Cleric",
+            "Druid"
         ],
         "ritual": false
     },
@@ -7093,8 +7093,8 @@
             "Casting this spell to restore life to a creature that has been dead for one year or longer taxes you greatly. Until you finish a long rest, you can’t cast spells again, and you have disadvantage on all attack rolls, ability checks, and saving throws."
         ],
         "classes": [
-            "bard",
-            "cleric"
+            "Bard",
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false
@@ -7122,9 +7122,9 @@
         "save": "dexterity",
         "concentration": true,
         "classes": [
-            "druid",
-            "sorcerer",
-            "wizard"
+            "Druid",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -7147,8 +7147,8 @@
             "You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can’t return to life a creature that has died of old age, nor can it restore any missing body parts."
         ],
         "classes": [
-            "cleric",
-            "paladin"
+            "Cleric",
+            "Paladin"
         ],
         "ritual": false,
         "concentration": false
@@ -7175,12 +7175,12 @@
             "Anything inside the extradimensional space drops out when the spell ends."
         ],
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "invisible"
+            "Invisible"
         ]
     },
     {
@@ -7203,7 +7203,7 @@
         ],
         "save": "dexterity",
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false
@@ -7229,7 +7229,7 @@
         ],
         "save": "wisdom",
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false
@@ -7257,8 +7257,8 @@
         ],
         "attack": "ranged",
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -7324,15 +7324,15 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "bard",
-            "cleric",
-            "druid",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "invisible"
+            "Invisible"
         ]
     },
     {
@@ -7354,14 +7354,14 @@
             "For the duration, you see invisible creatures and objects as if they were visible, and you can see into the Ethereal Plane. Ethereal creatures and objects appear ghostly and translucent."
         ],
         "classes": [
-            "bard",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "invisible"
+            "Invisible"
         ]
     },
     {
@@ -7383,9 +7383,9 @@
         ],
         "save": "charisma",
         "classes": [
-            "bard",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -7410,9 +7410,9 @@
             "You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a 5 percent chance that the message doesn’t arrive."
         ],
         "classes": [
-            "bard",
-            "cleric",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -7438,12 +7438,12 @@
             "You can set a condition for the spell to end early. The condition can be anything you choose, but it must occur or be visible within 1 mile of the target. Examples include “after 1,000 years” or “when the tarrasque awakens.” This spell also ends if the target takes any damage."
         ],
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "invisible"
+            "Invisible"
         ]
     },
     {
@@ -7471,12 +7471,12 @@
         ],
         "concentration": true,
         "classes": [
-            "druid",
-            "wizard"
+            "Druid",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "unconscious"
+            "Unconscious"
         ]
     },
     {
@@ -7506,10 +7506,10 @@
         ],
         "save": "constitution",
         "classes": [
-            "bard",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -7530,13 +7530,13 @@
         ],
         "reactionTrigger": "which you take when you are hit by an attack or targeted by the magic missile spell",
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "invisible"
+            "Invisible"
         ]
     },
     {
@@ -7559,8 +7559,8 @@
         ],
         "concentration": true,
         "classes": [
-            "cleric",
-            "paladin"
+            "Cleric",
+            "Paladin"
         ],
         "ritual": false
     },
@@ -7583,7 +7583,7 @@
             "The wood of a club or quarterstaff you are holding is imbued with nature’s power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8. The weapon also becomes magical, if it isn’t already. The spell ends if you cast it again or if you let go of the weapon."
         ],
         "classes": [
-            "druid"
+            "Druid"
         ],
         "ritual": false,
         "concentration": false
@@ -7608,8 +7608,8 @@
         ],
         "attack": "melee",
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -7631,12 +7631,12 @@
         "ritual": true,
         "concentration": true,
         "classes": [
-            "bard",
-            "cleric",
-            "ranger"
+            "Bard",
+            "Cleric",
+            "Ranger"
         ],
         "conditions": [
-            "deafened"
+            "Deafened"
         ]
     },
     {
@@ -7661,9 +7661,9 @@
         ],
         "concentration": true,
         "classes": [
-            "bard",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -7689,7 +7689,7 @@
             "If you cast this spell again, any duplicate you created with this spell is instantly destroyed."
         ],
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -7718,15 +7718,15 @@
             "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st."
         ],
         "classes": [
-            "bard",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "charmed",
-            "unconscious"
+            "Charmed",
+            "Unconscious"
         ]
     },
     {
@@ -7751,13 +7751,13 @@
         ],
         "concentration": true,
         "classes": [
-            "druid",
-            "sorcerer",
-            "wizard"
+            "Druid",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "prone"
+            "Prone"
         ]
     },
     {
@@ -7784,8 +7784,8 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -7804,7 +7804,7 @@
             "You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs."
         ],
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false
@@ -7825,9 +7825,9 @@
         ],
         "ritual": true,
         "classes": [
-            "bard",
-            "druid",
-            "ranger"
+            "Bard",
+            "Druid",
+            "Ranger"
         ],
         "concentration": false
     },
@@ -7851,8 +7851,8 @@
             "Until the spell ends, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the corpse is under no compulsion to offer a truthful answer if you are hostile to it or it recognizes you as an enemy. This spell doesn’t return the creature’s soul to its body, only its animating spirit. Thus, the corpse can’t learn new information, doesn’t comprehend anything that has happened since it died, and can’t speculate about future events."
         ],
         "classes": [
-            "bard",
-            "cleric"
+            "Bard",
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false
@@ -7881,14 +7881,14 @@
             "This spell can cause the plants created by the entangle spell to release a restrained creature."
         ],
         "classes": [
-            "bard",
-            "druid",
-            "ranger"
+            "Bard",
+            "Druid",
+            "Ranger"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "restrained"
+            "Restrained"
         ]
     },
     {
@@ -7911,9 +7911,9 @@
         ],
         "concentration": true,
         "classes": [
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -7941,8 +7941,8 @@
         ],
         "concentration": true,
         "classes": [
-            "druid",
-            "ranger"
+            "Druid",
+            "Ranger"
         ],
         "ritual": false
     },
@@ -7979,7 +7979,7 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false
     },
@@ -8007,7 +8007,7 @@
         ],
         "attack": "melee",
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false
@@ -8035,9 +8035,9 @@
         "save": "constitution",
         "concentration": true,
         "classes": [
-            "bard",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -8060,9 +8060,9 @@
             "You touch a stone object of Medium size or smaller or a section of stone no more than 5 feet in any dimension and form it into any shape that suits your purpose. So, for example, you could shape a large rock into a weapon, idol, or coffer, or make a small passage through a wall, as long as the wall is less than 5 feet thick. You could also shape a stone door or its frame to seal the door shut. The object you create can have up to two hinges and a latch, but finer mechanical detail isn’t possible."
         ],
         "classes": [
-            "cleric",
-            "druid",
-            "wizard"
+            "Cleric",
+            "Druid",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -8087,10 +8087,10 @@
         ],
         "concentration": true,
         "classes": [
-            "druid",
-            "ranger",
-            "sorcerer",
-            "wizard"
+            "Druid",
+            "Ranger",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -8122,11 +8122,11 @@
         ],
         "concentration": true,
         "classes": [
-            "druid"
+            "Druid"
         ],
         "ritual": false,
         "conditions": [
-            "deafened"
+            "Deafened"
         ]
     },
     {
@@ -8152,14 +8152,14 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "bard",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "charmed"
+            "Charmed"
         ]
     },
     {
@@ -8193,13 +8193,13 @@
         "save": "constitution",
         "concentration": true,
         "classes": [
-            "druid",
-            "sorcerer",
-            "wizard"
+            "Druid",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "blinded"
+            "Blinded"
         ]
     },
     {
@@ -8227,14 +8227,14 @@
         ],
         "save": "constitution",
         "classes": [
-            "druid",
-            "sorcerer",
-            "wizard"
+            "Druid",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "blinded"
+            "Blinded"
         ]
     },
     {
@@ -8271,18 +8271,18 @@
             "Stunning. Each target must make a Wisdom saving throw and becomes stunned for 1 minute on a failed save."
         ],
         "classes": [
-            "bard",
-            "cleric",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "frightened",
-            "incapacitated",
-            "invisible",
-            "stunned",
-            "unconscious"
+            "Frightened",
+            "Incapacitated",
+            "Invisible",
+            "Stunned",
+            "Unconscious"
         ]
     },
     {
@@ -8306,12 +8306,12 @@
         ],
         "concentration": true,
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "restrained"
+            "Restrained"
         ]
     },
     {
@@ -8400,9 +8400,9 @@
             "Mishap. The spell’s unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes 3d10 force damage, and the DM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time)."
         ],
         "classes": [
-            "bard",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -8427,9 +8427,9 @@
             "You can create a permanent teleportation circle by casting this spell in the same location every day for one year. You need not use the circle to teleport when you cast the spell in this way."
         ],
         "classes": [
-            "bard",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -8460,7 +8460,7 @@
             "If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action."
         ],
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false
@@ -8493,10 +8493,10 @@
         ],
         "save": "constitution",
         "classes": [
-            "bard",
-            "druid",
-            "sorcerer",
-            "wizard"
+            "Bard",
+            "Druid",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -8516,8 +8516,8 @@
             "This spell ends if one of the actions you use during this period, or any effects that you create during this period, affects a creature other than you or an object being worn or carried by someone other than you. In addition, the spell ends if you move to a place more than 1,000 feet from the location where you cast it."
         ],
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -8540,11 +8540,11 @@
             "This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says."
         ],
         "classes": [
-            "bard",
-            "cleric",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -8564,7 +8564,7 @@
             "This spell creates a magical link between a Large or larger inanimate plant within range and another plant, at any distance, on the same plane of existence. You must have seen or touched the destination plant at least once before. For the duration, any creature can step into the target plant and exit from the destination plant by using 5 feet of movement."
         ],
         "classes": [
-            "druid"
+            "Druid"
         ],
         "ritual": false,
         "concentration": false
@@ -8586,8 +8586,8 @@
         ],
         "concentration": true,
         "classes": [
-            "druid",
-            "ranger"
+            "Druid",
+            "Ranger"
         ],
         "ritual": false
     },
@@ -8620,13 +8620,13 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "bard",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "unconscious"
+            "Unconscious"
         ]
     },
     {
@@ -8650,8 +8650,8 @@
             "The spell can even provide a new body if the original no longer exists, in which case you must speak the creature’s name. The creature then appears in an unoccupied space you choose within 10 feet of you."
         ],
         "classes": [
-            "cleric",
-            "druid"
+            "Cleric",
+            "Druid"
         ],
         "ritual": false,
         "concentration": false
@@ -8675,11 +8675,11 @@
             "This spell gives the willing creature you touch the ability to see things as they actually are. For the duration, the creature has truesight, notices secret doors hidden by magic, and can see into the Ethereal Plane, all out to a range of 120 feet."
         ],
         "classes": [
-            "bard",
-            "cleric",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Cleric",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -8699,10 +8699,10 @@
         ],
         "concentration": true,
         "classes": [
-            "bard",
-            "sorcerer",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -8728,13 +8728,13 @@
         ],
         "ritual": true,
         "classes": [
-            "bard",
-            "warlock",
-            "wizard"
+            "Bard",
+            "Warlock",
+            "Wizard"
         ],
         "concentration": false,
         "conditions": [
-            "invisible"
+            "Invisible"
         ]
     },
     {
@@ -8760,8 +8760,8 @@
         "attack": "melee",
         "concentration": true,
         "classes": [
-            "warlock",
-            "wizard"
+            "Warlock",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -8784,7 +8784,7 @@
         ],
         "save": "wisdom",
         "classes": [
-            "bard"
+            "Bard"
         ],
         "ritual": false,
         "concentration": false
@@ -8818,9 +8818,9 @@
         "save": "dexterity",
         "concentration": true,
         "classes": [
-            "druid",
-            "sorcerer",
-            "wizard"
+            "Druid",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -8845,11 +8845,11 @@
         ],
         "concentration": true,
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "invisible"
+            "Invisible"
         ]
     },
     {
@@ -8880,7 +8880,7 @@
         ],
         "concentration": true,
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "ritual": false
     },
@@ -8910,9 +8910,9 @@
         "save": "dexterity",
         "concentration": true,
         "classes": [
-            "druid",
-            "sorcerer",
-            "wizard"
+            "Druid",
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false
     },
@@ -8945,7 +8945,7 @@
         "save": "dexterity",
         "concentration": true,
         "classes": [
-            "druid"
+            "Druid"
         ],
         "ritual": false
     },
@@ -8969,7 +8969,7 @@
             "The spell ends if you drop to 0 hit points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures. You can also dismiss the spell as an action."
         ],
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false
@@ -8994,10 +8994,10 @@
         ],
         "ritual": true,
         "classes": [
-            "druid",
-            "ranger",
-            "sorcerer",
-            "wizard"
+            "Druid",
+            "Ranger",
+            "Sorcerer",
+            "Wizard"
         ],
         "concentration": false
     },
@@ -9022,10 +9022,10 @@
         ],
         "ritual": true,
         "classes": [
-            "cleric",
-            "druid",
-            "ranger",
-            "sorcerer"
+            "Cleric",
+            "Druid",
+            "Ranger",
+            "Sorcerer"
         ],
         "concentration": false
     },
@@ -9057,12 +9057,12 @@
         "save": "dexterity",
         "concentration": true,
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "restrained"
+            "Restrained"
         ]
     },
     {
@@ -9085,11 +9085,11 @@
         "save": "wisdom",
         "concentration": true,
         "classes": [
-            "wizard"
+            "Wizard"
         ],
         "ritual": false,
         "conditions": [
-            "frightened"
+            "Frightened"
         ]
     },
     {
@@ -9112,12 +9112,12 @@
             "If a creature is in cloud form and flying when the effect ends, the creature descends 60 feet per round for 1 minute until it lands, which it does safely. If it can’t land after 1 minute, the creature falls the remaining distance."
         ],
         "classes": [
-            "druid"
+            "Druid"
         ],
         "ritual": false,
         "concentration": false,
         "conditions": [
-            "incapacitated"
+            "Incapacitated"
         ]
     },
     {
@@ -9146,8 +9146,8 @@
         "save": "strength",
         "concentration": true,
         "classes": [
-            "druid",
-            "ranger"
+            "Druid",
+            "Ranger"
         ],
         "ritual": false
     },
@@ -9182,8 +9182,8 @@
             "The stress of casting this spell to produce any effect other than duplicating another spell weakens you. After enduring that stress, each time you cast a spell until you finish a long rest, you take 1d10 necrotic damage per level of that spell. This damage can’t be reduced or prevented in any way. In addition, your Strength drops to 3, if it isn’t 3 or lower already, for 2d4 days. For each of those days that you spend resting and doing nothing more than light activity, your remaining recovery time decreases by 2 days. Finally, there is a 33 percent chance that you are unable to cast wish ever again if you suffer this stress."
         ],
         "classes": [
-            "sorcerer",
-            "wizard"
+            "Sorcerer",
+            "Wizard"
         ],
         "ritual": false,
         "concentration": false
@@ -9203,7 +9203,7 @@
             "You must designate a sanctuary by casting this spell within a location, such as a temple, dedicated to or strongly linked to your deity. If you attempt to cast the spell in this manner in an area that isn’t dedicated to your deity, the spell has no effect."
         ],
         "classes": [
-            "cleric"
+            "Cleric"
         ],
         "ritual": false,
         "concentration": false
@@ -9225,9 +9225,9 @@
         ],
         "save": "charisma",
         "classes": [
-            "bard",
-            "cleric",
-            "paladin"
+            "Bard",
+            "Cleric",
+            "Paladin"
         ],
         "ritual": false,
         "concentration": false

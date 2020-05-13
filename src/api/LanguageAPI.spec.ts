@@ -1,54 +1,64 @@
-
+import languages from '../../public/languages.json';
 import LanguageAPI, { Query } from './LanguageAPI';
 import * as io_ts from 'io-ts';
 import { ThrowReporter } from 'io-ts/lib/ThrowReporter';
-import { languageUnion } from '../../lib/test';
-import Language, { LanguageType, ScriptType } from '../models/Language';
+import Language from '../models/Language';
 
 describe('languages.get', () => {
 
     const tests: {
         name: string,
-        input: LanguageType,
+        input: string,
         expected: Language,
     }[] = [
             {
                 name: 'Abyssal',
-                input: LanguageType.Abyssal,
+                input: 'Abyssal',
                 expected: {
-                    name: LanguageType.Abyssal,
+                    name: 'Abyssal',
                     typicalSpeakers: [
                         'Demons'
                     ],
-                    script: ScriptType.Infernal,
+                    script: 'Infernal',
+                }
+            },
+            {
+                name: 'Abyssal, lowercase',
+                input: 'abyssal',
+                expected: {
+                    name: 'Abyssal',
+                    typicalSpeakers: [
+                        'Demons'
+                    ],
+                    script: 'Infernal',
                 }
             },
             {
                 name: 'Deep Speech',
-                input: LanguageType.DeepSpeech,
+                input: 'Deep Speech',
                 expected: {
-                    name: LanguageType.DeepSpeech,
+                    name: 'Deep Speech',
                     typicalSpeakers: [
                         'Aboleths',
                         'cloakers'
                     ],
-                    script: ScriptType.None,
+                    script: 'None',
                 }
             },
             {
                 name: 'Sylvan',
-                input: LanguageType.Sylvan,
+                input: 'Sylvan',
                 expected: {
-                    name: LanguageType.Sylvan,
+                    name: 'Sylvan',
                     typicalSpeakers: [
                         'Fey creatures'
                     ],
-                    script: ScriptType.Elvish,
+                    script: 'Elvish',
                 }
             }
         ];
 
-    const languageAPI = new LanguageAPI();
+    const languageAPI = new LanguageAPI(languages as Language[]);
 
     tests.forEach((test) => {
         it(test.name, (done) => {
@@ -67,7 +77,7 @@ describe('languages.get', () => {
 describe('languages.list', () => {
 
     it('count', () => {
-        const languageAPI = new LanguageAPI();
+        const languageAPI = new LanguageAPI(languages as Language[]);
 
         const actual = languageAPI.list();
 
@@ -82,67 +92,67 @@ describe('languages.query', () => {
     const tests: {
         name: string,
         input: Query,
-        expected: LanguageType[],
+        expected: string[],
     }[] = [
             {
                 name: 'Westeria Goodfellow',
                 input: {
                     types: [
-                        LanguageType.Common,
-                        LanguageType.Elvish,
-                        LanguageType.Sylvan,
-                        LanguageType.Giant,
+                        'Common',
+                        'Elvish',
+                        'Sylvan',
+                        'Giant',
                     ],
                 },
                 expected: [
-                    LanguageType.Common,
-                    LanguageType.Elvish,
-                    LanguageType.Giant,
-                    LanguageType.Sylvan,
+                    'Common',
+                    'Elvish',
+                    'Giant',
+                    'Sylvan',
                 ]
             },
             {
                 name: 'Elvish Script',
                 input: {
                     scripts: [
-                        ScriptType.Elvish,
+                        'Elvish',
                     ]
                 },
                 expected: [
-                    LanguageType.Elvish,
-                    LanguageType.Sylvan,
-                    LanguageType.Undercommon,
+                    'Elvish',
+                    'Sylvan',
+                    'Undercommon',
                 ],
             },
             {
                 name: 'Common Script',
                 input: {
                     scripts: [
-                        ScriptType.Common,
+                        'Common',
                     ]
                 },
                 expected: [
-                    LanguageType.Common,
-                    LanguageType.Halfling,
+                    'Common',
+                    'Halfling'
                 ],
             },
             {
                 name: 'Heaven and Hell',
                 input: {
                     scripts: [
-                        ScriptType.Celestial,
-                        ScriptType.Infernal,
+                        'Celestial',
+                        'Infernal',
                     ]
                 },
                 expected: [
-                    LanguageType.Abyssal,
-                    LanguageType.Celestial,
-                    LanguageType.Infernal,
+                    'Abyssal',
+                    'Celestial',
+                    'Infernal',
                 ],
             }
         ];
 
-    const languageAPI = new LanguageAPI();
+    const languageAPI = new LanguageAPI(languages as Language[]);
 
     tests.forEach((test) => {
         it(test.name, (done) => {
@@ -160,26 +170,13 @@ describe('languages.query', () => {
 
 describe('validate', () => {
 
-    const scriptUnion = io_ts.union([
-        io_ts.literal('none'),
-        io_ts.literal('celestial'),
-        io_ts.literal('common'),
-        io_ts.literal('draconic'),
-        io_ts.literal('dwarvish'),
-        io_ts.literal('elvish'),
-        io_ts.literal('infernal'),
-    ]);
-
     const objectInterface = io_ts.interface({
-        name: languageUnion,
+        name: io_ts.string,
         typicalSpeakers: io_ts.array(io_ts.string),
-        script: scriptUnion,
+        script: io_ts.string,
     });
 
-    const languageAPI = new LanguageAPI();
-    const languageList = languageAPI.list();
-
-    languageList.forEach((language) => {
+    (languages as Language[]).forEach((language) => {
         it(language.name, (done) => {
             const result = objectInterface.decode(language);
             ThrowReporter.report(result);

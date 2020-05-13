@@ -6,8 +6,8 @@
             "walking": 30
         },
         "languages": [
-            "common",
-            "draconic"
+            "Common",
+            "Draconic"
         ],
         "traits": [
             {
@@ -152,8 +152,8 @@
             "walking": 25
         },
         "languages": [
-            "common",
-            "dwarvish"
+            "Common",
+            "Dwarvish"
         ],
         "traits": [
             {
@@ -260,8 +260,8 @@
             "walking": 30
         },
         "languages": [
-            "common",
-            "elvish"
+            "Common",
+            "Elvish"
         ],
         "traits": [
             {
@@ -385,8 +385,8 @@
             "walking": 25
         },
         "languages": [
-            "common",
-            "gnomish"
+            "Common",
+            "Gnomish"
         ],
         "traits": [
             {
@@ -493,8 +493,8 @@
             "walking": 25
         },
         "languages": [
-            "common",
-            "halfling"
+            "Common",
+            "Halfling"
         ],
         "traits": [
             {
@@ -591,8 +591,8 @@
             "walking": 30
         },
         "languages": [
-            "common",
-            "elvish",
+            "Common",
+            "Elvish",
             "choice"
         ],
         "traits": [
@@ -665,8 +665,8 @@
             "walking": 30
         },
         "languages": [
-            "common",
-            "orc"
+            "Common",
+            "Orc"
         ],
         "traits": [
             {
@@ -746,7 +746,7 @@
             "walking": 30
         },
         "languages": [
-            "common",
+            "Common",
             "choice"
         ],
         "traits": [
@@ -799,8 +799,8 @@
             "walking": 30
         },
         "languages": [
-            "common",
-            "infernal"
+            "Common",
+            "Infernal"
         ],
         "traits": [
             {
